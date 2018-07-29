@@ -1,1 +1,3 @@
-# Jekyll blog repo for my website.
+# Blog
+
+## Jekyll blog repo for my website.

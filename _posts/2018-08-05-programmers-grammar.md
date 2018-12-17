@@ -1,4 +1,21 @@
-TODO:
+---
+layout: post
+title: Programmers grammar
+date: 2018-08-05 12:01:11
+author: Peter Stevenson
+summary: Grammar and spelling aren't dissimilar from syntax in programming.
+categories: programming
+thumbnail:
+tags:
+ - grammar
+ - spelling
+ - standardisation
+ - programming
+---
+
+> Grammar and spelling aren't dissimilar from syntax in programming
+
+WIP
 
 OCD with grammar etc.
 

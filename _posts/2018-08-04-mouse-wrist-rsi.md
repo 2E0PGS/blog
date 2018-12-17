@@ -13,8 +13,6 @@ tags:
  - wrist
 ---
 
-WIP
-
 ### My first venture into trying ergonomic ball mice to help with wrist RSI (Repetitive Strain Injury) while using computers.
 
 Being a computer programmer I can be using a computer for hours a day (_or night_). Many years of this have caused me to get pains in my palm of my hand and sometimes wrist. I recently decided to try a ergonomic mouse out of necessity due to pain.

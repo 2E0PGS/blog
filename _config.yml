@@ -7,7 +7,7 @@ url: "https://2e0pgs.github.io/blog/"
 title_description: "Ham radio, Programming, Networks, Electronics, FOSS, GNU/Linux, Trance and Ale."
 title_image: "https://secure.gravatar.com/avatar/b8a87d182b1468a827a92a27f465f15b?s=500&d=mm"
 google_analytics:
-disqus_account: 2e0pgs
+disqus_account: 2e0pgs-blog
 github_repository: https://github.com/2e0pgs/blog
 addthis_id:
 post_limit: 5

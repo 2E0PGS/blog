@@ -2,7 +2,7 @@
 title: "M3PGS/2E0PGS blog"
 email: 2E0PGS@gmail.com
 description: "Ham radio, Programming, Networks, Electronics, FOSS, GNU/Linux, Trance and Ale."
-baseurl: "https://2e0pgs.github.io/blog"
+baseurl: ""
 url: "https://2e0pgs.github.io/blog/"
 title_description: "Ham radio, Programming, Networks, Electronics, FOSS, GNU/Linux, Trance and Ale."
 title_image: "https://secure.gravatar.com/avatar/b8a87d182b1468a827a92a27f465f15b?s=500&d=mm"

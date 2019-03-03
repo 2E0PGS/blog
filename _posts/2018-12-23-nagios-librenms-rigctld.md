@@ -18,3 +18,5 @@ WIP
 ### Using LibreNMS and rigctld from [Hamlib](https://github.com/Hamlib/Hamlib) to graph my radio.
 
 ![screenshot](/blog/assets/2018-12-23/nagios-librenms-rigctld-screenshot.png)
+
+https://bitbucket.org/2E0PGS/nagios-plugins/src/master/check_rigctld

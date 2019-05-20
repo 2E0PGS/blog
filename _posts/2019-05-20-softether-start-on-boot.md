@@ -1,4 +1,18 @@
-# SoftEther Linux client/server start on boot
+---
+layout: post
+title: SoftEther Linux client/server start on boot
+date: 2019-05-20 09:37:19
+author: Peter Stevenson
+summary: Starting SoftEther on Linux and getting an IP on boot.
+categories: networking
+thumbnail:
+tags:
+ - SoftEther
+ - dhclient
+ - Linux
+---
+
+### How to start SoftEther Linux client/server on boot
 
 Based on a Debian crontab.
 

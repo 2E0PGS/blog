@@ -1,6 +1,8 @@
-# SoftEther Linux client start on boot
+# SoftEther Linux client/server start on boot
 
 Based on a Debian crontab.
+
+The SoftEther client requires a manual DHCP client call after starting to get an IP.
 
 ```
 @reboot /home/anon/vpnclient/vpnclient start

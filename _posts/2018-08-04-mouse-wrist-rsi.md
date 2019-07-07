@@ -21,4 +21,4 @@ I acquired the following from Amazon: [Logitech M570 Wireless Mouse](https://www
 
 In the Linux world with a terminal workflow it's quite easy to avoid using a mouse. Windows not so much because you normally need a mouse to interact with each window and that is just the way most programs are designed for now.
 
-Another unexpected thing I noticed was my Android mobile phone caused me to get hand cramps if used for a couple hours solid typing. Luckily this doesn't happen very often but it was something that effected my RSI quite badly when it did.
+Another unexpected thing I noticed was my Android mobile phone caused me to get hand cramps if used for a couple hours solid typing. Luckily this doesn't happen very often but it was something that effected my RSI quite badly when it did. Perhaps a smaller phone would solve this issue.

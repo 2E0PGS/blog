@@ -14,13 +14,13 @@ tags:
  - networking
 ---
 
-### RTSP forwarding
+# RTSP forwarding
 
-#### Enable IP forward in Linux.
+## Enable IP forward in Linux.
 
 `echo 1 > /proc/sys/net/ipv4/ip_forward`
 
-#### Allow traffic to be NAT to dest device.
+## Allow traffic to be NAT to dest device.
 
 We specify the port the firewall is listening on with `--dport`
 
@@ -28,10 +28,8 @@ Then we specify the device behind the firewall and what port it's listening on w
 
 `iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.50.2:80`
 
-#### Use MPV to try connect through firewall. Generally RTSP is TCP.
+## Use MPV to try connect through firewall. Generally RTSP is TCP.
 
 We use the firewalls IP here.
 
 `mpv rtsp://admin:password@192.168.1.40:80/stream`
-
-

@@ -15,8 +15,6 @@ tags:
  - files
 ---
 
-WIP
-
 ### Deciding on a personal file naming convention.
 
 If you haven't read my other post on [Programmers grammar](https://2e0pgs.github.io/blog/programming/2018/08/05/programmers-grammar/) I suggest you do so before reading this one for a bit of background.
@@ -30,10 +28,17 @@ Numbers may also be present for date stamps or version numbers. Example `2019-05
 * Easier on autocomplete in terminals. No need to hold shift.
 * Is pretty much universally safe for programs to parse.
 * It's the web standard for URL format.
-* Linux seems to have shifted to this standard from the old lowercase-underscorecase format for the core OS filesystem.
+* Linux seems to have shifted to this standard from the old `snake_case` format for the core OS filesystem.
 
-See general-naming-convention?
-See unix file system spec
-See web url spec
-See jekyll spec
-See JS/Node/Angular spec
+This is basically my general naming convention. 
+
+Many subfolders may also contain a `README.md` which hold metadata. This is normally a description of the folder structure if it's unusual.
+
+LF or CRLF?
+
+#### References
+
+* See unix file system spec
+* See web url spec
+* See jekyll spec
+* See JS/Node/Angular spec

@@ -38,7 +38,6 @@ ubuntu@graylog:/etc/nginx/sites-enabled$ sudo vim default
 Should look like
 
 ```
-
 server {
       listen 80;
       location / {
@@ -68,7 +67,6 @@ server {
                 auth_basic_user_file /etc/nginx/.htpasswd;
         }
 }
-
 ```
 
 Restart the service
@@ -91,6 +89,9 @@ Checking http reverse proxy on port 80
 
 ```
 peter@desktop:~$ curl 192.168.2.22:80/sgelf -X POST -H 'Content-Type: application/json' -d '{ "short_message": "from sgelf", "level": 5 }'
+```
+
+```
 <html>
 <head><title>401 Authorization Required</title></head>
 <body bgcolor="white">

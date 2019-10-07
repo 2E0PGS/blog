@@ -1,5 +1,19 @@
-so it turns out you dont need to download a full android studio to grab the `adb` tools.
+---
+layout: post
+title: ADB tools
+date: 2019-10-07 18:15:10
+author: Peter Stevenson
+summary: Android platform tools download
+categories: Android
+thumbnail:
+tags:
+ - Android
+ - ADB
+ - platform-tools
+---
 
-https://developer.android.com/studio/releases/platform-tools
+# Platform tools download
 
-platform tools are avaiable as a standalone binary
+So it turns out you don't need to download the full Android Studio to grab the `adb` tools.
+
+Platform tools are available as a stand alone binary here: [platform-tools](https://developer.android.com/studio/releases/platform-tools)

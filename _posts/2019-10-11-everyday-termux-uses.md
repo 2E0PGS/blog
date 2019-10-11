@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Termux uses
+title: Everyday Termux uses
 date: 2019-10-07 18:15:10
 author: Peter Stevenson
 summary: Useful tools for Termux.

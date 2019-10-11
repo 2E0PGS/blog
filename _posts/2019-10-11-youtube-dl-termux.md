@@ -19,7 +19,7 @@ tags:
 3. Run the command: `pkg install python`
 4. Run the command: `pip install youtube-dl`
 
-you now have youtube-dl on Android!
+You now have youtube-dl on Android!
 
 You may want to enable Termux storage access to rest of Android system: `termux-setup-storage`
 

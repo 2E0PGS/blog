@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Everyday Termux uses
-date: 2019-10-07 18:15:10
+date: 2019-10-11 20:16:10
 author: Peter Stevenson
 summary: Useful tools for Termux.
 categories: Android

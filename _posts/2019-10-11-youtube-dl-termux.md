@@ -1,7 +1,7 @@
 ---
 layout: post
 title: youtube-dl Termux
-date: 2019-10-07 18:15:10
+date: 2019-10-11 20:08:10
 author: Peter Stevenson
 summary: Download YouTube videos on Android with Termux.
 categories: Android

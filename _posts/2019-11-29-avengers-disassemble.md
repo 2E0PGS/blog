@@ -4,7 +4,7 @@ title: Avengers disassemble
 date: 2019-11-29 18:19:10
 author: Peter Stevenson
 summary: Tools for disassembling and reverse engineering binaries
-categories: Programming
+categories: programming
 thumbnail:
 tags:
  - Android

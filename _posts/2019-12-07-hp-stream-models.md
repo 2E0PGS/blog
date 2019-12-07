@@ -4,7 +4,7 @@ title: HP Stream models
 date: 2019-12-07 13:32:10
 author: Peter Stevenson
 summary: Difference in the HP Stream models
-categories: Computing
+categories: Computers
 thumbnail:
 tags:
  - HP

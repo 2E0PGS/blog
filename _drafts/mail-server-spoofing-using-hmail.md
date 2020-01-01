@@ -7,3 +7,5 @@ sender = local email
 recpit = remote
 deliver to all addresses
 use simple smtp client
+
+add screenshot

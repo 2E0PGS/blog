@@ -41,5 +41,7 @@ I recommend using a Virtual Machine for this with no internet connectivity.
 * [apktool](https://github.com/iBotPeaches/Apktool)
 * [JD-GUI](https://java-decompiler.github.io/)
 * [dex2jar](https://github.com/pxb1988/dex2jar)
+* [Apk Extractor](https://play.google.com/store/apps/details?id=com.ext.ui&hl=en) (non-opensource)
+* [HttpCanary](https://github.com/MegatronKing/HttpCanary)
 
 Useful resource on Android APK disassembly: [decompile-and-recompile-android-apk](https://blog.bramp.net/post/2015/08/01/decompile-and-recompile-android-apk/)

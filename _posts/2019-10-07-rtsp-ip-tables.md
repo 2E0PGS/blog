@@ -16,6 +16,16 @@ tags:
 
 # RTSP forwarding
 
+This is similair to a "data diode". 
+
+For this example I am using a Raspberry Pi with two NICs. One onboard (primary network 192.168.1.40) and one USB (secondary network 192.168.50.1). 
+
+The dest device is another host on the secondary network (192.168.50.2).
+
+My PC I use to test the configuration is on the primary network (192.168.1.39).
+
+This allows me to join two networks securely while only allowing TCP traffic over a specific port flowing in one direction.
+
 ## Enable IP forward in Linux.
 
 `echo 1 > /proc/sys/net/ipv4/ip_forward`

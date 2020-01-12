@@ -16,3 +16,5 @@ ensure suffix of callsign for gateway is not just a space but its last char of i
 * https://www.ebay.co.uk/itm/2018-latest-MMDVM-DMR-Repeater-Open-Source-Multi-Mode-Digital-Voice-Modem-Moto/352486107764?hash=item5211cf2a74:g:eJEAAOSwRE9bxBED
 * https://wiki.brandmeister.network/index.php/Homebrew/MMDVM?fbclid=IwAR3wkTfMHb_fN2V6INoDoh30Li06tqzpZdKBPKN5aTUeyScjTOPN0jQ8aS0#Recommend_radios_for_homebrew_repeaters
 * Robs pictures he took of the docs he received with his board.
+
+See DVAP page on my website.

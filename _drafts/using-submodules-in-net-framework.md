@@ -15,3 +15,5 @@ https://github.com/saturn72/SolutionWithGitSubmodulesAndNuget
 https://github.com/wgtmpeters/nugetprojectjson/issues/5
 
 https://github.com/wgtmpeters/nugetprojectjson/pull/4
+
+If you plan to consume a dotnet standard 2.0 library in a dotnet framework 4.6.1 project you will need Visual Studio 2017 or newer.

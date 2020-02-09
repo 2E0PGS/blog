@@ -24,3 +24,4 @@ tags:
 * `aprs-cli` Mobile APRS client. See my repo: [aprs-cli](https://bitbucket.org/2E0PGS/aprs-cli/src/master/)
 * `git` Programming and versioning.
 * `termux-api` Create your own scripts to automate Android. Example: [termux-scan-notification](https://bitbucket.org/2E0PGS/termux-scan-notification/src/master/)
+* `irssi` IRC client.

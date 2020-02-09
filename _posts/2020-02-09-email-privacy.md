@@ -150,7 +150,7 @@ Nothing here is suggesting that 365 does a PTR against my "sender" domain.
 
 **2020-02-04 18:11:** mailbox.org calendar wont send email notifications unless you set the timezone in the settings to match that of the event's time zone. So do that first and it becomes the default for new events.
 
-**Update 2020-02-04 19:41:** After I exported the old and new events .`ics` files to `diff`. It appears changing the primary alias and removing the old one will break email notifications for any calendar events created before that.
+**Update 2020-02-04 19:41:** After I exported the old and new events `.ics` files to `diff`. It appears changing the primary alias and removing the old one will break email notifications for any calendar events created before that.
 
 **Update 2020-02-07 19:30:** I am still having issues getting calendar to reliably email me event notifications.
 

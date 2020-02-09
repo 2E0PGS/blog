@@ -17,9 +17,9 @@ tags:
 
 # Email privacy
 
-In this article I detail how I setup my privacy focused email inbox with a custom domain to enable flexability in case I ever want to move mail servers.
+In this article I detail how I setup my privacy focused email inbox with a custom domain to enable flexibility in case I ever want to move mail servers.
 
-I have some redacted information which is designated in strikethrough text. This revolves around my reverse enigneering process of PTR validation. I left it here in case people wanted to see the evidence that allowed me to come to a conclusion on how PTR is validated by the mail server software.
+I have some redacted information which is designated in strike through text. This revolves around my reverse engineering process of PTR validation. I left it here in case people wanted to see the evidence that allowed me to come to a conclusion on how PTR is validated by the mail server software.
 
 I was considering either [Posteo](https://posteo.de/en) or [mailbox.org](https://mailbox.org) because of following resources
 
@@ -54,7 +54,7 @@ Autodiscover is only useful if the custom domain is the primary one on mailbox.o
 
 DMARC I don't think adds any benefit unless you are good at data analytics. So ignore it.
 
-5, 6 ~~and 7~~ are only essential if you are sending emails from this domain or want to prevent someone spoofing you. For recieve only it's not a concern.
+5, 6 ~~and 7~~ are only essential if you are sending emails from this domain or want to prevent someone spoofing you. For receive only it's not a concern.
 
 ### PTR
 
@@ -84,11 +84,11 @@ There isn't a tonne of documentation on how the email server does the PTR check.
 
 ~~It only seems to care if the PTR of the IPv4 points to a domain and if that domain points to the same IPv4.~~
 
-~~This is presumbly because my domain could have multiple origin IPs due to multiple outbound SMTP server cluster.~~
+~~This is presumably because my domain could have multiple origin IPs due to multiple outbound SMTP server cluster.~~
 
 In this context "client" means the sending SMTP server: `mout-u-204.mailbox.org` and "sender" means the senders domain: `my-domain.co.uk`
 
-It probably depends how strict the mail server is. It may check PTR of the "client" and the "sender" ~~which appears to be the case for 365~~. My email stopped getting flagged as spam once I made these changes. **After further investigaion detailed below and examination of email headers I see that the SPF record didn't propagate to exchange servers at the time I was having issues**. So the fact I made my "sender" domain have a reverse PTR was a false positive and had no effect I now believe. So I will make my domains point to my web server which unfrotunatly has a no FCrDNS IP but it shouldn't cause me any problems.
+It probably depends how strict the mail server is. It may check PTR of the "client" and the "sender" ~~which appears to be the case for 365~~. My email stopped getting flagged as spam once I made these changes. **After further investigation detailed below and examination of email headers I see that the SPF record didn't propagate to exchange servers at the time I was having issues**. So the fact I made my "sender" domain have a reverse PTR was a false positive and had no effect I now believe. So I will make my domains point to my web server which unfortunately has a no FCrDNS IP but it shouldn't cause me any problems.
 
 Looking at the [postfix/postconf man pages](https://linux.die.net/man/5/postconf) 
 
@@ -106,9 +106,9 @@ Of course exchange servers don't run postfix but it's probably the most popular 
 
 Run domain through the testing tools listed below.
 
-### Example fully configured recieved headers and source
+### Example fully configured received headers and source
 
-I have removed most text and left the relevent parts.
+I have removed most text and left the relevant parts.
 
 ```
 Authentication-Results: spf=pass; dkim=pass (signature was verified); dmarc=bestguesspass action=none;compauth=pass reason=109
@@ -135,7 +135,7 @@ X-Forefront-Antispam-Report:
  CIP:91.198.250.253;IPV:;CTRY:DE;EFV:NLI;SFV:SPM;SFS:(10001);DIR:INB;SFP:;SCL:5;SRVR:DB8PR02MB5833;H:mout-u-204.mailbox.org;FPR:;SPF:None;LANG:en;CAT:SPM;
 ```
 
-Anylsing the X-Forefront-Antispam-Report message we see the following interesting header fields
+Analysing the X-Forefront-Antispam-Report message we see the following interesting header fields
 
 * `SFV:SPM` The message was marked as spam by the content filter.
 * `SPM: Spam` The category of protection policy, applied to the message.
@@ -181,7 +181,7 @@ This isn't a problem once the custom alias is already added. It's only used to p
 * [debouncer PTR check](https://www.debouncer.com/reverse-dns-check)
 * [google toolbox messageheader](https://toolbox.googleapps.com/apps/messageheader/)
 
-### mailbox.org useful knowledgebase articles
+### mailbox.org useful knowledge base articles
 
 * [What data do they store and for how long](https://kb.mailbox.org/display/MBOKBEN/Which+data+do+we+store+and+for+how+long)
 * [Can I trust the staff at mailbox.org](https://kb.mailbox.org/display/MBOKBEN/Can+I+trust+the+staff+at+mailbox.org)

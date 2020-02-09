@@ -18,6 +18,12 @@ tags:
 
 First, backup your data.
 
+## Expand disk
+
+You may have migrated from a smaller to larger physical disk.
+
+If using VMWare power off the VM and expand the virtual disk in the VM settings menu.
+
 ## GParted disk image
 
 Insert the live bootable disk into the host. 

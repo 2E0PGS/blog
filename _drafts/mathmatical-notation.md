@@ -1,13 +1,12 @@
-prefix notation also called polish notation
-postfix notation also called reverse polish notation
-infix notation (this is what most people use daily)
+Prefix notation also called polish notation.
+Postfix notation also called reverse polish notation.
+Infix notation (this is what most people use daily).
 
-algebra...? is this a notation or expression or convention or a daft question?
+Algebra...? is this a notation or expression or convention or a daft question?
 
-operators and oprehands
+Operators and operands.
 
-buffers in polish notation are like computer registers/buffer
+Buffers in polish notation are like computer registers/buffer.
 
 `bc` `dc` etc
 
-operhands and operators.

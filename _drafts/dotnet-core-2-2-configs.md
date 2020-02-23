@@ -33,7 +33,7 @@ IConfigurationRoot configuration = builder.Build();
 
 See real example: [Core/Startup.cs](https://bitbucket.org/2E0PGS/core/src/master/Core/Startup.cs)
 
-### Retrive/consume configs from a class
+### Retrieve/consume configs from a class
 
 ```
 foreach(var repo in configuration.GetSection("repositories").GetChildren())

@@ -72,7 +72,11 @@ Works fine without all this mumbo jumbo. See example: [Core/Core.csproj](https:/
 
 ## Framework compatibility
 
-Some of these issues are around dotnet framework 4.6.1 not being "fully" compatible with dotnet standard 2.0. Despite the [.NET implementation support](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support) suggesting otherwise. Dotnet framework 4.7.2 is supposed to be fully supported. If I recall correctly this is more to do with the binding redirects and versions of dependencies.
+Some of these issues are around dotnet framework 4.6.1 not being "fully" compatible with dotnet standard 2.0. Despite the [.NET implementation support](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support) suggesting otherwise. Dotnet framework 4.7.2 is supposed to be fully supported.
+
+See point 2 under the [.NET implementation support](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support) table for more information.
+
+This is more to do with the binding redirects and versions of dependencies as dotnet framework 4.6.1 actually "implements .NET Standard 1.4". However it will support up to dotnet standard 2.0 with binding redirects.
 
 ## Azure DevOps/VSTS CI
 

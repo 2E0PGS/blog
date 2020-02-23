@@ -36,12 +36,12 @@ It seems Atom is quite fast on Linux still however on Windows VS Code is much fa
 
 * [Pluma](https://github.com/mate-desktop/pluma) Used rarely.
 * [Notepad](https://www.microsoft.com/en-us/p/windows-notepad/9msmlrh6lzf3?activetab=pivot:overviewtab) Used on Windows servers to display large log files.
-* [Notepad++](https://notepad-plus-plus.org/downloads/) I dont use N++ these days. Only if I help someone else who uses it. _Notice about recent CVE_.
-* [GNU Nano](https://www.nano-editor.org/) Linux servers that dont have full VIM installed.
+* [Notepad++](https://notepad-plus-plus.org/downloads/) I don't use N++ these days. Only if I help someone else who uses it. _Notice about recent CVE_.
+* [GNU Nano](https://www.nano-editor.org/) Linux servers that don't have full VIM installed.
 
 ## Notes
 
-It seems the lines between extreemly light text editor, code editor and full on IDE are blurring.
+It seems the lines between extremely light text editor, code editor and full on IDE are blurring.
 
 We are seeing many editors head towards these middle ground, modular, lightweight IDEs like Atom/VS Code.
 

@@ -32,13 +32,13 @@ If using VMWare use a virtual disk and ensure "connected" is checked.
 
 ## Boot options
 
-F12 for one time boot menu on most phsyical machines.
+F12 for one time boot menu on most physical machines.
 
 If using VMWare you need to boot into the VMWare BIOS via F2 and change the boot order to prioritise the CD drive.
 
 Choose GParted CD/ISO.
 
-## Paritioning
+## Partitioning
 
 "Deactivate" the partition you wish to extend via right click menu.
 

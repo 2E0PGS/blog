@@ -4,7 +4,7 @@ header....
 
 ## CLI projects
 
-This doesnt use a dep injector. KISS (Keep It Simple S...): https://stackoverflow.com/a/46437144
+This doesn't use a dep injector. KISS (Keep It Simple S...): https://stackoverflow.com/a/46437144
 
 See real example: [Salsa/Program.cs](https://bitbucket.org/2E0PGS/salsa/src/master/Salsa/Program.cs)
 
@@ -12,7 +12,7 @@ See real example: [Salsa/Program.cs](https://bitbucket.org/2E0PGS/salsa/src/mast
 
 Use camelCase to conform to JSON standards but it seems MS cant decide if they want to stick to their old school PascalCase days. 
 
-UPDATE: they seem to mostly give camelCase example code snippets now. Originally they had PascalCase JSON property names in the scaffolding templates.
+UPDATE: They seem to mostly give camelCase example code snippets now. Originally they had PascalCase JSON property names in the scaffolding templates.
 
 * Call it `appsettings.json`.
 * ??? Example migration from web.config: https://stackoverflow.com/a/52341105

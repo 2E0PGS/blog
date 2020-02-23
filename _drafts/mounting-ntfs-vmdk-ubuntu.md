@@ -2,7 +2,7 @@ headers
 
 # Mount NTFS VMDK file in Ubuntu desktop
 
-Using `vmware-mount` which seemed to come with vmware player.
+Using `vmware-mount` which seemed to come with VMWare player.
 
 ## List partitions
 

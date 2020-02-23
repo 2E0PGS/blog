@@ -35,6 +35,6 @@ No one seems to mention multistrand doubling over. I only found resources for si
 
 ## Summary
 
-* Double over if the cable diameter is too small acording to your personal disgression.
+* Double over if the cable diameter is too small according to your personal digression.
 * Multistrand should always have strands twisted together.
 * Bootlace ferrule or soldering multistrand conductors for termination into connector blocks I will save for another blog post some time.

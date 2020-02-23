@@ -80,7 +80,7 @@ This is more to do with the binding redirects and versions of dependencies as do
 
 ## Azure DevOps/VSTS CI
 
-You will need to ensure clone Submodules is part of the continues integration pipeline.
+You will need to ensure clone Submodules is part of the continuous integration pipeline.
 
 ## Potential roadblocks
 

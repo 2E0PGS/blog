@@ -46,26 +46,27 @@ Engineering paper is basically fancy graph paper.
 
 Below is a table of various notebooks I have and their line spacing. Most besides the "Rite in the Rain" are from the UK to my knowledge.
 
-| Name                     | Pattern     | Size     | Metric spacing | Imperial spacing |
-|--------------------------|-------------|----------|----------------|------------------|
-| nu: era                  | lined       | A5       | 8 mm           | 5/16 in          |
-| nu: craze                | lined       | A4       | 8 mm           | 5/16 in          |
-| Amazon basics            | squared     | A5       | 5 mm²          | 3/16 in²         |
-| Rite in the Rain 935     | universal   | 3x5 inch |                | 1/4 in           |
-| Unknown brand orange     | lined       | A6       | 8 mm           | 5/16 in          |
-| Office depot             | lined       | A5       | 8 mm           | 5/16 in          |
-| Office depot             | lined       | A4       | 8 mm           | 5/16 in          |
-| Lyreco refill pad        | lined       | A4       | 8 mm           | 5/16 in          |
-| Unknown brand refill pad | lined       | A4       | 8 mm           | 5/16 in          |
-| Hamelin Paperbrands      | lined       | A4       | 8 mm           | 5/16 in          |
-| Pukka Pads Jotta         | lined       | A4       | 8 mm           | 5/16 in          |
-| Pukka Pads Jotta         | lined       | A5       | 8 mm           | 5/16 in          |
-| Lemome Thick Classic     | lined       | A5       |                |                  |
-| Unknown circa 1988       | lined/graph | A4       | 8 mm           | 5/16 in          |
+| Name                     | Pattern     | Size   | Metric spacing | Imperial spacing |
+|--------------------------|-------------|--------|----------------|------------------|
+| nu: era                  | lined       | A5     | 8 mm           | 5/16 in          |
+| nu: craze                | lined       | A4     | 8 mm           | 5/16 in          |
+| Amazon basics            | squared     | A5     | 5 mm²          | 3/16 in²         |
+| Rite in the Rain 935     | universal   | 3x5 in | 6.35 mm        | 1/4 in           |
+| Unknown brand orange     | lined       | A6     | 8 mm           | 5/16 in          |
+| Office depot             | lined       | A5     | 8 mm           | 5/16 in          |
+| Office depot             | lined       | A4     | 8 mm           | 5/16 in          |
+| Lyreco refill pad        | lined       | A4     | 8 mm           | 5/16 in          |
+| Unknown brand refill pad | lined       | A4     | 8 mm           | 5/16 in          |
+| Hamelin Paperbrands      | lined       | A4     | 8 mm           | 5/16 in          |
+| Pukka Pads Jotta         | lined       | A4     | 8 mm           | 5/16 in          |
+| Pukka Pads Jotta         | lined       | A5     | 8 mm           | 5/16 in          |
+| Lemome Thick Classic     | lined       | A5     | 7 mm           | 9/32 in          |
+| Unknown circa 1988       | lined/graph | A4     | 8 mm           | 5/16 in          |
+| Staples Manuscript       | lined       | A4     | 8 mm           | 5/16 in          |
 
 I also saw on Amazon that Cambridge, Oxford Campus and Oxford Black n' Red notebooks use 8 mm line spacing.
 
-Oddly enough there isn't currently a United Kingdom subheading on the [Wikipedia ruled paper](https://en.wikipedia.org/wiki/Ruled_paper) page for line spacing.
+Oddly enough there isn't currently a United Kingdom subheading on the [Wikipedia ruled paper](https://en.wikipedia.org/wiki/Ruled_paper) page for line spacing. Furthermore I couldn't find a British standard for line spacing.
 
 ## Research links
 

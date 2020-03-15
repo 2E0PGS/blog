@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Notes and paper
-date: 2020-03-15 15:41:10
+date: 2020-03-15 16:24:10
 author: Peter Stevenson
 summary: Mechanical pencils and line spacing
 categories: personal
@@ -23,7 +23,9 @@ First rule was no Post-it Notes.
 
 Second rule was always have my notebook on the desk when I arrive at work so it's to hand. This prevents me reaching for Post-it Notes.
 
-I recently got back into mechanical pencils. I was looking at all types however I found out what Adam Savages favourite mechanical pencil is. It's the cheap disposable [PaperMate 0.7 mm Non-Stop](https://www.amazon.co.uk/PaperMate-Non-Stop-Mechanical-Pencil-Yellow/dp/B000SHSC5U). This was revolutionary and once I got my hand on one I soon fell in love. The rubber is a key part to a pencils usefulness over pens, any pencil without an attached rubber is useless to me.
+I recently got back into mechanical pencils. I was buying and testing all types however I found out what Adam Savages favourite mechanical pencil is. It's the cheap disposable [PaperMate 0.7 mm Non-Stop](https://www.amazon.co.uk/PaperMate-Non-Stop-Mechanical-Pencil-Yellow/dp/B000SHSC5U). This was revolutionary and once I got my hand on one I soon fell in love. 
+
+The rubber is a key part to a pencils usefulness over pens, any pencil without an attached rubber is useless to me. I tend to make a lot of mistakes in written writing where my brain is working faster than my hands. A writing implement which is erasable allows my notes to be edited and maintained like electronically typed notes on a computer.
 
 Coincidentally I recently also started reading Adam Savages new book "Every Tool's A Hammer: Life Is What You Make It". In the book he details his note taking techniques. I was again instantly understanding and wanting to try it for my self. I have used several note taking methods previously. Mostly lined paper with ticks at the end of lines I have completed.
 
@@ -57,7 +59,7 @@ Engineering paper is basically fancy graph paper. There are several types of gra
 
 ## Paper spacing
 
-Below is a table of various notebooks I have and their line spacing. Most besides the "Rite in the Rain" and "Lemome" are from the UK to my knowledge.
+Below is a table of various notebooks I have and their line spacing. All besides the "Rite in the Rain" and "Lemome" are from the UK to my knowledge.
 
 | Name                     | Pattern     | Size   | Metric spacing | Imperial spacing |
 |--------------------------|-------------|--------|----------------|------------------|
@@ -76,6 +78,15 @@ Below is a table of various notebooks I have and their line spacing. Most beside
 | Lemome Thick Classic     | lined       | A5     | 7 mm           | 9/32 in          |
 | Unknown circa 1988       | lined/graph | A4     | 8 mm           | 5/16 in          |
 | Staples Manuscript       | lined       | A4     | 8 mm           | 5/16 in          |
+| The Consortium           | squared     | A5     | 5 mm²          | 3/16 in²         |
+| The Consortium           | lined       | A4     | 8 mm           | 5/16 in          |
+| Oxford                   | squared     | A5     | 5 mm²          | 3/16 in²         |
+| John Dickinson           | squared     | A5     | 5 mm²          | 3/16 in²         |
+| Hamelin Paperbrands      | squared     | A5     | 5 mm²          | 3/16 in²         |
+| Hamelin Paperbrands      | lined       | A5     | 8 mm           | 5/16 in          |
+| Hamelin Paperbrands      | lined       | A4     | 8 mm           | 5/16 in          |
+| Rhino                    | squared     | A5     | 7 mm²          | 9/32 n²          |
+| Rhino                    | lined       | A4     | 8 mm           | 5/16 in          |
 
 I also saw on Amazon that Cambridge, Oxford Campus and Oxford Black n' Red notebooks use 8 mm line spacing.
 

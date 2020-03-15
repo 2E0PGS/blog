@@ -1,4 +1,19 @@
-
+---
+layout: post
+title: Notes and paper
+date: 2020-03-15 15:41:10
+author: Peter Stevenson
+summary: Mechanical pencils and line spacing
+categories: personal
+thumbnail:
+tags:
+ - notebooks
+ - pen
+ - paper
+ - typography
+ - engineering
+ - notes
+---
 
 # Notes and paper
 
@@ -20,17 +35,15 @@ I noticed this new note taking system would work well with squared paper. I see 
 
 I did a bit of research on the different paper types. I started with my own notebooks. I noticed some interesting things. Lined paper isn't always the same line spacing. Rite in the rain have a special "universal" format which I cannot find anyone else doing. It's lined with dotted less visible grid. The grid avoids visual overload but its there when required. [Click for for example](https://cdn3.volusion.com/fyqtn.tvutc/v/vspfiles/photos/RITR-774-MX-3.jpg)
 
-USA notebook was inches spacing. UK was mm spacing. Germany has a standard of 6mm line spacing.
+USA notebooks use inches for spacing. UK was mm spacing. Germany has a standard of 6mm line spacing.
 
 In the USA they seem to have "College Paper" and "High School Paper". I know we do something similar in the UK and my Lithuanian friend confirmed they also do this. Basically in schools they start with paper which has a large line spacing. When the child gets older they get paper with standard line spacing. It makes it easier for them until they have improved their hand writing. There are also various special paper types which aid hand writing.
 
 Hardback notebooks are better in general because I carry them around in my 5.11 backpack. This prevents damage and it makes the book much easier to read and write on because it remains rigid.
 
-Square paper spacing varies. 5 mm seems to be the most common. 1cm is around for school use.
+Square paper spacing varies. 5 mm² seems to be the most common. 10 mm² is around for school use.
 
-The paper shouldn't bleed when using felt pens.
-
-I don't write on both sides. I find it inconvenient.
+The paper shouldn't bleed when using felt or fountain pens.
 
 Digital notes are useful but not practical for diagrams or annotation unless using a very expensive tablet with a proper digitizer. I do however type documentation up in Markdown and use draw.io for finalised architecture diagrams.
 
@@ -40,11 +53,11 @@ Pens I will discuss at some point in the future. Mostly using [Zebra F-xMD](http
 
 "Squared Paper" is also known as "Grid Paper".
 
-Engineering paper is basically fancy graph paper.
+Engineering paper is basically fancy graph paper. There are several types of graph paper which vary in the amount of quadrants.
 
 ## Paper spacing
 
-Below is a table of various notebooks I have and their line spacing. Most besides the "Rite in the Rain" are from the UK to my knowledge.
+Below is a table of various notebooks I have and their line spacing. Most besides the "Rite in the Rain" and "Lemome" are from the UK to my knowledge.
 
 | Name                     | Pattern     | Size   | Metric spacing | Imperial spacing |
 |--------------------------|-------------|--------|----------------|------------------|
@@ -66,13 +79,14 @@ Below is a table of various notebooks I have and their line spacing. Most beside
 
 I also saw on Amazon that Cambridge, Oxford Campus and Oxford Black n' Red notebooks use 8 mm line spacing.
 
-Oddly enough there isn't currently a United Kingdom subheading on the [Wikipedia ruled paper](https://en.wikipedia.org/wiki/Ruled_paper) page for line spacing. Furthermore I couldn't find a British standard for line spacing.
+~~Oddly enough there isn't currently a United Kingdom subheading on the [Wikipedia ruled paper](https://en.wikipedia.org/wiki/Ruled_paper) page for line spacing.~~ I have since updated the Wikipedia page.
+
+For school books ruling see: [rhinostationery.com/page-ruling-guides](https://www.rhinostationery.com/page-ruling-guides/)
 
 ## Research links
 
 * [Markus Kuhn ISO paper](http://www.cs.utsa.edu/~wagner/date/iso-paper.html) again the best online reference material is a university with plain old HTML probably written using notepad or vim. Simple and includes clear information without clutter. Bring back the old web!
 * [Finding the best notebook](https://www.buzzfeed.com/josephinewolff/how-finding-the-perfect-notebook-made-me-less-anxious-about) as much as I don't want to reference this I think it's worth including it.
-* [Wiki2 paper types](https://wiki2.org/en/Ruled_paper#Generic_types)
 * [Reddit thread on line spacing of notebooks](https://www.reddit.com/r/notebooks/comments/540t28/lets_talk_about_line_spacing/)
 * [How to use engineering paper](https://www.customessays.co.uk/blog/essay/how-to-use-an-engineering-paper)
 
@@ -89,14 +103,7 @@ Oddly enough there isn't currently a United Kingdom subheading on the [Wikipedia
 ## Purchase links
 
 * [Tops Engineering Computation Pad](https://www.amazon.co.uk/Engineering-Computation-3-Hole-Punched-35502/dp/B001E6BXM8/)
-* [LEUCHTTURM1917 344782 (A5), 249 numbered pages, ruled, anthracite](https://www.amazon.co.uk/gp/product/B00FWP3POG/) 6 mm line spacing
+* [LEUCHTTURM1917 344782 (A5), 249 numbered pages, ruled, anthracite](https://www.amazon.co.uk/gp/product/B00FWP3POG/) German 6 mm line spacing
 * [LEUCHTTURM1917 344783 (A5), 249 numbered pages, squared, anthracite](https://www.amazon.co.uk/gp/product/B00FWRICHE/) 5 mm square
 * [AmazonBasics Classic Notebook, Plain 240 pages, Large](https://www.amazon.co.uk/gp/product/B01DN8TB5U) basically A5 size
-* [AmazonBasics Classic Notebook, Squared 240 pages, Large](https://www.amazon.co.uk/gp/product/B01DN8TEA2) 5 mm square
-
-### School books
-
-* [Lithuanian handwriting book](https://jurasta.com/idomioji-mokykla/sasiuviniai/sasiuviniai-pradinukams/sasiuvinis-sok-2-klasei-linijomis-12-lapu-80-g-m)
-* [Lithuanian handwriting book grades 3-5](https://jurasta.com/idomioji-mokykla/sasiuviniai/sasiuviniai-pradinukams/sasiuvinis-sok-3-5-klasei-linijomis-12-lapu-80-g-m)
-
-
+* [AmazonBasics Classic Notebook, Squared 240 pages, Large](https://www.amazon.co.uk/gp/product/B01DN8TEA2) 5 mm square, my current notebook at time of writing.

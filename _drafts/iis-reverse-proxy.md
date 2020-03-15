@@ -8,7 +8,7 @@ If you dont be careful of installing it in a shared config setup, you have to di
 
 Install ARRv3 for reverse proxy capabilities. You will probably run into same issue as above if using shared configs. [Download link](http://www.iis.net/download/ApplicationRequestRouting)
 
-## Dont bother with per site reverse proxy settings for example:
+## Don't bother with per site reverse proxy settings for example:
 
 * https://techcommunity.microsoft.com/t5/iis-support-blog/setup-iis-with-url-rewrite-as-a-reverse-proxy-for-real-world/ba-p/846222#
 * https://gunnarpeipman.com/plex-iis-reverse-proxy/

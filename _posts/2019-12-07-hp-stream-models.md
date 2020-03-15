@@ -20,6 +20,8 @@ I decided to compile a list to help me figure out the differences between the mo
 
 This document only covers 11 inch models.
 
+Dell also make a similar machine and it's specifications are all on one PDF: [Dell Inspiron 11 3000](https://www.bhphotovideo.com/lit_files/359150.pdf)
+
 ## Summary of findings
 
 * All have 32GB of eMMC storage.

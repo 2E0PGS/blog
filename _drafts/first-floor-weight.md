@@ -13,6 +13,4 @@ M = F/A
 1500/9.81 = 152 KG per square meter
 ```
 
-```
-at least 222kg within a 1meter squared area I have
-```
+I have at least 222kg within a 1 meter squared area. However the weight is positioned near a load bearing wall.

@@ -72,4 +72,4 @@ drwxr-xr-x 2 sftpuser sftpuser 4096 Oct 28 10:51 writeable
 ## References
 
 * https://askubuntu.com/a/134442
-*https://www.howtoforge.com/restricting-users-to-sftp-plus-setting-up-chrooted-ssh-sftp-debian-squeeze
+* https://www.howtoforge.com/restricting-users-to-sftp-plus-setting-up-chrooted-ssh-sftp-debian-squeeze

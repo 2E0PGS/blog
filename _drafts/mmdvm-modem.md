@@ -1,20 +1,49 @@
-pi-star beta image for raspi3
-pinouts
-may need the ign pin of modem pulled high? car ignition for auto boot of pi?
-sql pin of rig doesnt seem to be needed
-rssi pin of modem doesnt seem to be needed
-pi-star configuration/expert/mmdvmhost/txoffset is worth playing with try -100 or 100 or 200
 
-txinvert was default 1, for some radios like mine you may need to change it to 0 however in my case I later found my radio was off frequency and upon correcting it (see ic-e208 calibration) I had to put txinvert back to original value.
 
-ensure suffix of callsign for gateway is not just a space but its last char of input string: https://www.facebook.com/groups/pistarusergroup/414855285738167/?comment_id=414856705738025&reply_comment_id=415271039029925&notif_id=1554136716212493&notif_t=group_comment
+# MMDVM Modem Hat
 
-# Useful links
+I am using a Icom IC-E208 and a "MMDVM_pog" hat to make a GMSK DStar gateway.
 
-* https://www.ebay.com/itm/MMDVM-DMR-Repeater-Open-Source-Multi-Mode-Digital-Voice-Modem-for-Raspberry-MJ-/163608363073?oid=143133159407
-* http://www.radiomanual.info/schemi/ICOM_VU/IC-E208_user.pdf
-* https://www.ebay.co.uk/itm/2018-latest-MMDVM-DMR-Repeater-Open-Source-Multi-Mode-Digital-Voice-Modem-Moto/352486107764?hash=item5211cf2a74:g:eJEAAOSwRE9bxBED
-* https://wiki.brandmeister.network/index.php/Homebrew/MMDVM?fbclid=IwAR3wkTfMHb_fN2V6INoDoh30Li06tqzpZdKBPKN5aTUeyScjTOPN0jQ8aS0#Recommend_radios_for_homebrew_repeaters
+My fiend 2E0EOL has written a article on a similar setup: [daybologic GMSK Gateway](http://www.daybologic.co.uk/articles.php?content=gmsk)
+
+## Software installing
+
+Requires Pi-Star beta image for Raspberry Pi 3B+ at time of writing.
+
+UPDATE 07/04/2020: "Raspberry Pi 3B+ out of beta".
+
+## Pinouts
+
+For some reason my PI wont boot with the hat on. I haven't figured out why yet. See: [wojciechk8/MMDVM_pog/issues/4](https://github.com/wojciechk8/MMDVM_pog/issues/4#issuecomment-482480582)
+
+The "sql" pin of rig doesn't seem to be needed for basic setup.
+
+The "rssi" pin of modem doesn't seem to be needed for basic setup.
+
+## Software configuration 
+
+Pi-Star web UI page configuration/expert/mmdvmhost you will find the following fields.
+
+`txoffset` is worth playing with try `-100` or `100` or `200`.
+
+`txinvert` was default `1`, for some radios like mine you may need to change it to `0` however in my case I later found my radio was off frequency and upon correcting it (see: [IC-E208 Calibration](https://2e0pgs.github.io/blog/hamradio/2019/05/25/ic-e208-calibration/)) I had to put `txinvert` back to original value.
+
+Ensure suffix of CallSign for gateway is not just a space but its last char of input string.
+
+I had some issues changing the gateways CallSign without re-flashing.
+
+Thread: https://www.facebook.com/groups/pistarusergroup/414855285738167/?comment_id=414856705738025&reply_comment_id=415271039029925&notif_id=1554136716212493&notif_t=group_comment
+
+## Hardware calibration
+
+There is a couple trim pots on the board which allow you to adjust the mic gain. Use the ACL meter on the radio to gauge this.
+
+## Useful links
+
+* [Connection images from eBay listing](https://www.ebay.com/itm/MMDVM-DMR-Repeater-Open-Source-Multi-Mode-Digital-Voice-Modem-for-Raspberry-MJ-/163608363073)
+* [IC-e208 manual](http://www.radiomanual.info/schemi/ICOM_VU/IC-E208_user.pdf)
+* [More connection images from eBay listing](https://www.ebay.co.uk/itm/2018-latest-MMDVM-DMR-Repeater-Open-Source-Multi-Mode-Digital-Voice-Modem-Moto/352486107764)
+* [Radio compatibility tests](https://wiki.brandmeister.network/index.php/Homebrew/MMDVM?fbclid=IwAR3wkTfMHb_fN2V6INoDoh30Li06tqzpZdKBPKN5aTUeyScjTOPN0jQ8aS0#Recommend_radios_for_homebrew_repeaters)
 * Robs pictures he took of the docs he received with his board.
 
-See DVAP page on my website.
+Also see the DVAP page on my website: [ham-radio/dvap](https://2e0pgs.github.io/ham-radio/dvap.html)

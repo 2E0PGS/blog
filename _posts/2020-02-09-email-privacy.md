@@ -52,13 +52,13 @@ I choose mailbox.org as the mail server.
 
 Autodiscover is only useful if the custom domain is the primary one on mailbox.org.
 
-DMARC I don't think adds any benefit unless you are good at data analytics. So ignore it.
+DMARC I don't think adds any benefit unless you are good at data analytics's. So ignore it.
 
 5, 6 ~~and 7~~ are only essential if you are sending emails from this domain or want to prevent someone spoofing you. For receive only it's not a concern.
 
 ### PTR
 
-~~Google/gmail doesn't seem to worry about PTR but it may help spam score.~~
+~~Google/Gmail doesn't seem to worry about PTR but it may help spam score.~~
 
 I had some mail being flagged by 365 spam filters.
 
@@ -146,21 +146,31 @@ Nothing here is suggesting that 365 does a PTR against my "sender" domain.
 
 ## Issues
 
-### mailbox.org calendar
-
 **2020-02-04 18:11:** mailbox.org calendar wont send email notifications unless you set the timezone in the settings to match that of the event's time zone. So do that first and it becomes the default for new events.
 
-**Update 2020-02-04 19:41:** After I exported the old and new events `.ics` files to `diff`. It appears changing the primary alias and removing the old one will break email notifications for any calendar events created before that.
+**Update: 2020-02-04 19:41:** After I exported the old and new events `.ics` files to `diff`. It appears changing the primary alias and removing the old one will break email notifications for any calendar events created before that.
 
-**Update 2020-02-07 19:30:** I am still having issues getting calendar to reliably email me event notifications.
+**Update: 2020-02-07 19:30:** I am still having issues getting calendar to reliably email me event notifications.
+
+**Update: 2020-02-19 12:03:** The email subject line of the reminder is always in CET despite all my settings being in GMT and my mail body is GMT. 
+
+**Update: 2020-02-19 12:03:** The plus addressing folder organisation is case sensitive given email addresses should be regarded as case insensitive. This isn't mentioned here at time of writing: [Can I use plus-aliases in the format](https://kb.mailbox.org/display/MAILBOX/What+is+an+alias+and+how+do+I+use+it) However it is here: [How to use mail extensions](https://kb.mailbox.org/display/MBOKBEN/How+to+use+mail+extensions)
+
+**Update: 2020-04-24 15:57:** Mailbox.org: "We have opened a bugreport with Open Xchange".
+
+### Greylisting 
+
+Had me confused for a while why my emails weren't getting through. Eventually they all came through once the sending server retries. See: [Spam protection through greylisting](https://kb.mailbox.org/m/mobile.action#page/1181556) 
+
+### I accidentally deleted the mailbox.org security key
+
+This isn't a problem once the custom alias is already added. It's only used to prove that you own the domain.
+
+You will need to re add a security key for adding another alias email on that domain. They provide this on screen if you try to add one.
 
 ### ~~Can you still use HTTP redirects with A record on Ionos?~~
 
 ~~1&1 HTTP redirect points the A record to `http://clienthosting.eu/` so it's not possible to use this in conjunction with the PTR work around.~~
-
-### I accidently deleted the mailbox.org security key
-
-This isn't a problem once the custom alias is already added. It's only used to prove that you own the domain.
 
 ## My final DNS entries look like this
 

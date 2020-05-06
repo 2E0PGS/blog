@@ -14,7 +14,9 @@ tags:
  - shell
 ---
 
-### How to shutdown ESXi safely when a UPS is on battery.
+# EXSi UPS shutdown script
+
+How to shutdown ESXi safely when a UPS is on battery.
 
 ## esxi-ups-shutdown.sh
 

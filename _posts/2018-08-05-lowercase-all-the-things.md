@@ -15,7 +15,7 @@ tags:
  - files
 ---
 
-# Deciding on a personal file naming convention.
+# Deciding on a personal file naming convention
 
 If you haven't read my other post on [Programmers grammar](https://2e0pgs.github.io/blog/programming/2018/08/05/programmers-grammar/) I suggest you do so before reading this one for a bit of background.
 

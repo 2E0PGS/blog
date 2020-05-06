@@ -12,7 +12,7 @@ tags:
  - programming
 ---
 
-### Just setup my blog.
+# Just setup my blog
 
 Greetings I just got the blog setup on my Github pages under a separate repo. I decided to use [Carte Noire](https://github.com/jacobtomlinson/carte-noire/) Jekyll site theme since it looks pretty clean.
 

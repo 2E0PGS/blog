@@ -12,7 +12,7 @@ tags:
  - Linux
 ---
 
-### How to start SoftEther Linux client/server on boot
+# How to start SoftEther Linux client/server on boot
 
 Based on a Debian crontab.
 

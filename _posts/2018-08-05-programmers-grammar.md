@@ -15,7 +15,9 @@ tags:
  - programming
 ---
 
-### Grammar and spelling aren't dissimilar from syntax in programming
+# Programmers grammar
+
+Grammar and spelling aren't dissimilar from syntax in programming
 
 I was never very decent at spelling or grammar however after years of programming you kind of become a bit particular about what you type down to each character if you want your code to run properly.
 

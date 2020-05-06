@@ -15,13 +15,13 @@ tags:
  - Calibration
 ---
 
-### Using GQRX to calibrate a radio
+# Using GQRX to calibrate a radio
 
 I recently had to calibrate two IC-e208 radios which were around 3KHz off centre frequency.
 
 ![screenshot](/blog/assets/2019-05-25/ic-e208-calibration-screenshot.png)
 
-#### Tools used
+## Tools used
 
 * IF output of another radio used as a spectrum scope. See [ic-7100-gqrx]()
 * JIG cable

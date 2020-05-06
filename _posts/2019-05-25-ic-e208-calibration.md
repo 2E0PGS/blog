@@ -23,7 +23,7 @@ I recently had to calibrate two IC-e208 radios which were around 3KHz off centre
 
 ## Tools used
 
-* IF output of another radio used as a spectrum scope. See [ic-7100-gqrx]()
+* IF output of another radio used as a spectrum scope. See [ic-7100 AF/IF over USB](https://2e0pgs.github.io/ham-radio/ic-7100.html)
 * JIG cable
 * SWR and power meter
 * Reference transmitter with known good output signal or signal generator

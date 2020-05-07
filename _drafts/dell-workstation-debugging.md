@@ -10,3 +10,9 @@ make new screenshot
 
 optiplex-i7-linux.png
 I also compared to my identical i7 rig
+
+Ran memtest86+ for several days. Maybe 8 days. Pass
+
+Drive SMART tests. Pass
+
+The NIC sometimes causes a lockup of local network on the dumb switch once the PC dies.

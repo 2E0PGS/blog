@@ -25,6 +25,10 @@ Second rule was always have my notebook on the desk when I arrive at work so it'
 
 I recently got back into mechanical pencils. I was buying and testing all types however I found out what Adam Savages favourite mechanical pencil is. It's the cheap disposable [PaperMate 0.7 mm Non-Stop](https://www.amazon.co.uk/PaperMate-Non-Stop-Mechanical-Pencil-Yellow/dp/B000SHSC5U). This was revolutionary and once I got my hand on one I soon fell in love. 
 
+The pencil is made of plastic therefore non conductive when the lead is retracted so it's useful as a pointing/articulation device for electronics or code see below picture.
+
+![mechanical-pencil-code](../assets/2020-03-15/mechanical-pencil-code.jpg)
+
 The rubber is a key part to a pencils usefulness over pens, any pencil without an attached rubber is useless to me. I tend to make a lot of mistakes in written writing where my brain is working faster than my hands. A writing implement which is erasable allows my notes to be edited and maintained like electronically typed notes on a computer.
 
 Coincidentally I recently also started reading Adam Savages new book "Every Tool's A Hammer: Life Is What You Make It". In the book he details his note taking techniques. I was again instantly understanding and wanting to try it for my self. I have used several note taking methods previously. Mostly lined paper with ticks at the end of lines I have completed.

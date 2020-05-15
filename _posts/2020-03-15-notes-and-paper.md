@@ -27,7 +27,7 @@ I recently got back into mechanical pencils. I was buying and testing all types 
 
 The pencil is made of plastic therefore non conductive when the lead is retracted so it's useful as a pointing/articulation device for electronics or code see below picture.
 
-![mechanical-pencil-code](../assets/2020-03-15/mechanical-pencil-code.jpg)
+![mechanical-pencil-code](/blog/assets/2020-03-15/mechanical-pencil-code.jpg)
 
 The rubber is a key part to a pencils usefulness over pens, any pencil without an attached rubber is useless to me. I tend to make a lot of mistakes in written writing where my brain is working faster than my hands. A writing implement which is erasable allows my notes to be edited and maintained like electronically typed notes on a computer.
 

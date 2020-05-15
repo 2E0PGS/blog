@@ -21,7 +21,7 @@ If you haven't read my other post on [Programmers grammar](https://2e0pgs.github
 
 After much research and consideration I settled on a general naming convention for my files on my filesystem. That convention is lowercase-hyphencase. So words are all lowercase and are separated by a hyphen. Example `my-magic-text-file.txt`. Notice how the only special character is a fullstop designating the beginning of the file type extension. I choose to always append a file extension where possible.
 
-Numbers may also be present for date stamps or version numbers. Example `2019-05-25-gardening-notes.md`. Notice how the date goes first, this is to aid with sorting/ordering in a directory listing.
+Numbers may also be present for date stamps or version numbers. Example `2019-05-25-gardening-notes.md`. Notice how the date goes first, this is to aid with sorting/ordering in a directory listing. I use [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date formats.
 
 Many subfolders may also contain a `README.md` which hold metadata. This is normally a description of the folder structure if it's unusual.
 

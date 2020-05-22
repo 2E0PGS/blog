@@ -15,4 +15,4 @@ Ran memtest86+ for several days. Maybe 8 days. Pass
 
 Drive SMART tests. Pass
 
-The NIC sometimes causes a lockup of local network on the un-managed switch once the PC dies.
+The NIC sometimes causes a lock-up of local network on the un-managed switch once the PC dies.

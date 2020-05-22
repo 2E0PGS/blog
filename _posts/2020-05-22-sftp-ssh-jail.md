@@ -1,4 +1,23 @@
-# The following sets up a jail environment for SFTP only file transfer for a specific user.
+---
+layout: post
+title: SFTP/SSH jail
+date: 2020-05-22 23:45:19
+author: Peter Stevenson
+summary: Jail environment for SFTP only file transfer
+categories: sysadmin
+thumbnail:
+tags:
+ - SFTP
+ - SSH
+ - Linux
+ - OpenSSH
+---
+
+# SFTP/SSH jail
+
+The following sets up a jail environment for SFTP only file transfer for a specific user.
+
+Based on `openssh-server` and a Ubuntu based OS.
 
 ## Create a new user home folder
 
@@ -44,10 +63,10 @@ Match User sftuser
 
 ## You should have the following folders
 
-adminuser is our root accounts folder. You may have something else there.
+`adminuser` is our admin level account home folder. You will probably have a different name for your admin/sudoers level account. This account was the first user we setup during OS installation. The user we are currently using to SSH in.
 
 ```
- ls -al /home
+ls -al /home
 total 16
 drwxr-xr-x  4 root      root      4096 Oct 28 10:23 .
 drwxr-xr-x 23 root      root      4096 Oct 28 10:22 ..
@@ -64,12 +83,12 @@ drwx------ 2 sftpuser sftpuser 4096 Oct 28 10:34 .cache
 drwxr-xr-x 2 sftpuser sftpuser 4096 Oct 28 10:51 writeable
 ```
 
-## Test it is secure.
+## Test it is secure
 
-* FileZilla try escape directory
-* openssh-client try getting a bash shell
+* FileZilla try escape directory.
+* OpenSSH client try getting a bash shell.
 
 ## References
 
-* https://askubuntu.com/a/134442
-* https://www.howtoforge.com/restricting-users-to-sftp-plus-setting-up-chrooted-ssh-sftp-debian-squeeze
+* [askubuntu.com/a/134442](https://askubuntu.com/a/134442)
+* [howtoforge.com/restricting-users...](https://www.howtoforge.com/restricting-users-to-sftp-plus-setting-up-chrooted-ssh-sftp-debian-squeeze)

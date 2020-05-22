@@ -46,33 +46,30 @@ You will need a range of adapters if you wish to use RTL devices.
 
 Bias Tee for LNA power.
 
+LNB DC power blocker.
+
 ## Polarisation
 
-### Single LNB or Yagi
+### Yagi
 
 Horizontal
 
 Vertical
 
-### Two LNBs
-
-LH (Left Horizontal)
-
-RH (Right Horizontal)
-
 ### Special
 
 Circular
 
-### Quad LNB
+### Universal LNBs
 
-High Horizontal
+Ref: [wiki/Low-noise_block](https://en.wikipedia.org/wiki/Low-noise_block_downconverter#Universal_LNB_(%22Astra%22_LNB))
 
-Low Horizontal
-
-High Vertical
-
-Low Vertical
+| Voltage |  Tone  | Polarization |     Frequency band    |
+|---------|--------|--------------|-----------------------|
+| 13 V    | 0 kHz  | Vertical     | 10.70–11.70 GHz, low  |
+| 18 V    | 0 kHz  | Horizontal   | 10.70–11.70 GHz, low  |
+| 13 V    | 22 kHz | Vertical     | 11.70–12.75 GHz, high |
+| 18 V    | 22 kHz | Horizontal   | 11.70–12.75 GHz, high |
 
 ## Amps
 
@@ -84,13 +81,15 @@ UHF Yagi.
 
 VHF Yagi.
 
-LNB dish.
+LNB + dish.
 
 ## Test signals
 
-578 MHz aka 578000 KHz UK broadcast TV
-
-1.316 GHz aka 1316 MHz aka 1316000 KHz GB3ZZ
+| Station            | Type  | GHz   | MHz  | KHz     |
+|--------------------|-------|-------|------|---------|
+| GB3ZZ              | DVB-S | 1.316 | 1316 | 1316000 |
+| Broadcast freeview | DVB-T | 0.578 | 578  | 578000  |
+| Broadcast freesat  | DVB-S |       |      |         |
 
 ## Bus speeds for tuner devices
 
@@ -110,11 +109,9 @@ Digital TV sources: `/dev/dvb/adapter0`
 
 Using a TV antenna for ham radio band reception.
 
-DAB decoding using RTL dongle and FOSS software.
+DAB decoding using RTL dongle and FOSS software using: [welle.io](https://github.com/AlbrechtL/welle.io)
 
 ## TODO
-
-Include various GQRX screenshots comparing SNR/db level.
 
 Include VLC codec screenshots.
 
@@ -132,7 +129,7 @@ PPM offsets. Megasymbols. etc
 | USB 2                | Dual                  | RTL              |                   |                 | DVB-T                | SMA, SMA                                              | Linux          | V4L2             | VLC, Tvheadend      |            |                                                                                        |                              |
 | USB 2                | Xbox One              | Digital TV Tuner | Panasonic MN88472 |                 | DVB-T, DVB-T2, DVB-C | Belling-Lee                                           | Linux          | V4L2             | Kaffeine, Tvheadend |            | [linuxtv](https://www.linuxtv.org/wiki/index.php/Xbox_One_Digital_TV_Tuner)            | Firmware required for Linux. |
 | PCI universal 32 bit | Pinnacle PCTV Systems | 4000i            |                   |                 | DVB-S                | F-type                                                | Windows        |                  |                     |            | [linuxtv](https://www.linuxtv.org/wiki/index.php/Pinnacle_PCTV_Dual_Sat_Pro_PCI_4000I) | No Linux support as of yet.  |
-| PCI-E                | TBS                   | TBS-6980         |                   |                 | DVB-S, DVB-S2        | F-type, F-type                                        | Linux          | V4L2             |                     |            | [linuxtv](https://linuxtv.org/wiki/index.php/TBS6980)                                  |                              |
+| PCI-E                | TBS                   | TBS-6980         |                   |                 | DVB-S, DVB-S2        | F-type, F-type                                        | Linux          | V4L2             |                     |            | [linuxtv](https://linuxtv.org/wiki/index.php/TBS6980)                                  | Firmware required for Linux. |
 
 ## AsusTek - LNA Tiger Hybrid signal issues
 
@@ -142,17 +139,30 @@ Linux VLC: No decode as of yet. Sometimes syncs but never a image or�
 
 ## Firmware
 
-## AsusTek LNA Tiger Hybrid
+## AsusTek - LNA Tiger Hybrid
 
 ```
 wget https://github.com/OpenELEC/dvb-firmware/blob/master/firmware/dvb-fe-tda10046.fw?raw=true -O dvb-fe-tda10046.fw
+sudo cp dvb-fe-tda10046.fw /lib/firmware
+sudo reboot
 ```
 
-## Xbox One Digital TV Tuner
+## Xbox One - Digital TV Tuner
 
 ```
 wget http://palosaari.fi/linux/v4l-dvb/firmware/MN88472/02/latest/dvb-demod-mn88472-02.fw
-cp dvb-demod-mn88472-02.fw /lib/firmware
+sudo cp dvb-demod-mn88472-02.fw /lib/firmware
+sudo reboot
+```
+
+## TBS - TBS-6980
+
+Ref: [github.com/ljalves/linux_media](https://github.com/ljalves/linux_media/wiki/CX24117-firmware)
+
+```
+wget http://www.tbsdtv.com/download/document/common/tbs-linux-drivers_v130901.zip
+unzip -p tbs-linux-drivers_v130901.zip linux-tbs-drivers.tar.bz2 | tar jxOf - linux-tbs-drivers/v4l/tbs6981fe_driver.o.x86_64 | dd bs=1 skip=10144 count=55486 of=dvb-fe-cx24117.fw
+sudo cp dvb-fe-cx24117.fw /lib/firmware
 sudo reboot
 ```
 
@@ -160,13 +170,13 @@ sudo reboot
 
 Tests are carried out using the following two "Pre-defined muxes":
 
-"--Generic--: auto-With167kHzOffsets" adds 155 muxes
+`--Generic--: auto-With167kHzOffsets` adds 155 muxes
 
-"United Kingdom: uk-Mendip" brings us up to 157 muxes total to scan
+`United Kingdom: uk-Mendip` brings us up to 157 muxes total to scan
 
-~~Make sure you check and un-check enabled against each `Autorecs` item after changes to channel mappings for the auto recordings to work properly. Otherwise it seems to miss some with `Status:Invalid`.~~
+~~Make sure you check and un-check enabled against each `Autorecs` item after changes to channel mappings for the auto recordings to work properly. Otherwise it seems to miss some with `Status:Invalid`.~~ Seems you just need to wait for the EPG to update itself and recordings match up again.
 
-~~Make sure you don't have any `Autorecs` with channel specific filters. They will be lost when removing channels for remapping.~~
+Make sure you don't have any `Autorecs` with channel specific filters. They will be lost when removing channels for remapping.
 
 "Recording"/"Digital Video Recorder Profiles" sensible format string: `$t/%F-%R-$t$-e$n.$x` 
 
@@ -174,4 +184,4 @@ Example path created: `Beat-The-Chasers/2020-04-29-23-45-Beat-The-Chasers.ts`
 
 Example duplicate path created: `Beat-The-Chasers/2020-04-29-23-45-Beat-The-Chasers-1.ts`
 
-It's a shame its not lowercase but it's as good as I can hope.
+It's a shame it's not lowercase but it's as good as I can hope.

@@ -3,3 +3,5 @@ I ordered two of these in the 868MHz variant: https://www.aliexpress.com/item/40
 Just did some range tests and had really impressive results.
 
 Suggested some improvements to the project, link Github issues?
+
+https://github.com/sudomesh/disaster-radio

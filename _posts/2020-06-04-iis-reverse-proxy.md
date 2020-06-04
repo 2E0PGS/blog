@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IIS reverse proxy server
-date: 2020-06-04 17:02:19
+date: 2020-06-04 17:07:19
 author: Peter Stevenson
 summary: Create a reverse proxy with IIS
 categories: sysadmin

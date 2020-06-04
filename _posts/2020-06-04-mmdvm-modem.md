@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MMDVM modem hat
-date: 2020-06-04 17:07:19
+date: 2020-06-04 17:02:19
 author: Peter Stevenson
 summary: MMDVM_pog hat to make a GMSK DStar gateway
 categories: hamradio

@@ -28,7 +28,7 @@ Install ARRv3 for reverse proxy capabilities. You will probably run into same is
 
 ## This is more along our lines of setup
 
-* https://community.spiceworks.com/how_to/73336-so-you-need-to-share-port-443-iis-arr
+* [so-you-need-to-share-port-443-iis-arr](https://community.spiceworks.com/how_to/73336-so-you-need-to-share-port-443-iis-arr)
 
 Set it globally under server farm. You will need to close and open IIS Manager to see this new option.
 

@@ -41,9 +41,9 @@ Pi-Star web UI page configuration/expert/mmdvmhost you will find the following f
 
 `txinvert` was default `1`, for some radios like mine you may need to change it to `0` however in my case I later found my radio was off frequency and upon correcting it (see: [IC-E208 Calibration](https://2e0pgs.github.io/blog/hamradio/2019/05/25/ic-e208-calibration/)) I had to put `txinvert` back to original value.
 
-Ensure suffix of CallSign for gateway is not just a space but its last char of input string.
+Ensure suffix of call sign for gateway is not just a space but its last char of input string.
 
-I had some issues changing the gateways CallSign without re-flashing.
+I had some issues changing the gateways call sign without re-flashing.
 
 Thread: [facebook.com/groups/pistarusergroup/414855285738167](https://www.facebook.com/groups/pistarusergroup/414855285738167/?comment_id=414856705738025&reply_comment_id=415271039029925&notif_id=1554136716212493&notif_t=group_comment)
 

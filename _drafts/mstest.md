@@ -13,7 +13,7 @@ old MS test
 
             try
             {
-                var result = _myController.GetStuff(foobarString, foobarDecimal);               
+                var result = _myController.GetStuff(foobarString, foobarDecimal);
             }
             catch (Exception ex)
             {

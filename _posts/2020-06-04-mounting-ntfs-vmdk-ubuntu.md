@@ -1,4 +1,16 @@
-headers
+---
+layout: post
+title: Mount VMDK in Ubuntu
+date: 2020-06-04 17:12:19
+author: Peter Stevenson
+summary: Mount NTFS VMDK file in Ubuntu desktop
+categories: sysadmin
+thumbnail:
+tags:
+ - VMDK
+ - VMWare
+ - Ubuntu
+---
 
 # Mount NTFS VMDK file in Ubuntu desktop
 
@@ -10,7 +22,7 @@ Using `vmware-mount` which seemed to come with VMWare player.
 
 ```
 Nr Start Size      Type Id System
-1  2024  947890176 BIOS 7  HPFS/NTFS
+1  2024  947890173 BIOS 7  HPFS/NTFS
 ```
 
 ## Create mount folder

@@ -1,4 +1,17 @@
-
+---
+layout: post
+title: MMDVM modem hat
+date: 2020-06-04 17:02:19
+author: Peter Stevenson
+summary: MMDVM_pog hat to make a GMSK DStar gateway
+categories: hamradio
+thumbnail:
+tags:
+ - MMDVM_pog
+ - MMDVM
+ - D-Star
+ - GMSK
+---
 
 # MMDVM Modem Hat
 
@@ -32,7 +45,7 @@ Ensure suffix of CallSign for gateway is not just a space but its last char of i
 
 I had some issues changing the gateways CallSign without re-flashing.
 
-Thread: https://www.facebook.com/groups/pistarusergroup/414855285738167/?comment_id=414856705738025&reply_comment_id=415271039029925&notif_id=1554136716212493&notif_t=group_comment
+Thread: [facebook.com/groups/pistarusergroup/414855285738167](https://www.facebook.com/groups/pistarusergroup/414855285738167/?comment_id=414856705738025&reply_comment_id=415271039029925&notif_id=1554136716212493&notif_t=group_comment)
 
 ## Hardware calibration
 
@@ -44,6 +57,11 @@ There is a couple trim pots on the board which allow you to adjust the mic gain.
 * [IC-e208 manual](http://www.radiomanual.info/schemi/ICOM_VU/IC-E208_user.pdf)
 * [More connection images from eBay listing](https://www.ebay.co.uk/itm/2018-latest-MMDVM-DMR-Repeater-Open-Source-Multi-Mode-Digital-Voice-Modem-Moto/352486107764)
 * [Radio compatibility tests](https://wiki.brandmeister.network/index.php/Homebrew/MMDVM?fbclid=IwAR3wkTfMHb_fN2V6INoDoh30Li06tqzpZdKBPKN5aTUeyScjTOPN0jQ8aS0#Recommend_radios_for_homebrew_repeaters)
-* Robs pictures he took of the docs he received with his board.
 
 Also see the DVAP page on my website: [ham-radio/dvap](https://2e0pgs.github.io/ham-radio/dvap.html)
+
+## Useful documentation
+
+My friend Rob (2E0RPT) took pictures of the document he received with his board. I didn't receive any such documentation with mine.
+
+![mmdvm-modem-settings-guide](/blog/assets/2020-06-04/mmdvm-modem-settings-guide.jpg)

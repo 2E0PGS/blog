@@ -1,4 +1,17 @@
-
+---
+layout: post
+title: IIS reverse proxy server
+date: 2020-06-04 17:02:19
+author: Peter Stevenson
+summary: Create a reverse proxy with IIS
+categories: sysadmin
+thumbnail:
+tags:
+ - IIS
+ - Proxy
+ - Windows
+ - ARR
+---
 
 # IIS reverse proxy server
 
@@ -8,12 +21,12 @@ If you dont be careful of installing it in a shared config setup, you have to di
 
 Install ARRv3 for reverse proxy capabilities. You will probably run into same issue as above if using shared configs. [Download link](http://www.iis.net/download/ApplicationRequestRouting)
 
-## Don't bother with per site reverse proxy settings for example:
+## Don't bother with per site reverse proxy settings for example
 
-* https://techcommunity.microsoft.com/t5/iis-support-blog/setup-iis-with-url-rewrite-as-a-reverse-proxy-for-real-world/ba-p/846222#
-* https://gunnarpeipman.com/plex-iis-reverse-proxy/
+* [iis-support-blog/setup-iis-with-url...](https://techcommunity.microsoft.com/t5/iis-support-blog/setup-iis-with-url-rewrite-as-a-reverse-proxy-for-real-world/ba-p/846222#)
+* [gunnarpeipman.com/plex-iis-reverse-proxy...](https://gunnarpeipman.com/plex-iis-reverse-proxy/)
 
-## This is more along our lines of setup:
+## This is more along our lines of setup
 
 * https://community.spiceworks.com/how_to/73336-so-you-need-to-share-port-443-iis-arr
 
@@ -46,3 +59,11 @@ This setup works well with HTTP. It should also be working fine with HTTPS.
 You will need matching bindings on each server for each sites. 
 
 _The sites will also need to be online each server. However it can be a blank site on the proxy server._
+
+## Screenshots
+
+The IP addresses have been masked for privacy reasons.
+
+![server-list](/blog/assets/2020-06-04/server-list.png)
+
+![server-status](/blog/assets/2020-06-04/server-status.png)

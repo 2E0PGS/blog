@@ -20,9 +20,9 @@ I am installing this onto a Ubuntu Server VM.
 
 Three projects involved:
 
-* https://github.com/asdil12/pymultimonaprs
-* https://osmocom.org/projects/rtl-sdr/wiki/Rtl-sdr
-* https://github.com/EliasOenal/multimon-ng/
+* [pymultimonaprs](https://github.com/asdil12/pymultimonaprs)
+* [RTL-SDR](https://osmocom.org/projects/rtl-sdr/wiki/Rtl-sdr)
+* [multimon-ng](https://github.com/EliasOenal/multimon-ng/)
 
 ## RTL-SDR installation
 

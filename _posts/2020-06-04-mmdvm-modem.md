@@ -17,6 +17,8 @@ tags:
 
 I am using a Icom IC-E208 and a "MMDVM_pog" hat to make a GMSK DStar gateway.
 
+![mmdvm-modem-overview](/blog/assets/2020-06-04/mmdvm-modem-overview.jpg)
+
 My fiend 2E0EOL has written a article on a similar setup: [daybologic GMSK Gateway](http://www.daybologic.co.uk/articles.php?content=gmsk)
 
 ## Software installing
@@ -32,6 +34,11 @@ For some reason my PI wont boot with the hat on. I haven't figured out why yet. 
 The "sql" pin of rig doesn't seem to be needed for basic setup.
 
 The "rssi" pin of modem doesn't seem to be needed for basic setup.
+
+### Icom IC-E208
+
+![mmdvm-modem-hat](/blog/assets/2020-06-04/mmdvm-modem-hat.jpg)
+![mmdvm-modem-breadboard](/blog/assets/2020-06-04/mmdvm-modem-breadboard.jpg)
 
 ## Software configuration 
 

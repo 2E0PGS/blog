@@ -1,8 +1,32 @@
-https://github.com/asdil12/pymultimonaprs
-https://osmocom.org/projects/rtl-sdr/wiki/Rtl-sdr
-https://github.com/EliasOenal/multimon-ng/
+---
+layout: post
+title: RTL-SDR pymultimonaprs iGate
+date: 2020-06-13 14:31:10
+author: Peter Stevenson
+summary: Installing RTL-SDR pymultimonaprs iGate
+categories: hamradio
+thumbnail:
+tags:
+ - hamradio
+ - RTL-SDR
+ - SDR
+ - Linux
+ - APRS
+---
 
+# Installing RTL-SDR pymultimonaprs iGate
 
+I am installing this onto a Ubuntu Server VM.
+
+Three projects involved:
+
+* https://github.com/asdil12/pymultimonaprs
+* https://osmocom.org/projects/rtl-sdr/wiki/Rtl-sdr
+* https://github.com/EliasOenal/multimon-ng/
+
+## RTL-SDR installation
+
+```
 git clone git://git.osmocom.org/rtl-sdr.git
 
 cd rtl-sdr/
@@ -22,9 +46,11 @@ make
 sudo make install
 
 sudo ldconfig
+```
 
-###
+## multimon-ng installation
 
+```
 git clone https://github.com/EliasOenal/multimon-ng.git
 
 cd multimon-ng/
@@ -35,14 +61,17 @@ cd build
 
 cmake ..
 
-# ignore pusle warning
+// Ignore the pulse audio warning.
 
 make
 
 sudo make install
 
-###
+```
 
+## pymultimonaprs installation
+
+```
 git clone https://github.com/asdil12/pymultimonaprs.git
 
 cd multimon-ng/
@@ -62,3 +91,4 @@ sudo systemctl enable pymultimonaprs.service
 sudo systemctl start pymultimonaprs.service
 
 sudo systemctl status pymultimonaprs.service
+```

@@ -1,24 +1,44 @@
-
-
-headers etc
+---
+layout: post
+title: A state of tuners
+date: 2020-06-16 18:31:19
+author: Peter Stevenson
+summary: DATV, IPTV and tuners
+categories: hamradio
+thumbnail:
+tags:
+ - Tuners
+ - IPTV
+ - Tvheadend
+ - Satellite
+ - Terrestrial
+ - DATV
+ - ATV
+ - SATIP
+ - GB3ZZ
+---
 
 # A state of tuners
 
-Using free and open-source software.
+PCI tuners, digital amateur television, SATIP, IPTV and open source software.
 
-CCTV, Satellite, Terrestrial and amateur TV.
+Covering digital modes of satellite, terrestrial and amateur TV.
 
 ## Software
 
-vlc
+The following software is useful for testing.
 
-mpv
+[VLC](https://www.videolan.org)
 
-w_scan
+[mpv](https://mpv.io/)
+
+[w_scan](https://linuxtv.org/wiki/index.php/W_scan)
 
 [kaffeine](https://kde.org/applications/multimedia/org.kde.kaffeine)
 
 [SDRangel](https://github.com/f4exb/sdrangel)
+
+[Tvheadend](https://github.com/tvheadend/tvheadend)
 
 ## Modes
 
@@ -38,15 +58,15 @@ DVB-C
 
 PAL-I
 
-## Adapters
+## Adapters and accessories
 
 You will need a range of adapters if you wish to use RTL devices.
 
 75 Ohm coax.
 
-Bias Tee for LNA power.
+Bias Tee for LNB power.
 
-LNB DC power blocker.
+LNB DC power blocker. Used for connecting a passive device like a Yagi to a tuner which supplies LNB power. Do not trust the LNB power option inside the set top box settings. Sometimes there isn't even a option. See eBay listing: [F Screw Type DC Power Blocking Blocker Inline In Line Connector Coupler 100994](https://www.ebay.co.uk/itm/F-Screw-Type-DC-Power-Blocking-Blocker-Inline-In-Line-Connector-Coupler-100994/112227310735)
 
 ## Polarisation
 
@@ -62,6 +82,8 @@ Circular
 
 ### Universal LNBs
 
+This is specific to europe.
+
 Ref: [wiki/Low-noise_block](https://en.wikipedia.org/wiki/Low-noise_block_downconverter#Universal_LNB_(%22Astra%22_LNB))
 
 | Voltage |  Tone  | Polarization |     Frequency band    |
@@ -71,33 +93,31 @@ Ref: [wiki/Low-noise_block](https://en.wikipedia.org/wiki/Low-noise_block_downco
 | 13 V    | 22 kHz | Vertical     | 11.70–12.75 GHz, high |
 | 18 V    | 22 kHz | Horizontal   | 11.70–12.75 GHz, high |
 
-## Amps
-
-TV terrestrial distribution amplifier
-
 ## Antenna systems
 
-UHF Yagi.
+UHF Yagi. Most common for modern terrestrial DVB-T, DVB-T2 Freeview. If doing DATV DVB-S you must use a LNB DC power blocker.
 
-VHF Yagi.
+VHF Yagi. Old analog TV.
 
-LNB + dish.
+Universal LNB + dish. Most common for satellite DVB-S, DVB-S2 Freesat. Also can be used for: QO-100/Es'hail-2
 
 ## Test signals
 
 | Station            | Type  | GHz   | MHz  | KHz     |
 |--------------------|-------|-------|------|---------|
 | GB3ZZ              | DVB-S | 1.316 | 1316 | 1316000 |
-| Broadcast freeview | DVB-T | 0.578 | 578  | 578000  |
-| Broadcast freesat  | DVB-S |       |      |         |
+| Broadcast Freeview | DVB-T | 0.578 | 578  | 578000  |
+| Broadcast Freesat  | DVB-S |       |      |         |
 
 ## Bus speeds for tuner devices
+
+Important to ensure we have the bandwidth for video.
 
 USB 2.0 revised = 60 MBps 
 
 PCI standard 32 bit = 133 MBps
 
-PCI-E x4 = 800 MBps (am I using 3.0?)
+PCI-E x4 = 800 MBps (am I using PCI 3.0?)
 
 ## Linux paths
 
@@ -113,9 +133,9 @@ DAB decoding using RTL dongle and FOSS software using: [welle.io](https://github
 
 ## TODO
 
-Include VLC codec screenshots.
-
-PPM offsets. Megasymbols. etc
+* Include VLC codec screenshots.
+* Megasymbols. etc
+* 28.2E : Astra 2A/2C/2E/2F/Eutelsat 28A
 
 ## Device table
 
@@ -130,6 +150,8 @@ PPM offsets. Megasymbols. etc
 | USB 2                | Xbox One              | Digital TV Tuner | Panasonic MN88472 |                 | DVB-T, DVB-T2, DVB-C | Belling-Lee                                           | Linux          | V4L2             | Kaffeine, Tvheadend |            | [linuxtv](https://www.linuxtv.org/wiki/index.php/Xbox_One_Digital_TV_Tuner)            | Firmware required for Linux. |
 | PCI universal 32 bit | Pinnacle PCTV Systems | 4000i            |                   |                 | DVB-S                | F-type                                                | Windows        |                  |                     |            | [linuxtv](https://www.linuxtv.org/wiki/index.php/Pinnacle_PCTV_Dual_Sat_Pro_PCI_4000I) | No Linux support as of yet.  |
 | PCI-E                | TBS                   | TBS-6980         |                   |                 | DVB-S, DVB-S2        | F-type, F-type                                        | Linux          | V4L2             |                     |            | [linuxtv](https://linuxtv.org/wiki/index.php/TBS6980)                                  | Firmware required for Linux. |
+
+Note: Generic RTL devices may require a PPM offset outside their intended use frequency range.
 
 ## AsusTek - LNA Tiger Hybrid signal issues
 
@@ -185,3 +207,14 @@ Example path created: `Beat-The-Chasers/2020-04-29-23-45-Beat-The-Chasers.ts`
 Example duplicate path created: `Beat-The-Chasers/2020-04-29-23-45-Beat-The-Chasers-1.ts`
 
 It's a shame it's not lowercase but it's as good as I can hope.
+
+```
+11916 MHz is the frequency the blind scan found GB3ZZ on.
+
+11916 MHz -1316 MHz =
+10600 MHz
+
+Which corresponds with high band universal LNB local oscillator frequency on Wikipedia: 10.60 GHz
+
+So it looks like the set top box display takes into account LNB local oscillator frequency?
+```

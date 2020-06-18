@@ -31,9 +31,11 @@ UPDATE 07/04/2020: "Raspberry Pi 3B+ out of beta".
 
 For some reason my PI wont boot with the hat on. I haven't figured out why yet. See: [wojciechk8/MMDVM_pog/issues/4](https://github.com/wojciechk8/MMDVM_pog/issues/4#issuecomment-482480582)
 
-The "sql" pin of rig doesn't seem to be needed for basic setup.
+I connected the modem pins "GND", "TX", "RX" and "PTT" accordingly to my radio. You need a radio with a "DATA IN" jack accepting 9600 bps GMSK.
 
-The "rssi" pin of modem doesn't seem to be needed for basic setup.
+The "SQL" pin of rig doesn't seem to be needed for basic setup.
+
+The "RSSI" pin of modem doesn't seem to be needed for basic setup.
 
 ### Icom IC-E208
 

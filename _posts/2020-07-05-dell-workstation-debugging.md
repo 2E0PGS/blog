@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dell workstation debugging
-date: 2020-06-09 16:45:19
+date: 2020-07-05 15:53:19
 author: Peter Stevenson
 summary: Debugging Dell workstation stability
 categories: sysadmin

@@ -29,7 +29,7 @@ UPDATE 07/04/2020: "Raspberry Pi 3B+ out of beta".
 
 ## Pinouts
 
-I connected the modem pins "GND", "TX", "RX" and "PTT" accordingly to my radio. You need a radio with a "DATA IN" jack accepting 9600 bps GMSK.
+I connected the modem pins "GND", "TX", "RX" and "PTT" accordingly to my radio. You need a radio with a "DATA IN" jack accepting 9600 bps GMSK. The radio must also support 2.5 kHz FM narrow deviation.
 
 The "SQL" pin of rig doesn't seem to be needed for basic setup.
 

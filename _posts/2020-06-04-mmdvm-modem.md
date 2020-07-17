@@ -54,7 +54,7 @@ Pi-Star web UI page "Configuration"/"Expert"/"MMDVMHost" you will find the follo
 
 `TXInvert` was default `1`, for some radios like mine you may need to change it to `0` however in my case I later found my radio was off frequency and upon correcting it I had to put `txinvert` back to original value.
 
-"Radio/Modem Type" either options worked for me:
+"Radio/Modem Type" either option worked for me:
 
 "MMDVM_HS_Hat (DB9MAT & DF2ET) for Pi (GPIO)"
 

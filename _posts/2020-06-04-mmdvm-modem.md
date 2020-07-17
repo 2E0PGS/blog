@@ -62,9 +62,9 @@ Use a SDR or spectrum analyser to check the radio is on frequency see: [IC-E208 
 
 ## Issues
 
-### PI wont boot with the HAT on
+### Pi wont boot with the HAT on
 
-I had to power up the PI with no HAT then add the HAT once the PI has booted a bit. Not ideal because it wouldn't easily recover from power outage. Also causes more potential for pins to misalign or make contact at different times with power/data.
+I had to power up the Pi with no HAT then add the HAT once the Pi has booted a bit. Not ideal because it wouldn't easily recover from power outage. Also causes more potential for pins to misalign or make contact at different times with power/data.
 
 MMDVM_pog HAT: [wojciechk8/MMDVM_pog/issues/4](https://github.com/wojciechk8/MMDVM_pog/issues/4#issuecomment-482480582)
 
@@ -80,7 +80,7 @@ console=serial0,115200 console=tty1 root=PARTUUID=2fed7fee-02 rootfstype=ext4 el
 console=tty1 root=PARTUUID=2fed7fee-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet init=/usr/lib/raspi-config/init_resize.sh
 ```
 
-I noticed my friend Rob (2E0RPT) had a different looking PCB layout on his MMDVM HAT he bought from eBay. He confirmed his PI 3B cold booted just fine with the HAT on. So I wondered if this was a hardware problem with my PI or the HAT. Rob actually offered so send me his HAT to compare. After testing with his HAT the PI booted just fine however the PCB lacks version or author information. Perhaps shop for one that looks the same, see the below image of the board I now recommend instead of the board I show above with two blue POTs:
+I noticed my friend Rob (2E0RPT) had a different looking PCB layout on his MMDVM HAT he bought from eBay. He confirmed his Pi 3B+ cold booted just fine with the HAT on. So I wondered if this was a hardware problem with my Pi or the HAT. Rob actually offered to send me his HAT to compare. After testing with his HAT the Pi booted just fine however the PCB lacks version or author information. Perhaps shop for one that looks the same, see the below image of the board I now recommend instead of the board I show above with two blue POTs:
 
 ![mmdvm-hs](/blog/assets/2020-06-04/mmdvm-hs.jpeg)
 

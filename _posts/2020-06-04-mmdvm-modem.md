@@ -52,17 +52,13 @@ Pi-Star web UI page "Configuration"/"Expert"/"MMDVMHost" you will find the follo
 
 `TXOffset` is worth playing with try `-100` or `100` or `200`.
 
-`TXInvert` was default `1`, for some radios like mine you may need to change it to `0` however in my case I later found my radio was off frequency and upon correcting it (see: [IC-E208 Calibration](https://2e0pgs.github.io/blog/hamradio/2019/05/25/ic-e208-calibration/)) I had to put `txinvert` back to original value.
-
-Ensure suffix of call sign for gateway is not just a space but its last char of input string.
-
-I had some issues changing the gateways call sign without re-flashing.
-
-Thread: [facebook.com/groups/pistarusergroup/414855285738167](https://www.facebook.com/groups/pistarusergroup/414855285738167/?comment_id=414856705738025&reply_comment_id=415271039029925&notif_id=1554136716212493&notif_t=group_comment)
+`TXInvert` was default `1`, for some radios like mine you may need to change it to `0` however in my case I later found my radio was off frequency and upon correcting it I had to put `txinvert` back to original value.
 
 ## Hardware calibration
 
 There is a couple trim pots on the board which allow you to adjust the mic gain. Use the ACL meter on the radio to gauge this.
+
+Use a SDR or spectrum analyser to check the radio is on frequency see: [IC-E208 Calibration](https://2e0pgs.github.io/blog/hamradio/2019/05/25/ic-e208-calibration/)
 
 ## Issues
 
@@ -87,6 +83,14 @@ console=tty1 root=PARTUUID=2fed7fee-02 rootfstype=ext4 elevator=deadline fsck.re
 I noticed my friend Rob (2E0RPT) had a different looking PCB layout on his MMDVM HAT he bought from eBay. He confirmed his PI 3B cold booted just fine with the HAT on. So I wondered if this was a hardware problem with my PI or the HAT. Rob actually offered so send me his HAT to compare. After testing with his HAT the PI booted just fine however the PCB lacks version or author information. Perhaps shop for one that looks the same, see the below image of the board I now recommend instead of the board I show above with two blue POTs:
 
 ![mmdvm-hs](/blog/assets/2020-06-04/mmdvm-hs.jpeg)
+
+### Gateway call sign
+
+Ensure suffix of call sign for gateway is not just a space but its last char of input string.
+
+I had some issues changing the gateways call sign without re-flashing.
+
+Thread: [facebook.com/groups/pistarusergroup/414855285738167](https://www.facebook.com/groups/pistarusergroup/414855285738167/?comment_id=414856705738025&reply_comment_id=415271039029925&notif_id=1554136716212493&notif_t=group_comment)
 
 ## Useful links
 

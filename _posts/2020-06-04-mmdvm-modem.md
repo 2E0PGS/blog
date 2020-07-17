@@ -13,7 +13,7 @@ tags:
  - GMSK
 ---
 
-# MMDVM Modem HAT
+# MMDVM modem HAT
 
 I am using a Icom IC-E208 and a "MMDVM_pog" HAT to make a GMSK DStar gateway.
 

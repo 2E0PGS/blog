@@ -1,9 +1,9 @@
 ---
 layout: post
-title: MMDVM modem hat
+title: MMDVM modem HAT
 date: 2020-06-04 17:02:19
 author: Peter Stevenson
-summary: MMDVM_pog hat to make a GMSK DStar gateway
+summary: MMDVM_pog HAT to make a GMSK DStar gateway
 categories: hamradio
 thumbnail:
 tags:
@@ -13,9 +13,9 @@ tags:
  - GMSK
 ---
 
-# MMDVM Modem Hat
+# MMDVM Modem HAT
 
-I am using a Icom IC-E208 and a "MMDVM_pog" hat to make a GMSK DStar gateway.
+I am using a Icom IC-E208 and a "MMDVM_pog" HAT to make a GMSK DStar gateway.
 
 ![mmdvm-modem-overview](/blog/assets/2020-06-04/mmdvm-modem-overview.jpg)
 
@@ -29,8 +29,6 @@ UPDATE 07/04/2020: "Raspberry Pi 3B+ out of beta".
 
 ## Pinouts
 
-For some reason my PI wont boot with the hat on. I haven't figured out why yet. See: [wojciechk8/MMDVM_pog/issues/4](https://github.com/wojciechk8/MMDVM_pog/issues/4#issuecomment-482480582)
-
 I connected the modem pins "GND", "TX", "RX" and "PTT" accordingly to my radio. You need a radio with a "DATA IN" jack accepting 9600 bps GMSK.
 
 The "SQL" pin of rig doesn't seem to be needed for basic setup.
@@ -42,13 +40,19 @@ The "RSSI" pin of modem doesn't seem to be needed for basic setup.
 ![mmdvm-modem-hat](/blog/assets/2020-06-04/mmdvm-modem-hat.jpg)
 ![mmdvm-modem-breadboard](/blog/assets/2020-06-04/mmdvm-modem-breadboard.jpg)
 
+### Icom ID-E880
+
+The pinout is the same for a ID-E880 which is nice! Picture is of a setup with the HAT I now recommend see the below heading "Issues".
+
+![id-e880-mmdvm](/blog/assets/2020-06-04/id-e880-mmdvm.jpeg)
+
 ## Software configuration 
 
-Pi-Star web UI page configuration/expert/mmdvmhost you will find the following fields.
+Pi-Star web UI page "Configuration"/"Expert"/"MMDVMHost" you will find the following fields.
 
-`txoffset` is worth playing with try `-100` or `100` or `200`.
+`TXOffset` is worth playing with try `-100` or `100` or `200`.
 
-`txinvert` was default `1`, for some radios like mine you may need to change it to `0` however in my case I later found my radio was off frequency and upon correcting it (see: [IC-E208 Calibration](https://2e0pgs.github.io/blog/hamradio/2019/05/25/ic-e208-calibration/)) I had to put `txinvert` back to original value.
+`TXInvert` was default `1`, for some radios like mine you may need to change it to `0` however in my case I later found my radio was off frequency and upon correcting it (see: [IC-E208 Calibration](https://2e0pgs.github.io/blog/hamradio/2019/05/25/ic-e208-calibration/)) I had to put `txinvert` back to original value.
 
 Ensure suffix of call sign for gateway is not just a space but its last char of input string.
 
@@ -59,6 +63,30 @@ Thread: [facebook.com/groups/pistarusergroup/414855285738167](https://www.facebo
 ## Hardware calibration
 
 There is a couple trim pots on the board which allow you to adjust the mic gain. Use the ACL meter on the radio to gauge this.
+
+## Issues
+
+### PI wont boot with the HAT on
+
+I had to power up the PI with no HAT then add the HAT once the PI has booted a bit. Not ideal because it wouldn't easily recover from power outage. Also causes more potential for pins to misalign or make contact at different times with power/data.
+
+MMDVM_pog HAT: [wojciechk8/MMDVM_pog/issues/4](https://github.com/wojciechk8/MMDVM_pog/issues/4#issuecomment-482480582)
+
+I tried testing fresh install of Raspian lite. This didn't help.
+
+I tried changing the `cmdline.txt` to remove the `serial0` console in case the HAT was firing some serial command at boot. This didn't help.
+
+```
+console=serial0,115200 console=tty1 root=PARTUUID=2fed7fee-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet init=/usr/lib/raspi-config/init_resize.sh
+```
+
+```
+console=tty1 root=PARTUUID=2fed7fee-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet init=/usr/lib/raspi-config/init_resize.sh
+```
+
+I noticed my friend Rob (2E0RPT) had a different looking PCB layout on his MMDVM HAT he bought from eBay. He confirmed his PI 3B cold booted just fine with the HAT on. So I wondered if this was a hardware problem with my PI or the HAT. Rob actually offered so send me his HAT to compare. After testing with his HAT the PI booted just fine however the PCB lacks version or author information. Perhaps shop for one that looks the same, see the below image of the board I now recommend instead of the board I show above with two blue POTs:
+
+![mmdvm-hs](/blog/assets/2020-06-04/mmdvm-hs.jpeg)
 
 ## Useful links
 

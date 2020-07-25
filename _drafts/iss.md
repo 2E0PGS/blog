@@ -4,13 +4,14 @@
 Good enough for ISS good enough for me.
 
 TM-D710
+
 TM-D100
 
 It's important you set path via `ariss` and not `WIDE1-1` or `WIDE2-1` as WIDE is for terrestrial APRS.
 
-I had a sudden idea pop into my head on how to do a TX with my IC-7100
+I had a sudden idea pop into my head on how to do a TX with my IC-7100.
 
-This hack job got my packet on the map.
+My hack job script below got my packet on the map using a IC-7100 running 25 w into a collinear. Back to earth via DL8NDR iGate.
 
 ```
 $ cat aprs-tx.sh 
@@ -109,7 +110,7 @@ Running: `direwolf -a 100 -t 0`
 
 Test it decodes use another radio to send a packet over 145.825.
 
-Test it beacons use another device with a decoder: ```2020-06-13 17:09:00: APRS: 2E0PGS-6>APDW15,ARISS:!1234.12NS00123.12W`PHG5450www.m3pgs.co.uk```
+Test it beacons use another device with a decoder: (screenshothere)
 
 I have my SatGate beacon currently only going via RF to the ISS. Maybe I will have it use TCPIP beacons at some point. I see most hardcore SatGate operators have two IDs/radios one for a TCPIP beacon SatGate and one is a standalone RF only beacon so that way they advertise their SatGate 24/7 and still have a ID that shows only when the ISS received them.
 

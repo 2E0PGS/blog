@@ -143,7 +143,7 @@ sudo certbot --nginx -d logger.example.com
 ### Checking it (CURL)
 
 ```
-curl https://logger.example.com -X POST -H 'Content-Type: application/json' -H "Authorization: Basic $(echo -n foo:bar | base64)" -d '{ "short_message": "https reverse basic auth proxy", "level": 5 }'
+peter@desktop:~$ curl https://logger.example.com -X POST -H 'Content-Type: application/json' -H "Authorization: Basic $(echo -n foo:bar | base64)" -d '{ "short_message": "https reverse basic auth proxy", "level": 5 }'
 ```
 
 ## Library for C#

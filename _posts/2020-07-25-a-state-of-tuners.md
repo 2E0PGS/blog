@@ -287,7 +287,7 @@ So it looks like the set top box frequency display takes into account LNB local 
 
 We can if we want change our software LNB frequency to make the actual frequency calculation easier `- 10000` 10 GHz.
 
-![datv-blazer-new-lnb-if.jpeg](/blog/assets/2020-07-25/datv-blazer-new-lnb-if.jpeg)
+![datv-blazer-new-lnb-if.jpg](/blog/assets/2020-07-25/datv-blazer-new-lnb-if.jpg)
 
 ### GB3ZZ reception
 

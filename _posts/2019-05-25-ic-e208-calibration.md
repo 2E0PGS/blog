@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IC-E208 Calibration
+title: IC-E208 calibration
 date: 2019-05-25 13:26:19
 author: Peter Stevenson
 summary: Using GQRX to calibrate a radio.

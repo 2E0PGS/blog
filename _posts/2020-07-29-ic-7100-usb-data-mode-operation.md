@@ -12,7 +12,7 @@ tags:
  - Icom
  - GQRX
  - QSSTV
- - WSJT-x
+ - WSJT-X
 ---
 
 # Using IC-7100 for data modes on a PC

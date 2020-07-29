@@ -31,7 +31,9 @@ _This is to choose fist microphone when not operating in "DATA" mode e.g. using 
 
 _This is to choose USB source as the microphone when operating in "DATA" mode._
 
-"SET"/"Connectors"/"USB Audio SQL": "OFF (OPEN)" This is to allow USB audio to always be present regardless of SQL level.
+"SET"/"Connectors"/"USB Audio SQL": "OFF (OPEN)" 
+
+_This is to allow USB audio to always be present regardless of SQL level._
 
 "ACC" is the accessory socket aka DIN socket.
 

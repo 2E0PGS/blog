@@ -75,9 +75,9 @@ make install-conf
 
 Use `aplay -l` to find hardware device ID of sound card. See IC-7100 blog post on `AF` output mode if applicable.
 
-#### direwolf.conf
+#### direwolf-satgate.conf
 
-This is a basic config which will get you going. My final config is more complex I actually override the config location using flags: `-c ~/direwolf-satgate.conf` however I suggest you keep it simple to start with.
+This is my current config file.
 
 ```
 ADEVICE  plughw:4,0
@@ -97,16 +97,18 @@ KISSPORT 8001
 
 PBEACON delay=1 every=1 overlay=S symbol="dish" lat=12^34.56N long=1^23.45W power=25 height=20 gain=5 comment="www.m3pgs.co.uk" via=ARISS
 
-IGSERVER rotate.aprs2.net 
+IGSERVER euro.aprs2.net 
 
 IGLOGIN 2E0PGS-6 12345
 
 IGTXLIMIT 6 10
 
-LOGFILE direwolf-rx.log
+FILTER 0 ig b/RS0ISS | d/RS0ISS
+
+LOGFILE /home/peter/direwolf-satgate-rx.log
 ```
 
-Running: `direwolf -a 100 -t 0`
+Running direwolf: `direwolf -a 100 -t 0 -d ii -d fff -c ~/direwolf-satgate.conf | tee -a ~/direwolf-satgate-console.log`
 
 Test it decodes use another radio to send a packet over 145.825.
 
@@ -134,7 +136,7 @@ chan,utime,isotime,source,heard,level,error,dti,name,symbol,latitude,longitude,s
 
 This is a console output that I `tee` to a log file for more verbose info about the IGate using flags: `-d ii -d fff`.
 
-I was tweaking my config here and there so there are some errors. However I got some nice decodes coming in towards the end of my config alterations. The `LOGFILE` seems to not work with `~/` path so explicitly state the full path.
+I was tweaking my config here and there so there are some errors. However I got some nice decodes coming in towards the end of my config alterations. The `LOGFILE` seems to not work with `~/` path so explicitly state the full path in the config.
 
 ```
 Digipeater RS0ISS audio level = 24(9/9)   [SINGLE]   ____:____

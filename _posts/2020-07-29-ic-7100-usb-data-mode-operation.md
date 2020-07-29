@@ -95,10 +95,34 @@ WSPR screen.
 
 ![wsjt-x-wspr.png](/blog/assets/2020-07-29/wsjt-x-wspr.png)
 
-WSPR map on 20 m.
+## Screenshots of data mode usage
+
+WSPR map on 20 m using Diamon CP-6.
 
 ![2020-06-07-wspr-band-20-m.png](/blog/assets/2020-07-29/2020-06-07-wspr-band-20-m.png)
 
-WSPR map on 40 m.
+WSPR map on 40 m using Diamon CP-6.
 
 ![2020-06-07-wspr-band-40-m.png](/blog/assets/2020-07-29/2020-06-07-wspr-band-40-m.png)
+
+FT-8 PSK Reporter map on 20 m using Diamon CP-6.
+
+![2020-06-09-ft-8-band-20-m.png](/blog/assets/2020-07-29/2020-06-09-ft-8-band-20-m.png)
+
+FT-8 PSK Reporter map on 40 m using Diamon CP-6.
+
+![2020-06-10-ft-8-band-40-m.png](/blog/assets/2020-07-29/2020-06-10-ft-8-band-40-m.png)
+
+FT-8 PSK Reporter map on multiple bands using Diamon CP-6.
+
+![2020-06-11-ft-8-multi-band.png](/blog/assets/2020-07-29/2020-06-11-ft-8-multi-band.png)
+
+QSSTV images on 14.230 MHz 20 m using Diamon CP-6.
+
+![2020-06-09-qsstv-f4hmp.png](/blog/assets/2020-07-29/2020-06-09-qsstv-f4hmp.png)
+
+![2020-06-07-qsstv-iz3aoy.png](/blog/assets/2020-07-29/2020-06-07-qsstv-iz3aoy.png)
+
+![2020-06-07-qsstv-ea9uv.png](/blog/assets/2020-07-29/2020-06-07-qsstv-ea9uv.png)
+
+![2020-06-07-qsstv-ea3auw.png](/blog/assets/2020-07-29/2020-06-07-qsstv-ea3auw.png)

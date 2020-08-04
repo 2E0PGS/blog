@@ -26,17 +26,17 @@ What other free open source operating systems with a non Linux kernel are there?
 
 Well BSD is probably the first that comes to mind.
 
-OpenBSD or FreeBSD you may ask?
+## OpenBSD or FreeBSD you may ask?
 
-FreeBSD...
+FreeBSD... You can roll your own with their installer and grab a desktop afterwards. I prefer it CLI only and use it on servers and IBM laptops.
 
-You can roll your own with their installer and grab a desktop afterwards.
+The FreeBSD `pkg` package repos are quite extensive these days otherwise you can try FreeBSD ports.
 
-However if you just want a FreeBSD distro that is the dogs. Then look no further than GhostBSD.
+The only two I recommend are FreeBSD and GhostBSD (based on FreeBSD/TrueOS) for desktop use. 
 
-Yes I have tried many other distros. Dragonfly etc.
+## GhostBSD
 
-The only two I recommend are FreeBSD and GhostBSD (based on FreeBSD/TrueOS) for desktop use.
+If you just want a graphical FreeBSD based distro that is the dogs, then look no further than GhostBSD. Yes I have tried many other distros such as DragonflyBSD etc.
 
 GhostBSD has basically everything you need. Besides games and a couple programs that are Electron based. It's perfectly usable out the box.
 
@@ -44,8 +44,10 @@ I did find one odd bug with hot plugging my keyboard/mice while the system is ru
 
 `var/log/syslog` showed connection changes but Xorg problem? No mouse after re-plug.
 
-Anyway I ran GhostBSD on Dell desktops and IBM laptops.
+Anyway I have ran GhostBSD on Dell desktops and IBM laptops.
 
 Oh its missing full file system encryption too. Not sure how to implement that yet.
 
-Perhaps GNU Hurd will be more viable soon. Otherwise some open source XNU/Darwin based OS could also work.
+## Others
+
+Perhaps GNU Hurd will be more viable soon. Otherwise some open source XNU/Darwin based OS could also work. NetBSD I need to try again as it's been a long time since I last looked at it.

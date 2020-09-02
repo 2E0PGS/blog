@@ -268,3 +268,5 @@ Where I been first to IGate something and no duplicate packets were rejected on 
 * http://aprs.org/pcsat.html
 * http://aprs.org/astars.html
 * http://www1.findu.com/cgi-bin/pcsat.cgi
+* http://www.isstracker.com (slightly inaccurate?)
+* http://amsat.org.ar/pass.htm (pass times and sat tracking)

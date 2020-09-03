@@ -28,11 +28,21 @@ Enable "remote errors" under properties.
 
 ## Logins and security
 
+### Service account
+
 The actual service runs under: "NT Service\ReportServer" below we are discussing creating a user for our application to talk to SSRS.
 
-Create local or domain user account. This can then be used by your software in a connection string to make connections to the reporting service.
+### Connections to SSRS
 
-Add this user account to the SQL server logins.
+Create local or domain user account. This can then be used by your software in a connection string to make connections to the reporting service over HTTP/HTTPS.
+
+In a browser on the SSRS server navigate to [http://localhost/Reports](http://localhost/Reports) and assign the user to "System User" role under settings cog top right "Site settings"/"Security".
+
+Going back to original home page right click a reports folder or use "Manager folder" on the black ribbon bar (to apply to all reports folders) and assign the user correct permissions for those reports. E.g. "Browser"
+
+### Data source
+
+If your SSRS data source is set to log into the data source: "As the user viewing the report" then you will need to add the new user account we created to the SQL server logins.
 
 Map this login to each DB the reporting service will be retrieving data from.
 
@@ -46,6 +56,4 @@ GRANT EXECUTE TO [MyUser]
 
 _You can also do this on a per SP level for more security._
 
-In a browser on the SSRS server navigate to [http://localhost/Reports](http://localhost/Reports) and assign the user to "System User" role under settings cog top right "Site settings"/"Security".
-
-Going back to original home page right click a reports folder or use "Manager folder" on the black ribbon bar (to apply to all reports folders) and assign the user correct permissions for those reports. E.g. "Browser"
+Alternatively you can supply a different set of credentials SSRS will use to talk to the SQL data source.

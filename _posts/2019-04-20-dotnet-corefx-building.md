@@ -16,13 +16,13 @@ tags:
 
 # Building corefx for testing a patch
 
+_This post is backdated because I left it sat in my drafts for so long and may not still be relevant. See: [Consolidating .NET GitHub repos #11](https://github.com/dotnet/announcements/issues/119)_ 
+
 A while back I needed to test my corefx patch [dotnet/corefx/pull/36913](https://github.com/dotnet/corefx/pull/36913). Below is the commands I used to build corefx from source and run my program [2E0PGS/program-trak](https://bitbucket.org/2E0PGS/program-trak/src) using the hand compiled corefx runtime. 
 
 `ProcessNameTest` is a simplified version of [2E0PGS/program-trak](https://bitbucket.org/2E0PGS/program-trak/src) I wrote for testing so this name can be interchangeable when trying to understand the below commands.
 
 These commands maybe of use to someone as I recall it was slightly tricky to figure out at the time.
-
-_This post is backdated because I left it sat in my drafts for so long and may not still be relevant._
 
 Useful corefx documentation: [advanced-inner-loop-testing.md](https://github.com/dotnet/corefx/blob/master/Documentation/building/advanced-inner-loop-testing.md)
 

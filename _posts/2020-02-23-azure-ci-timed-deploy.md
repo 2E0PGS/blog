@@ -18,7 +18,7 @@ tags:
 
 Azure DevOps aka VSTS Continuous Integration Pipelines.
 
-This post has been sat around in my drafts for a long time. Anyway I thought I best post it before it becomes totally irrelevant due to Microsoft using more [Config Driven Development](https://www.ibm.com/developerworks/library/wa-configdev/index.html). 
+This post has been sat around in my drafts for a long time. Anyway I thought I best post it before it becomes totally irrelevant due to Microsoft using more [Infrastructure as code (IaC)](https://en.wikipedia.org/wiki/Infrastructure_as_code). 
 
 TODO: Find the other term I cannot think of right now. Config Driven Orchestration?
 

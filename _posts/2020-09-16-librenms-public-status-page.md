@@ -34,4 +34,7 @@ Services in error state
 
 ![red-services.jpg](/blog/assets/2020-09-16/red-services.jpg)
 
-See also: [My custom LibreNMS/Nagios plugins](https://bitbucket.org/2E0PGS/nagios-plugins)
+## See also
+
+* [My custom LibreNMS/Nagios plugins repo](https://bitbucket.org/2E0PGS/nagios-plugins)
+* [nagios-plugin-minecraft](https://github.com/2E0PGS/nagios-plugin-minecraft)

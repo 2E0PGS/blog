@@ -32,6 +32,6 @@ Services
 
 Services in error state
 
-![red-services.png](/blog/assets/2020-09-16/red-services.png)
+![red-services.jpg](/blog/assets/2020-09-16/red-services.jpg)
 
 See also: [My custom LibreNMS/Nagios plugins](https://bitbucket.org/2E0PGS/nagios-plugins)

@@ -23,7 +23,7 @@ tags:
 
 # Creating clients for the Overham API
 
-Overham is written by my friend [2E0EOL](http://www.daybologic.co.uk/services.php?content=overham)
+Overham API is written by my friend [2E0EOL](http://www.daybologic.co.uk/services.php?content=overham)
 
 ## IRC client
 

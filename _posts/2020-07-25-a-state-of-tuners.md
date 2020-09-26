@@ -147,6 +147,10 @@ DAB decoding using RTL dongle and FOSS software using: [welle.io](https://github
 
 Note: Generic RTL devices may require a PPM offset outside their intended use center frequency.
 
+## VLC DVB-T RTL
+
+Quick and simple command to view TV on VLC using a RTL dongle: `vlc dvb-t://frequency=578000000:bandwidth=0`
+
 ## AsusTek - LNA Tiger Hybrid signal issues
 
 Windows VLC: Not good signal at all. Very blocky. For some reason will decode in DVB-T2 but I don't believe it really is doing V2. See screenshots of VLC codec info.

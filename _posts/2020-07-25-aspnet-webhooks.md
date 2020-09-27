@@ -3,16 +3,22 @@ layout: post
 title: ASP.NET WebHooks
 date: 2020-07-25 14:29:19
 author: Peter Stevenson
-summary: WebHooks in ASP.NET framework
+summary: WebHooks in ASP.NET
 categories: programming
 thumbnail:
 tags:
  - WebHooks
  - aspnet
- - web
+ - Web
+ - Framework
+ - API
+ - Core
+ - ASP.NET
 ---
 
-# WebHooks in ASP.NET framework
+# WebHooks in ASP.NET
+
+I mostly discuss code for ASP.NET Framework but most if not all is interchangeable with ASP.NET Core.
 
 The following official blog post document most of the setting up:
 

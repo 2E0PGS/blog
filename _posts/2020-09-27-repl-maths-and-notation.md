@@ -120,7 +120,7 @@ System.Decimal
 0.819672131147540983606557377
 ```
 
-### .NET Framework
+#### .NET Framework
 
 * [REPL for full .NET Framework using C# interactive window in VS](https://odetocode.com/blogs/scott/archive/2020/01/21/the-c-interactive-window.aspx)
 
@@ -137,7 +137,7 @@ Interactive window example
 0.83333333333333337
 ```
 
-### Mono
+#### Mono
 
 * [Mono REPL](https://www.mono-project.com/docs/tools+libraries/tools/repl/)
 * [Online REPL repl.it/languages/csharp](https://repl.it/languages/csharp)

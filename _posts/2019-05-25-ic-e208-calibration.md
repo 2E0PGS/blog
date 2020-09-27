@@ -11,8 +11,8 @@ tags:
  - IC-E208
  - Linux
  - GQRX
- - Spectrum
- - Calibration
+ - spectrum
+ - calibration
 ---
 
 # Using GQRX to calibrate a radio

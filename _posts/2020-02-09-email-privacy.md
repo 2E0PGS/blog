@@ -10,7 +10,7 @@ tags:
  - mailbox.org
  - MX
  - SPF
- - Mail server
+ - mail server
  - Ionos
  - 1&1
 ---

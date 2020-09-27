@@ -13,6 +13,9 @@ tags:
  - typography
  - engineering
  - notes
+ - PaperMate
+ - mechanical
+ - line spacing
 ---
 
 # Notes and paper

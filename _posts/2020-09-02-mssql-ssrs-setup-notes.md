@@ -10,7 +10,8 @@ tags:
  - Windows
  - SSRS
  - MSSQL
- - TSQLissues
+ - T-SQL
+ - SQL
  - SSMS
 ---
 

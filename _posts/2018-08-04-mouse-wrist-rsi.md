@@ -9,7 +9,7 @@ thumbnail:
 tags:
  - ball
  - mouse
- - rsi
+ - RSI
  - wrist
 ---
 

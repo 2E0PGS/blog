@@ -9,8 +9,8 @@ thumbnail:
 tags:
  - Linux
  - NGINX
- - Security
- - Networking
+ - security
+ - networking
 ---
 
 # Securing Graylog

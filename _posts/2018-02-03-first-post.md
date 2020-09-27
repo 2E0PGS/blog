@@ -7,7 +7,7 @@ summary: Just setup my blog.
 categories: programming
 thumbnail:
 tags:
- - jekyll
+ - Jekyll
  - blog
  - programming
 ---

@@ -1,22 +1,26 @@
 ---
 layout: post
-title: dotnet core 2.2 configs
+title: .NET Core 2.2 configs
 date: 2020-07-25 14:17:19
 author: Peter Stevenson
-summary: Config files in dotnet core 2.2
+summary: Config files in .NET Core 2.2
 categories: programming
 thumbnail:
 tags:
  - dotnet
  - aspnet
- - web
- - core
+ - Web
+ - Core
  - config
+ - console
+ - .NET
+ - ASP.NET
+ - MVC
 ---
 
-# Config files in dotnet core 2.2
+# Config files in .NET Core 2.2
 
-## CLI projects
+## .NET Core console application
 
 This doesn't use a dep injector. KISS (Keep It Simple S...): [stackoverflow.com/a/46437144](https://stackoverflow.com/a/46437144)
 
@@ -31,7 +35,7 @@ UPDATE: They seem to mostly give camelCase example code snippets now. Originally
 * Call it `appsettings.json`.
 * _Untested example migration from web.config: [stackoverflow.com/a/52341105](https://stackoverflow.com/a/52341105)_ I say untested because I believe I did try this and it didn't work however I didn't spend much time at all testing maybe 5 mins.
 
-## aspnet web projects
+## ASP.NET Core projects
 
 Dep injection of config: [aspnet/core/fundamentals/configuration](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2)
 

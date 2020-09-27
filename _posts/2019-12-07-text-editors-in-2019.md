@@ -8,10 +8,12 @@ categories: programming
 thumbnail:
 tags:
  - IDE
- - Editors
+ - editors
  - VIM
  - VSCode
  - Atom
+ - VS
+ - Visual Studio
 ---
 
 # A state of text editors in late 2019

@@ -9,16 +9,18 @@ thumbnail:
 tags:
  - LibreNMS
  - dotnet
- - core
+ - aspnet
+ - Core
  - REST
  - API
- - netstandard2.0
- - netcore2.0
+ - .NET
+ - ASP.NET
+ - MVC
 ---
 
 # Creating a custom status page using the LibreNMS API
 
-A while back in 2019‑12‑07 I created a area in my [dotnet core website](https://bitbucket.org/2E0PGS/core) to host a status page for LibreNMS using my [dotnet standard client library for LibreNMS](https://bitbucket.org/2E0PGS/librenms-client).
+A while back in 2019‑12‑07 I created a area in my [ASP.NET Core website](https://bitbucket.org/2E0PGS/core) to host a status page for LibreNMS using my [.NET Standard client library for LibreNMS](https://bitbucket.org/2E0PGS/librenms-client).
 
 This allows me to have a public status page for my hosted services.
 

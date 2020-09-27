@@ -3,26 +3,27 @@ layout: post
 title: MSTest exceptions
 date: 2020-06-14 13:28:19
 author: Peter Stevenson
-summary: MS test for exception thrown
+summary: MSTest for exception thrown
 categories: programming
 thumbnail:
 tags:
- - mstest
+ - MSTest
  - UnitTestFramework
  - dotnet
- - core
- - framework
+ - Core
+ - Framework
+ - .NET
 ---
 
-# MS test for exception thrown
+# MSTest for exception thrown
 
 If you switch between the two frameworks often and use MS test you may find this useful.
 
-## Old MS test
+## Old MSTest
 
 `C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll`
 
-In old dotnet framework test library you don't have the Assert.Throws.
+In old .NET Framework test library you don't have the Assert.Throws.
 
 So use below try catch return.
 
@@ -45,11 +46,11 @@ public void GetStuff_ThrowsException()
 }
 ```
 
-## New MS test
+## New MSTest
 
 `C:\Users\peter\.nuget\packages\mstest.testframework\1.3.2\lib\netstandard1.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll`
 
-In new dotnet core test library you can use the following methods.
+In new .NET Core test library you can use the following methods.
 
 `Assert.ThrowsExceptionAsync`
 

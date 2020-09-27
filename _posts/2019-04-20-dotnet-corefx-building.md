@@ -1,6 +1,6 @@
 ---
 layout: post
-title: dotnet corefx building
+title: .NET corefx building
 date: 2019-04-20 18:33:19
 author: Peter Stevenson
 summary: Building corefx for testing a patch
@@ -8,10 +8,10 @@ categories: programming
 thumbnail:
 tags:
  - dotnet
- - aspnet
  - corefx
- - core
+ - Core
  - building
+ - .NET
 ---
 
 # Building corefx for testing a patch

@@ -9,9 +9,9 @@ thumbnail:
 tags:
  - dotnet
  - aspnet
- - web
+ - Web
  - API
- - core
+ - Core
  - NuGet
  - Angular
  - JWT
@@ -19,6 +19,8 @@ tags:
  - IdentityServer
  - IdentityServer3
  - IdentityServer4
+ - .NET
+ - ASP.NET
 ---
 
 # Auth against IdentityServer3 in ASP.NET Core 2.2 and Angular 7

@@ -9,7 +9,10 @@ thumbnail:
 tags:
  - HP
  - Stream
- - Laptops
+ - models
+ - laptops
+ - notebook
+ - cloudbook
 ---
 
 # HP Stream model numbers

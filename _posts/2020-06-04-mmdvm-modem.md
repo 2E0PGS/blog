@@ -11,6 +11,9 @@ tags:
  - MMDVM
  - D-Star
  - GMSK
+ - HAT
+ - Pi-Star
+ - Raspberry Pi
 ---
 
 # MMDVM modem HAT

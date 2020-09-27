@@ -8,17 +8,18 @@ categories: programming
 thumbnail:
 tags:
  - Overham
+ - OverhamJ
  - dotnet
- - core
+ - aspnet
+ - Core
  - REST
  - API
- - netstandard2.0
- - netcore2.0
+ - .NET
+ - ASP.NET
  - Node
  - NodeJS
- - Java
- - Perl
  - Insomnia
+ - MVC
 ---
 
 # Creating clients for the Overham API
@@ -51,7 +52,7 @@ Recording status
 
 ## Website client
 
-Around 2018‑12‑15 I created a area in my [dotnet core website](https://bitbucket.org/2E0PGS/core) to host a client web UI for Overham using my [dotnet standard client library for Overham](https://bitbucket.org/2E0PGS/overham-client).
+Around 2018‑12‑15 I created a area in my [ASP.NET Core website](https://bitbucket.org/2E0PGS/core) to host a client web UI for Overham using my [.NET Standard client library for Overham](https://bitbucket.org/2E0PGS/overham-client).
 
 Core overview of methods
 

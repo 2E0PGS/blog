@@ -19,6 +19,7 @@ tags:
  - bc
  - GNU
  - LINQ
+ - .NET
 ---
 
 # Maths, notation, calculators and REPL programming
@@ -69,13 +70,13 @@ You will run into int based calculations unless specifying decimal variables/inp
 
 > The M suffix on the numbers is how you indicate that a constant should use the decimal type. Otherwise, the compiler assumes the double type.
 
-#### dotnet core
+#### .NET Core
 
 * [.NET Interactive](https://github.com/dotnet/interactive)
 * [.NET Interactive Plans](https://github.com/dotnet/interactive/issues/392)
 * [REPL console application feature request](https://github.com/dotnet/interactive/issues/335)
 * [OmniSharp C# REPL feature request](https://github.com/OmniSharp/omnisharp-vscode/issues/1239)
-* [dotnet script](https://github.com/filipw/dotnet-script)
+* [dotnet-script](https://github.com/filipw/dotnet-script)
 
 Console application example
 
@@ -119,9 +120,9 @@ System.Decimal
 0.819672131147540983606557377
 ```
 
-### dotnet framework
+### .NET Framework
 
-* [REPL for full dotnet framework using C# interactive window in VS](https://odetocode.com/blogs/scott/archive/2020/01/21/the-c-interactive-window.aspx)
+* [REPL for full .NET Framework using C# interactive window in VS](https://odetocode.com/blogs/scott/archive/2020/01/21/the-c-interactive-window.aspx)
 
 Interactive window example
 
@@ -216,7 +217,7 @@ RMarkdown
 
 [Jupyter Notebook](https://jupyter.org/)
 
-[Jupyer with dotnet core](https://github.com/dotnet/interactive#notebooks-with-net-core)
+[Jupyer with .NET Core](https://github.com/dotnet/interactive#notebooks-with-net-core)
 
 Wolfram Mathematica?
 

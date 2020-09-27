@@ -12,7 +12,7 @@ tags:
  - ip-tables
  - Linux
  - networking
- - Raspberry-Pi
+ - Raspberry Pi
 ---
 
 # RTSP forwarding

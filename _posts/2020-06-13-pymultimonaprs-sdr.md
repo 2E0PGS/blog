@@ -7,7 +7,7 @@ summary: Installing RTL-SDR pymultimonaprs iGate
 categories: hamradio
 thumbnail:
 tags:
- - hamradio
+ - ham radio
  - RTL-SDR
  - SDR
  - Linux

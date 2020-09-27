@@ -7,11 +7,11 @@ summary: DATV, IPTV and tuners
 categories: hamradio
 thumbnail:
 tags:
- - Tuners
+ - tuners
  - IPTV
  - Tvheadend
- - Satellite
- - Terrestrial
+ - satellite
+ - terrestrial
  - DATV
  - ATV
  - SATIP

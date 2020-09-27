@@ -8,13 +8,13 @@ categories: sysadmin
 thumbnail:
 tags:
  - VMDK
- - VMWare
+ - VMware
  - Ubuntu
 ---
 
 # Mount NTFS VMDK file in Ubuntu desktop
 
-Using `vmware-mount` which seemed to come with VMWare player.
+Using `vmware-mount` which seemed to come with VMware player.
 
 ## List partitions
 

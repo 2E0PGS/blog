@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EXSi UPS shutdown script
+title: ESXi UPS shutdown script
 date: 2019-01-13 13:29:34
 author: Peter Stevenson
 summary: How to shutdown ESXi safely when a UPS is on battery.
@@ -14,13 +14,13 @@ tags:
  - shell
 ---
 
-# EXSi UPS shutdown script
+# ESXi UPS shutdown script
 
 How to shutdown ESXi safely when a UPS is on battery.
 
 ## esxi-ups-shutdown.sh
 
-Replace `"PASSWORD"` with the EXSi server password and replace `SERVERIP` with the EXSI servers IP.
+Replace `"PASSWORD"` with the ESXi server password and replace `SERVERIP` with the ESXi servers IP.
 
 ```sh
 #!/bin/bash

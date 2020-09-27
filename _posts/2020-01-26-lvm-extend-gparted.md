@@ -9,7 +9,7 @@ thumbnail:
 tags:
  - GParted
  - partitioning
- - VMWare
+ - VMware
  - Linux
  - LVM
 ---
@@ -22,19 +22,19 @@ First, backup your data.
 
 You may have migrated from a smaller to larger physical disk.
 
-If using VMWare power off the VM and expand the virtual disk in the VM settings menu.
+If using VMware power off the VM and expand the virtual disk in the VM settings menu.
 
 ## GParted disk image
 
 Insert the live bootable disk into the host. 
 
-If using VMWare use a virtual disk and ensure "connected" is checked.
+If using VMware use a virtual disk and ensure "connected" is checked.
 
 ## Boot options
 
 F12 for one time boot menu on most physical machines.
 
-If using VMWare you need to boot into the VMWare BIOS via F2 and change the boot order to prioritise the CD drive.
+If using VMware you need to boot into the VMware BIOS via F2 and change the boot order to prioritise the CD drive.
 
 Choose GParted CD/ISO.
 

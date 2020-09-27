@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text editors
+title: A state of text editors in late 2019
 date: 2019-12-07 14:17:10
 author: Peter Stevenson
 summary: A state of text editors in late 2019

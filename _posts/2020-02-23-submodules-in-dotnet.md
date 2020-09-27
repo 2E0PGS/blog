@@ -1,22 +1,26 @@
 ---
 layout: post
-title: Submodules in dotnet framework
+title: Submodules in .NET
 date: 2020-02-23 17:16:10
 author: Peter Stevenson
-summary: Using Git Submodules in dotnet framework
+summary: Using Git Submodules in .NET
 categories: programming
 thumbnail:
 tags:
  - Git
  - Submodules
  - dotnet
- - core
- - standard
- - framework
+ - aspnet
+ - Core
+ - Standard
+ - Framework
  - NuGet
+ - .NET
+ - ASP.NET
+ - MVC
 ---
 
-# Using Git Submodules in dotnet framework
+# Using Git Submodules in .NET
 
 You will need to migrate all the projects involved away from `packages.config` to `project.json`. See below project type specific instructions.
 
@@ -34,7 +38,7 @@ A related blog post on the topic: [Oren Codes - Project.json all the things](htt
 
 Powershell script to automate it: [nugetprojectjson](https://github.com/wgtmpeters/nugetprojectjson)
 
-Example command for a dotnet framework 4.6.1 project: `.\create_project_json.ps1 -r -f net461`
+Example command for a .NET Framework 4.6.1 project: `.\create_project_json.ps1 -r -f net461`
 
 A couple fixes and issues I found for you to be aware of:
 
@@ -44,39 +48,39 @@ A couple fixes and issues I found for you to be aware of:
 
 ## Project types
 
-### Dotnet standard 2.0 class library and dotnet framework 4.6.1 MVC web
+### .NET Standard 2.0 class library and ASP.NET Framework 4.6.1 MVC
 
-This assumes a dotnet standard 2.0 class library with `Project.csproj` package references and a dotnet framework 4.6.1 MVC web project with `package.config`.
+This assumes a .NET Standard 2.0 class library with `Project.csproj` package references and a ASP.NET Framework 4.6.1 MVC project with `package.config`.
 
-1. Migrate the dotnet framework project to project.json.
-2. If you plan to consume a dotnet standard 2.0 library in a dotnet framework 4.6.1 project you will need Visual Studio 2017 or newer.
-3. If it's a MVC web project you will need to run the project, stop it and then double click the binding redirect warning to update the `Web.Config` automatically with the correct bindings.
+1. Migrate the ASP.NET Framework project to `project.json`.
+2. If you plan to consume a .NET Standard 2.0 class library in a ASP.NET Framework 4.6.1 project you will need Visual Studio 2017 or newer.
+3. If it's a MVC project you will need to run the project, stop it and then double click the binding redirect warning to update the `Web.Config` automatically with the correct bindings.
 
-### Dotnet framework 4.6.1 class library and dotnet framework 4.6.1 MVC web
+### .NET Framework 4.6.1 class library and ASP.NET Framework 4.6.1 MVC
 
-This assumes two dotnet framework 4.6.1 projects with `package.config`.
+This assumes two .NET Framework 4.6.1 projects with `package.config`.
 
-1. Migrate both projects to project.json.
+1. Migrate both projects to `project.json`.
 2. You wont need binding redirects unless you have a version mismatch in NuGet deps.
 
-### Dotnet framework 4.6.1 PackageReference format
+### .NET Framework 4.6.1 PackageReference format
 
-* Material on dotnet framework 4.6.1 and package reference not supported see: [NuGet/Home/issues/6763](https://github.com/NuGet/Home/issues/6763)
+* Material on .NET Framework 4.6.1 and package reference not supported see: [NuGet/Home/issues/6763](https://github.com/NuGet/Home/issues/6763)
 * [Migrate packages.config to PackageReference](https://docs.microsoft.com/en-us/nuget/consume-packages/migrate-packages-config-to-package-reference#limitations)
 
-### Dotnet standard 2.0 class library and dotnet core web 2.0+
+### .NET Standard 2.0 class library and ASP.NET Core 2.0+ MVC
 
-This assumes a dotnet standard 2.0 class library and a dotnet core web project with `Project.csproj`.
+This assumes a .NET Standard 2.0 class library and a ASP.NET Core 2.0+ MVC project with `Project.csproj`.
 
 Works fine without all this mumbo jumbo. See example: [Core/Core.csproj](https://bitbucket.org/2E0PGS/core/src/develop/Core/Core.csproj)
 
 ## Framework compatibility
 
-Some of these issues are around dotnet framework 4.6.1 not being "fully" compatible with dotnet standard 2.0. Despite the [.NET implementation support](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support) suggesting otherwise. Dotnet framework 4.7.2 is supposed to be fully supported.
+Some of these issues are around .NET Framework 4.6.1 not being "fully" compatible with .NET Standard 2.0. Despite the [.NET implementation support](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support) suggesting otherwise. .NET Framework 4.7.2 is supposed to be fully supported.
 
 See point 2 under the [.NET implementation support](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support) table for more information.
 
-This is more to do with the binding redirects and versions of dependencies as dotnet framework 4.6.1 actually "implements .NET Standard 1.4". However it will support up to dotnet standard 2.0 with binding redirects.
+This is more to do with the binding redirects and versions of dependencies as .NET Framework 4.6.1 actually "implements .NET Standard 1.4". However it will support up to .NET Standard 2.0 with binding redirects.
 
 ## Azure DevOps/VSTS CI
 

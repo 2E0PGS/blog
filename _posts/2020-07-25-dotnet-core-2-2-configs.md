@@ -39,7 +39,7 @@ UPDATE: They seem to mostly give camelCase example code snippets now. Originally
 
 Dep injection of config: [aspnet/core/fundamentals/configuration](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2)
 
-### Setup injector in `Startup.cs` class
+### Setup injector in Startup.cs class
 
 ```
 var builder = new ConfigurationBuilder()
@@ -61,7 +61,7 @@ foreach(var repo in configuration.GetSection("repositories").GetChildren())
 }
 ```
 
-## Example `appsettings.json`
+## Example appsettings.json
 
 ```
 "repositories": [

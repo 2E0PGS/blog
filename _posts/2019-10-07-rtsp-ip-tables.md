@@ -69,9 +69,9 @@ Reboot the Pi(firewall).
 
 We specify the port the Pi(firewall) is listening on with `--dport`
 
-Then we specify the device behind the Pi(firewall) and what port it's listening on with `--to-detination`
+Then we specify the device behind the Pi(firewall) and what port it's listening on with `--to-destination`
 
-`iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.50.2:80`
+`sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.50.2:80`
 
 ## Test use MPV to try connect through the Pi(firewall)
 
@@ -84,5 +84,3 @@ We use the Pi(firewall) IP here.
 ### Flow of traffic
 
 PC desktop (192.168.1.39) --> Pi primary NIC (192.168.1.40) --> NAT and IP forwarding --> Pi secondary NIC (192.168.50.1) --> Dest RTSP server (192.168.50.2)
-
-test

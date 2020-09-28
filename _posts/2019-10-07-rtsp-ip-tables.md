@@ -73,6 +73,10 @@ Then we specify the device behind the Pi(firewall) and what port it's listening 
 
 `iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.50.2:80`
 
+To make it persistent you can add the line to `crontab -e` like so
+
+
+
 ## Test use MPV to try connect through the Pi(firewall)
 
 Generally RTSP is TCP.

@@ -73,6 +73,12 @@ Then we specify the device behind the Pi(firewall) and what port it's listening 
 
 `sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.50.2:80`
 
+Make it persistent across reboots, there is a few ways of doing this but quick and dirty add this to roots crontab.
+
+`@reboot /usr/sbin/iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.50.2:80`
+
+You can check the rule is in place with: `sudo iptables -t nat -L`
+
 ## Test use MPV to try connect through the Pi(firewall)
 
 Generally RTSP is TCP.

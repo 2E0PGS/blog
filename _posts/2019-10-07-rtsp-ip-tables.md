@@ -90,5 +90,3 @@ We use the Pi(firewall) IP here.
 ### Flow of traffic
 
 PC desktop (192.168.1.39) --> Pi primary NIC (192.168.1.40) --> NAT and IP forwarding --> Pi secondary NIC (192.168.50.1) --> Dest RTSP server (192.168.50.2)
-
-test

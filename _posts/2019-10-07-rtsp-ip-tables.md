@@ -63,15 +63,21 @@ net.ipv4.ip_forward = 1
 
 `sudo nano /etc/hosts` and `sudo nano /etc/hostname`
 
+Reboot the Pi(firewall).
+
 ### Allow traffic to be NAT to dest device
 
 We specify the port the Pi(firewall) is listening on with `--dport`
 
 Then we specify the device behind the Pi(firewall) and what port it's listening on with `--to-detination`
 
-`iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.50.2:80`
+`sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.50.2:80`
 
-Reboot the Pi(firewall).
+To make it persistent you can add the line to `crontab -e` like so
+
+`@reboot /usr/sbin/iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.50.2:80`
+
+Check rule with: `sudo iptables -t nat -L`
 
 ## Test use MPV to try connect through the Pi(firewall)
 

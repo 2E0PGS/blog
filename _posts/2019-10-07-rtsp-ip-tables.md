@@ -69,7 +69,7 @@ Reboot the Pi(firewall).
 
 We specify the port the Pi(firewall) is listening on with `--dport`
 
-Then we specify the device behind the Pi(firewall) and what port it's listening on with `--to-detination`
+Then we specify the device behind the Pi(firewall) and what port it's listening on with `--to-destination`
 
 `iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.50.2:80`
 

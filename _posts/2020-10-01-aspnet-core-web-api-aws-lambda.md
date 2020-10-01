@@ -26,8 +26,6 @@ I am using the below two tools.
 * [AWS Lambda for .NET Core](https://github.com/aws/aws-lambda-dotnet/)
 * [.NET Core CLI](https://docs.aws.amazon.com/lambda/latest/dg/csharp-package-cli.html)
 
-See screenshots folder.
-
 ## Blueprint types
 
 Blueprint and template are interchangeable words here.
@@ -170,6 +168,8 @@ Deploys just the Lambda function itself. I think this is much simpler and doesn'
 
 However you need to carefully configure the API Gateway from default to work with an existing Lambda Function with a API Gateway trigger created using the AWS console (web UI) as I describe what will happen otherwise below.
 
+![add-lambda-api-gateway-trigger](/blog/assets/2020-10-01/add-lambda-api-gateway-trigger.png)
+
 ![aws-lambda-layout](/blog/assets/2020-10-01/aws-lambda-layout.png)
 
 I have to hack the `aws-lambda-tools-defaults.json` to include a `function-handler` and a `function-runtime` based on `serverless.template` `AwsServerlessAspNetCore.Api::AwsServerlessAspNetCore.Api.LambdaEntryPoint::FunctionHandlerAsync`
@@ -179,6 +179,8 @@ You have to specify runtime. `dotnetcore3.1` unless you define it in `aws-lambda
 They probably prefer you using the `serverless.template` because it adds the method routing into API Gateway automatically. Otherwise you may run into the below.
 
 #### Default API Gateway routes
+
+![default-api-gateway-routes](/blog/assets/2020-10-01/default-api-gateway-routes.png)
 
 Doesn't work, returns 405 method not allowed.
 

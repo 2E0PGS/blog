@@ -1,3 +1,24 @@
+---
+layout: post
+title: ASP.NET Core Web API AWS Lambda
+date: 2020-10-01 19:33:19
+author: Peter Stevenson
+summary: Testing AWS Lambda with ASP.NET Core Web API
+categories: programming
+thumbnail:
+tags:
+ - dotnet
+ - aspnet
+ - Web
+ - API
+ - Core
+ - AWS
+ - Lambda
+ - Serverless
+ - .NET
+ - ASP.NET
+---
+
 # ASP.NET Core Web API AWS Lambda
 
 I am using the below two tools.

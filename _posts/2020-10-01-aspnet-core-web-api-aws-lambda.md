@@ -101,7 +101,7 @@ curl --request POST \
 
 #### Insomnia example
 
-![aspnet-core-web-api-insomnia](aspnet-core-web-api-insomnia.png)
+![aspnet-core-web-api-insomnia](/blog/assets/2020-10-01/aspnet-core-web-api-insomnia.png)
 
 ### lambda.EmptyFunction
 
@@ -160,7 +160,7 @@ public APIGatewayProxyResponse Post(APIGatewayProxyRequest request, ILambdaConte
 
 #### Insomnia example
 
-![empty-serverless-insomnia](empty-serverless-insomnia.png)
+![empty-serverless-insomnia](/blog/assets/2020-10-01/empty-serverless-insomnia.png)
 
 ## Deploy types
 
@@ -170,7 +170,7 @@ Deploys just the Lambda function itself. I think this is much simpler and doesn'
 
 However you need to carefully configure the API Gateway from default to work with an existing Lambda Function with a API Gateway trigger created using the AWS console (web UI) as I describe what will happen otherwise below.
 
-![aws-lambda-layout](aws-lambda-layout.png)
+![aws-lambda-layout](/blog/assets/2020-10-01/aws-lambda-layout.png)
 
 I have to hack the `aws-lambda-tools-defaults.json` to include a `function-handler` and a `function-runtime` based on `serverless.template` `AwsServerlessAspNetCore.Api::AwsServerlessAspNetCore.Api.LambdaEntryPoint::FunctionHandlerAsync`
 
@@ -209,7 +209,7 @@ It will return unsupported media type for POST unless you send with header `Cont
 
 #### Using API Gateway proxy+ route
 
-![api-gateway-resources-api-key](api-gateway-resources-api-key.png)
+![api-gateway-resources-api-key](/blog/assets/2020-10-01/api-gateway-resources-api-key.png)
 
 Working routing on this without ASP "route template" if using `{proxy+}`
 
@@ -225,11 +225,11 @@ Manually add auth via API key: [Set up API keys using the API Gateway console](h
 
 Repeat after me, I will not forget to deploy my API Gateway: [AWS API Gateway: Solving Missing Authentication Tokens](http://www.awslessons.com/2017/aws-api-gateway-missing-authentication-token/)
 
-![api-gateway-deploy-1](api-gateway-deploy-1.png)
+![api-gateway-deploy-1](/blog/assets/2020-10-01/api-gateway-deploy-1.png)
 
-![api-gateway-deploy-2](api-gateway-deploy-2.png)
+![api-gateway-deploy-2](/blog/assets/2020-10-01/api-gateway-deploy-2.png)
 
-![api-gateway-stages](api-gateway-stages.png)
+![api-gateway-stages](/blog/assets/2020-10-01/api-gateway-stages.png)
 
 Run: `dotnet lambda deploy-function`
 

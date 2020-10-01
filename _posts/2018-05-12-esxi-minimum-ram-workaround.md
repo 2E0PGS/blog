@@ -13,6 +13,8 @@ tags:
 
 # ESXi minimum RAM workaround
 
+_Moved here from [original gist](https://gist.github.com/2E0PGS/9e56e67d72c31e849147b9e56e3ae383)_
+
 You have 4 GB RAM installed in a new server and ESXi says you have 3.88 GB so it prevents you from continuing the install. This is a workaround for that.
 
 Based upon this article but I had to make a few changes to get the permissions to take: [https://community.spiceworks.com/topic/411970-installing-esxi-5-5-with-4gb-ram-memory_size-error?page=1](https://community.spiceworks.com/topic/411970-installing-esxi-5-5-with-4gb-ram-memory_size-error?page=1)

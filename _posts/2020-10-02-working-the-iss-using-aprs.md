@@ -288,7 +288,7 @@ Where I been first to IGate something and no duplicate packets were rejected on 
 00:00:10:46 : EA2AUK]CQ,RS0ISS*,qAO,2E0PGS-6:=4019.67N/00105.66W-[Pedro en Teruel Via ISS 73]
 ```
 
-## `SGATE` path
+## SGATE path
 
 * [amsat.org/pipermail/amsat-bb/2015-June/053382](https://www.amsat.org/pipermail/amsat-bb/2015-June/053382.html)
 * [aprs.net.au/satellite/aprs-satellite/](http://www.aprs.net.au/satellite/aprs-satellite/)

@@ -1,17 +1,44 @@
+---
+layout: post
+title: Working the ISS using APRS
+date: 2020-10-02 18:17:10
+author: Peter Stevenson
+summary: Using APRS to contact the ISS
+categories: hamradio
+thumbnail:
+tags:
+ - IC-7100
+ - mpv
+ - multimon-ng
+ - Dire Wolf
+ - APRS
+ - ISS
+ - ARISS
+ - GQRX
+ - RS0ISS
+---
+
+# Using APRS to contact the ISS
 
 ## Radios
 
-Good enough for ISS good enough for me.
+Good enough for the ISS good enough for me. I was about to buy one of the following Kenwood radios.
 
 TM-D710
 
 TM-D100
+
+## aprs-tx.sh
 
 It's important you set path via `ariss` and not `WIDE1-1` or `WIDE2-1` as WIDE is for terrestrial APRS.
 
 I had a sudden idea pop into my head on how to do a TX with my IC-7100.
 
 My hack job script below got my packet on the map using a IC-7100 running 25 w into a collinear. Back to earth via DL8NDR iGate.
+
+`aprs-2e0pgs-6.mp3` is a audio recording I made of a encoded APRS packet which includes my location and call sign.
+
+I have a previous blog post on rigctl: [here](https://2e0pgs.github.io/blog/programming/2018/12/17/ic7100-hamlib/)
 
 ```
 $ cat aprs-tx.sh 
@@ -25,6 +52,12 @@ mpv aprs-2e0pgs-6.mp3 --audio-device='pulse/alsa_output.usb-Burr-Brown_from_TI_U
 ```
 watch -n 60 ./aprs-tx.sh
 ```
+
+![ariss-website-map](/blog/assets/2020-10-02/ariss-website-map.png)
+
+![ariss-website-log](/blog/assets/2020-10-02/ariss-website-log.jpeg)
+
+![aprs-fi](/blog/assets/2020-10-02/aprs-fi.png)
 
 While I am at it we can decode via GQRX and UDP out to multimon-ng. It worked but was a bit hit and miss on the message probably due to doppler shift. Below is some of the decodes I had via multimon-ng. I later enabled `--timestamps` flag.
 
@@ -47,6 +80,8 @@ AFSK1200: fm ? to R7=S16-1 QSO Nr 5165 RNR5v pid=B3
 2020-06-12 21:07:13: AFSK1200: fm ? to ]M/K'W-1 QSO Nr 2258 I66^ pid=E7
 2020-06-12 21:07:13: ...;..
 ```
+
+![gqrx-iss-doppler](/blog/assets/2020-10-02/gqrx-iss-doppler.png)
 
 ## Dire Wolf
 
@@ -73,7 +108,7 @@ sudo make install
 make install-conf
 ```
 
-Use `aplay -l` to find hardware device ID of sound card. See IC-7100 blog post on `AF` output mode if applicable.
+Use `aplay -l` to find hardware device ID of sound card. See [IC-7100 blog post](https://2e0pgs.github.io/blog/hamradio/2020/07/29/ic-7100-usb-data-mode-operation/) on `AF` output mode if applicable.
 
 #### direwolf-satgate.conf
 
@@ -112,7 +147,9 @@ Running direwolf: `direwolf -a 100 -t 0 -d ii -d fff -c ~/direwolf-satgate.conf 
 
 Test it decodes use another radio to send a packet over 145.825.
 
-Test it beacons use another device with a decoder: (screenshothere)
+Test it beacons use another device with a decoder.
+
+![laptop-decode-beacon](/blog/assets/2020-10-02/laptop-decode-beacon.png)
 
 I have my SatGate beacon currently only going via RF to the ISS. Maybe I will have it use TCPIP beacons at some point. I see most hardcore SatGate operators have two IDs/radios one for a TCPIP beacon SatGate and one is a standalone RF only beacon so that way they advertise their SatGate 24/7 and still have a ID that shows only when the ISS received them.
 
@@ -256,17 +293,29 @@ Where I been first to IGate something and no duplicate packets were rejected on 
 * [amsat.org/pipermail/amsat-bb/2015-June/053382](https://www.amsat.org/pipermail/amsat-bb/2015-June/053382.html)
 * [aprs.net.au/satellite/aprs-satellite/](http://www.aprs.net.au/satellite/aprs-satellite/)
 
+## Closing notes
+
+I am yet to have the ISS hear my Dire Wolf beacon so there is more tweaking required with Dire Worlf.
+
+Dire Worlf is currently working for decoding as a iGate/SatGate though.
+
+However I am happy the ISS did hear my hack job script beacon.
+
+I should try the ISS cross band voice repeater.
+
+I should also try recieve ISS SSTV images.
+
 ## Useful links
 
-* https://issfanclub.eu/iss-frequencies/
-* https://www.ariss.org/contact-the-iss.html
-* https://www.ariss.org/current-status-of-iss-stations.html
-* https://ariss-sstv.blogspot.com/
-* https://www.amsat.org/track/
-* http://www.aprs-dl.de/?APRS_Detailwissen:APRS_via_SAT%2FISS
-* http://aprs.org/psat.html
-* http://aprs.org/pcsat.html
-* http://aprs.org/astars.html
-* http://www1.findu.com/cgi-bin/pcsat.cgi
-* http://www.isstracker.com (slightly inaccurate?)
-* http://amsat.org.ar/pass.htm (pass times and sat tracking)
+* [ISS Frequencies](https://issfanclub.eu/iss-frequencies/)
+* [Contact the ISS](https://www.ariss.org/contact-the-iss.html)
+* [Current Status of ISS Stations](https://www.ariss.org/current-status-of-iss-stations.html)
+* [ARISS-SSTV images](https://ariss-sstv.blogspot.com/)
+* [AMSAT Online Satellite Pass Predictions](https://www.amsat.org/track/)
+* [APRS_via_SAT](http://www.aprs-dl.de/?APRS_Detailwissen:APRS_via_SAT%2FISS)
+* [PSAT - APRS and a new PSK31 Approach](http://aprs.org/psat.html)
+* [PCSAT-1, Amateur Radio Satellite NO-44](http://aprs.org/pcsat.html)
+* [APRS Satellite Traffic and Reporting System](http://aprs.org/astars.html)
+* [Amateur Radio Stations heard via Satellite](http://www1.findu.com/cgi-bin/pcsat.cgi)
+* [isstracker.com](http://www.isstracker.com) (slightly inaccurate or slow to update)
+* [AMSAT passtimes and tracking](http://amsat.org.ar/pass.htm) (pass times and sat tracking)

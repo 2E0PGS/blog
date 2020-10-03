@@ -7,12 +7,9 @@ summary: MMDVM_pog HAT to make a GMSK DStar gateway
 categories: hamradio
 thumbnail:
 tags:
- - MMDVM_pog
  - MMDVM
- - D-Star
+ - SDR
  - GMSK
- - HAT
- - Pi-Star
  - Raspberry Pi
 ---
 

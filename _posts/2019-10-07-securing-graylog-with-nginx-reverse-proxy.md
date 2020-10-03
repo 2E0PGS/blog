@@ -10,7 +10,6 @@ tags:
  - Linux
  - NGINX
  - security
- - networking
 ---
 
 # Securing Graylog

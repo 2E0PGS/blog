@@ -8,7 +8,6 @@ categories: programming
 thumbnail:
 tags:
  - Git
- - Submodules
  - Core
  - Standard
  - Framework
@@ -16,6 +15,7 @@ tags:
  - .NET
  - ASP.NET
  - MVC
+ - C#
 ---
 
 # Using Git Submodules in .NET

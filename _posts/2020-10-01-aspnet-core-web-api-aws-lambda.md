@@ -10,10 +10,9 @@ tags:
  - API
  - Core
  - AWS
- - Lambda
- - Serverless
  - .NET
  - ASP.NET
+ - C#
 ---
 
 # ASP.NET Core Web API AWS Lambda

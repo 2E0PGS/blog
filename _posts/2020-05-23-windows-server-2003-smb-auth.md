@@ -7,7 +7,7 @@ summary: Fix unknown user name or bad password error
 categories: sysadmin
 thumbnail:
 tags:
- - Windows Server
+ - Windows
 ---
 
 # Windows Server 2003 SMB auth

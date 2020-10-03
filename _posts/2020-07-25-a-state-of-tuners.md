@@ -7,15 +7,8 @@ summary: DATV, IPTV and tuners
 categories: hamradio
 thumbnail:
 tags:
- - tuners
- - IPTV
  - Tvheadend
- - satellite
- - terrestrial
- - DATV
  - ATV
- - SATIP
- - GB3ZZ
 ---
 
 # A state of tuners

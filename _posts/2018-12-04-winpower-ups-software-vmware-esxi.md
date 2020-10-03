@@ -8,9 +8,6 @@ categories: sysadmin
 thumbnail:
 tags:
  - VMware
- - Winpower
- - UPS
- - vCLI
 ---
 
 # Using a Winpower UPS with VMware ESXi

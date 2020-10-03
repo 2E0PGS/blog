@@ -7,9 +7,8 @@ summary: Mount NTFS VMDK file in Ubuntu desktop
 categories: sysadmin
 thumbnail:
 tags:
- - VMDK
  - VMware
- - Ubuntu
+ - Linux
 ---
 
 # Mount NTFS VMDK file in Ubuntu desktop

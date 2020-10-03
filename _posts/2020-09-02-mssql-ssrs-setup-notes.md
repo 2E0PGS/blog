@@ -8,11 +8,7 @@ categories: sysadmin
 thumbnail:
 tags:
  - Windows
- - SSRS
- - MSSQL
- - T-SQL
  - SQL
- - SSMS
 ---
 
 # MSSQL SSRS setup notes

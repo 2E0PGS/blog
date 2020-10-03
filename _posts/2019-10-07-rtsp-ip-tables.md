@@ -7,11 +7,8 @@ summary: Using IP tables as a firewall for RTSP traffic
 categories: networking
 thumbnail:
 tags:
- - firewall
  - security
- - ip-tables
  - Linux
- - networking
  - Raspberry Pi
 ---
 

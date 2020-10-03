@@ -7,7 +7,6 @@ summary: A state of text editors in late 2019
 categories: programming
 thumbnail:
 tags:
- - IDE
  - VIM
  - VS Code
  - Atom

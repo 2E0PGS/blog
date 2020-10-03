@@ -14,6 +14,7 @@ tags:
  - .NET
  - ASP.NET
  - MVC
+ - C#
 ---
 
 # Config files in .NET Core 2.2

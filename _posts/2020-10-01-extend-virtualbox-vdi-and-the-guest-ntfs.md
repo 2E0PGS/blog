@@ -10,7 +10,6 @@ tags:
  - Windows
  - partitioning
  - VirtualBox
- - NTFS
 ---
 
 # Using Windows Disk Management to extend a NTFS partition

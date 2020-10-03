@@ -7,11 +7,8 @@ summary: Gnome screensaver leave a message
 categories: sysadmin
 thumbnail:
 tags:
- - gnome-screensaver
- - mate-screensaver
- - lock-dialog
+ - Linux
  - security
- - troll
 ---
 
 # Screensaver troll

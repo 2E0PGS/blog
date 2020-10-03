@@ -7,15 +7,8 @@ summary: Mechanical pencils and line spacing
 categories: personal
 thumbnail:
 tags:
- - notebooks
- - pen
- - paper
  - typography
- - engineering
- - notes
- - PaperMate
- - mechanical
- - line spacing
+ - standardisation
 ---
 
 # Notes and paper

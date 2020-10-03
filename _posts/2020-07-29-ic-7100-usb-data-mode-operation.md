@@ -8,11 +8,7 @@ categories: hamradio
 thumbnail:
 tags:
  - IC-7100
- - USB
- - Icom
  - GQRX
- - QSSTV
- - WSJT-X
 ---
 
 # Using IC-7100 for data modes on a PC

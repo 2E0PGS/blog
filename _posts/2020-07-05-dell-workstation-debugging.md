@@ -9,6 +9,7 @@ thumbnail:
 tags:
  - Dell
  - Linux
+ - SDR
 ---
 
 # Debugging Dell workstation stability

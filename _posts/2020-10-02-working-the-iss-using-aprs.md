@@ -9,14 +9,8 @@ thumbnail:
 feed_exclude_content: true
 tags:
  - IC-7100
- - mpv
- - multimon-ng
- - Dire Wolf
  - APRS
- - ISS
- - ARISS
  - GQRX
- - RS0ISS
 ---
 
 # Using APRS to contact the ISS

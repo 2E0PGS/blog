@@ -7,12 +7,8 @@ summary: Privacy focused email inbox with a custom domain
 categories: sysadmin
 thumbnail:
 tags:
- - mailbox.org
- - MX
- - SPF
  - mail server
  - Ionos
- - 1&1
 ---
 
 # Email privacy

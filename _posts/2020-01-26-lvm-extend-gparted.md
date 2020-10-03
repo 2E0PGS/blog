@@ -7,11 +7,9 @@ summary: Using GParted to extend a LVM partition
 categories: sysadmin
 thumbnail:
 tags:
- - GParted
  - partitioning
  - VMware
  - Linux
- - LVM
 ---
 
 # Using GParted to extend a LVM partition

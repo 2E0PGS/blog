@@ -7,10 +7,8 @@ summary: Jail environment for SFTP only file transfer
 categories: sysadmin
 thumbnail:
 tags:
- - SFTP
- - SSH
  - Linux
- - OpenSSH
+ - security
 ---
 
 # SFTP/SSH jail

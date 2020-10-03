@@ -10,14 +10,6 @@ tags:
  - Maths
  - C#
  - SQL
- - REPL
- - CSI
- - Mono
- - R
- - MATLAB
- - bc
- - GNU
- - LINQ
  - .NET
 ---
 

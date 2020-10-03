@@ -8,9 +8,7 @@ categories: sysadmin
 thumbnail:
 tags:
  - IIS
- - Proxy
  - Windows
- - ARR
 ---
 
 # IIS reverse proxy server

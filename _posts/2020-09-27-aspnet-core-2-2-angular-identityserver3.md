@@ -15,6 +15,7 @@ tags:
  - IdentityServer
  - .NET
  - ASP.NET
+ - C#
 ---
 
 # Auth against IdentityServer3 in ASP.NET Core 2.2 and Angular 7

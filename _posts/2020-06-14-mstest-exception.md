@@ -12,6 +12,7 @@ tags:
  - Core
  - Framework
  - .NET
+ - C#
 ---
 
 # MSTest for exception thrown

@@ -11,6 +11,7 @@ tags:
  - Core
  - building
  - .NET
+ - C#
 ---
 
 # Building corefx for testing a patch

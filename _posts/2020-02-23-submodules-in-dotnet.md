@@ -9,8 +9,6 @@ thumbnail:
 tags:
  - Git
  - Submodules
- - dotnet
- - aspnet
  - Core
  - Standard
  - Framework

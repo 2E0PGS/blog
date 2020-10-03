@@ -9,7 +9,6 @@ thumbnail:
 tags:
  - MSTest
  - UnitTestFramework
- - dotnet
  - Core
  - Framework
  - .NET

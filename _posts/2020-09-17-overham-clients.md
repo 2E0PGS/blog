@@ -8,9 +8,6 @@ categories: programming
 thumbnail:
 tags:
  - Overham
- - OverhamJ
- - dotnet
- - aspnet
  - Core
  - REST
  - API

@@ -7,8 +7,6 @@ summary: Rotativa in a ASP.NET Framework Web API
 categories: programming
 thumbnail:
 tags:
- - dotnet
- - aspnet
  - Web
  - API
  - Framework

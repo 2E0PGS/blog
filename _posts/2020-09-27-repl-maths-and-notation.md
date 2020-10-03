@@ -12,7 +12,6 @@ tags:
  - SQL
  - REPL
  - CSI
- - dotnet
  - Mono
  - R
  - MATLAB

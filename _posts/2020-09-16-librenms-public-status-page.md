@@ -8,8 +8,7 @@ categories: programming
 thumbnail:
 tags:
  - LibreNMS
- - dotnet
- - aspnet
+ 
  - Core
  - REST
  - API

@@ -8,7 +8,6 @@ categories: programming
 thumbnail:
 tags:
  - WebHooks
- - aspnet
  - Web
  - Framework
  - API

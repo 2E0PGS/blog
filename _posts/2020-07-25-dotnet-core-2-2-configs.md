@@ -7,8 +7,6 @@ summary: Config files in .NET Core 2.2
 categories: programming
 thumbnail:
 tags:
- - dotnet
- - aspnet
  - Web
  - Core
  - config

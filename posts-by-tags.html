@@ -26,7 +26,7 @@ make-smaller-titles: true
     <div class="col-md-12 content-panel articles">
       <h2>Tags</h2>
         {% for tag in site.tags %}
-      <a class="tag" href="/posts-by-tags/#{{ tag | first | slugify }}">{{ tag | first }}</a>    
+      <a class="tag" href="{{ site.baseurl }}/posts-by-tags/#{{ tag | first | slugify }}">{{ tag | first }}</a>    
        {% endfor %}
     </div>
 

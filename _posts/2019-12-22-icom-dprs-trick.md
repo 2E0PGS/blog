@@ -8,9 +8,7 @@ categories: hamradio
 thumbnail:
 tags:
  - hamradio
- - DPRS
  - APRS
- - Icom
 ---
 
 # Useful trick for Icom DPRS settings

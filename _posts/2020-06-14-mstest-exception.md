@@ -8,7 +8,6 @@ categories: programming
 thumbnail:
 tags:
  - MSTest
- - UnitTestFramework
  - Core
  - Framework
  - .NET

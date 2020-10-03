@@ -9,7 +9,7 @@ thumbnail:
 tags:
  - Android
  - Termux
- - cli
+ - command-line
 ---
 
 # Everyday Termux uses

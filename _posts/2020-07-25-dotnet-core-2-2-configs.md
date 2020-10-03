@@ -9,8 +9,7 @@ thumbnail:
 tags:
  - API
  - Core
- - config
- - console
+ - command-line
  - .NET
  - ASP.NET
  - MVC

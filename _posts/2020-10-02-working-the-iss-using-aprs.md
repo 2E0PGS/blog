@@ -257,7 +257,7 @@ N 40 19.6700, W 001 05.6600
 [Pedro en Teruel Via ISS 73]
 Opening log file "/home/peter/direwolf-satgate-rx.log"
 Rx IGate: Truncated information part at CR.
-rx_to_ig_allow? 53197 "EA2AUK>CQ:=4019.67N/00105.66W-[Pedro en Teruel Via ISS 73]"
+rx_to_ig_allow? 53197 EA2AUK>CQ:=4019.67N/00105.66W-[Pedro en Teruel Via ISS 73]
 rx_to_ig_allow? YES, no dedupe checking
 [rx>ig] EA2AUK>CQ,RS0ISS*,qAO,2E0PGS-6:=4019.67N/00105.66W-[Pedro en Teruel Via ISS 73]
 [rx>ig] #

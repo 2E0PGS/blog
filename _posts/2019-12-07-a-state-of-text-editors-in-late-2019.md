@@ -8,11 +8,9 @@ categories: programming
 thumbnail:
 tags:
  - IDE
- - editors
  - VIM
- - VSCode
+ - VS Code
  - Atom
- - VS
  - Visual Studio
 ---
 

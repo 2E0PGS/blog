@@ -22,22 +22,30 @@ make-smaller-titles: true
       </div>
 
     </small></h2>
-      {% for tag in site.tags %}
-      <div class="col-md-12 content-panel articles">
-        <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
-        <ul>
-          {% for posts in tag %}
-            {% for post in posts %}
-              <li>
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
-              </li>
-            {% endfor %}
-          {% endfor %}
 
-        </ul>
+    <div class="col-md-12 content-panel articles">
+      <h2>Tags</h2>
+        {% for tag in site.tags %}
+      <a class="tag" href="/posts-by-tags/#{{ tag | first | slugify }}">{{ tag | first }}</a>    
+       {% endfor %}
+    </div>
+
+    {% for tag in site.tags %}
+      <div class="col-md-12 content-panel articles">
+        <!-- Make sure the tag isn't a long int. Couldn't figure out variable incapsulation here. -->
+        <h2 id="{{ tag | first | slugify }}">{{ tag | first }}</h2>
+          <ul>
+            {% for posts in tag %}
+              {% for post in posts %}
+                <li>
+                  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
+                </li>
+              {% endfor %}
+            {% endfor %}
+          </ul>
       </div>
-      {% endfor %}
+    {% endfor %}
 
   </div>
 </div>

@@ -10,7 +10,7 @@ tags:
  - WebHooks
  - API
  - .NET Framework
-  - .NET Core
+ - .NET Core
  - ASP.NET
 ---
 

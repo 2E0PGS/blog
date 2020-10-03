@@ -10,7 +10,6 @@ tags:
  - LibreNMS
  - C#
  - Core
- - REST
  - API
  - .NET
  - ASP.NET

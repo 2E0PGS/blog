@@ -9,13 +9,10 @@ thumbnail:
 tags:
  - Overham
  - Core
- - REST
  - API
  - .NET
  - ASP.NET
- - Node
- - NodeJS
- - Insomnia
+ - Node.js
  - MVC
  - C#
 ---

@@ -8,8 +8,6 @@ categories: programming
 thumbnail:
 tags:
  - Jekyll
- - blog
- - programming
 ---
 
 # Just setup my blog

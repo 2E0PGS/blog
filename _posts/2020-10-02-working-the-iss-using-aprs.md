@@ -11,6 +11,7 @@ tags:
  - IC-7100
  - APRS
  - GQRX
+ - Bash
 ---
 
 # Using APRS to contact the ISS

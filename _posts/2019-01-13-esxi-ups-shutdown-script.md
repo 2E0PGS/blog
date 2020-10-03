@@ -7,11 +7,9 @@ summary: How to shutdown ESXi safely when a UPS is on battery.
 categories: programming
 thumbnail:
 tags:
- - UPS
  - VMware
  - Linux
- - programming
- - shell
+ - Bash
 ---
 
 # ESXi UPS shutdown script

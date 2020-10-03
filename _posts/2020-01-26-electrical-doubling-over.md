@@ -7,9 +7,6 @@ summary: Doubling over cable conductors
 categories: electronics
 thumbnail:
 tags:
- - multistrand
- - single-core
- - double-over
 ---
 
 # Doubling over cable conductors

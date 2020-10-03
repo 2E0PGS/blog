@@ -8,8 +8,6 @@ categories: sysadmin
 thumbnail:
 tags:
  - Windows
- - RDP
- - Robocopy
 ---
 
 # Moving lots of files between two Windows servers

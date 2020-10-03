@@ -8,12 +8,7 @@ categories: sysadmin
 thumbnail:
 tags:
  - FreeBSD
- - Workstation
  - Linux
- - OpenBSD
- - GNU
- - TrueOS
- - GhostBSD
 ---
 
 # BSD as a backup plan to Linux

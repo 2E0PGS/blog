@@ -15,7 +15,7 @@ tags:
  - Node.js
  - MVC
  - C#
-- .NET Standard
+ - .NET Standard
 ---
 
 # Creating clients for the Overham API

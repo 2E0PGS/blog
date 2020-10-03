@@ -7,10 +7,7 @@ summary: My first venture into trying ergonomic ball mice to help with wrist RSI
 categories: personal
 thumbnail:
 tags:
- - ball
- - mouse
  - RSI
- - wrist
 ---
 
 # Wrist RSI from computer mice

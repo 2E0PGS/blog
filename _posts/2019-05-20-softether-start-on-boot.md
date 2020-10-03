@@ -8,7 +8,6 @@ categories: networking
 thumbnail:
 tags:
  - SoftEther
- - dhclient
  - Linux
 ---
 

@@ -8,7 +8,6 @@ categories: sysadmin
 thumbnail:
 tags:
  - VMware
- - ESXi
 ---
 
 # ESXi minimum RAM workaround

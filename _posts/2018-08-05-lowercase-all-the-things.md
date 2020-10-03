@@ -7,12 +7,8 @@ summary: Deciding on a personal file naming convention.
 categories: programming
 thumbnail:
 tags:
- - programming
- - lowercase
- - naming
- - convention
+ - naming convention
  - standardisation
- - files
 ---
 
 # Deciding on a personal file naming convention

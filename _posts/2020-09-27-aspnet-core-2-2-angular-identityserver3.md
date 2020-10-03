@@ -7,7 +7,6 @@ summary: Auth against IdentityServer3 in ASP.NET Core 2.2 and Angular 7
 categories: programming
 thumbnail:
 tags:
- - Web
  - API
  - Core
  - NuGet

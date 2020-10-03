@@ -8,11 +8,7 @@ categories: computers
 thumbnail:
 tags:
  - HP
- - Stream
- - models
- - laptops
- - notebook
- - cloudbook
+ - Dell
 ---
 
 # HP Stream model numbers

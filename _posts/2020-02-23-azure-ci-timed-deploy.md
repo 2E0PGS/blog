@@ -8,10 +8,7 @@ categories: sysadmin
 thumbnail:
 tags:
  - Azure
- - CI
- - DevOps
- - Deployments
- - Pipelines
+ - CI/CD
 ---
 
 # Azure CI timed deploy

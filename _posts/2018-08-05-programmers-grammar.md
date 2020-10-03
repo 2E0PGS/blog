@@ -8,11 +8,8 @@ categories: programming
 thumbnail:
 tags:
  - grammar
- - spelling
- - naming
- - convention
+ - naming convention
  - standardisation
- - programming
 ---
 
 # Programmers grammar

@@ -8,7 +8,7 @@ categories: programming
 thumbnail:
 tags:
  - UPS
- - ESXi
+ - VMware
  - Linux
  - programming
  - shell

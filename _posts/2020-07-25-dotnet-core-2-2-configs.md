@@ -7,7 +7,7 @@ summary: Config files in .NET Core 2.2
 categories: programming
 thumbnail:
 tags:
- - Web
+ - API
  - Core
  - config
  - console

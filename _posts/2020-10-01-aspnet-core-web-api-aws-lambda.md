@@ -7,7 +7,6 @@ summary: Testing AWS Lambda with ASP.NET Core Web API
 categories: programming
 thumbnail:
 tags:
- - Web
  - API
  - Core
  - AWS

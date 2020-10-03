@@ -8,10 +8,7 @@ categories: sysadmin
 thumbnail:
 tags:
  - Dell
- - workstation
  - Linux
- - stability
- - HDMI
 ---
 
 # Debugging Dell workstation stability

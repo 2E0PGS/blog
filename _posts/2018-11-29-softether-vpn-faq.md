@@ -8,9 +8,6 @@ categories: networking
 thumbnail:
 tags:
  - SoftEther
- - VPN
- - routing
- - routes
 ---
 
 # SoftEther VPN FAQ

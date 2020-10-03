@@ -8,15 +8,8 @@ categories: programming
 thumbnail:
 tags:
  - Android
- - APK
  - Windows
- - X86
  - Assembly
- - DEX
- - JAR
- - ILSpy
- - JD-GUI
- - apktool
 ---
 
 # Disassembling and reverse engineering binaries

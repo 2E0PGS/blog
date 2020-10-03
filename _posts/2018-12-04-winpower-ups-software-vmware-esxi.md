@@ -10,7 +10,6 @@ tags:
  - VMware
  - Winpower
  - UPS
- - ESXi
  - vCLI
 ---
 

@@ -6,6 +6,7 @@ author: Peter Stevenson
 summary: Using APRS to contact the ISS
 categories: hamradio
 thumbnail:
+feed_exclude_content: true
 tags:
  - IC-7100
  - mpv

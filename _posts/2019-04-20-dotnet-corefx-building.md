@@ -7,7 +7,7 @@ summary: Building corefx for testing a patch
 categories: programming
 thumbnail:
 tags:
- - Core
+ - .NET Core
  - .NET
  - C#
 ---

@@ -8,7 +8,7 @@ categories: programming
 thumbnail:
 tags:
  - API
- - Core
+ - .NET Core
  - command-line
  - .NET
  - ASP.NET

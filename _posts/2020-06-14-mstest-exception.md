@@ -8,8 +8,8 @@ categories: programming
 thumbnail:
 tags:
  - MSTest
- - Core
- - Framework
+ - .NET Core
+ - .NET Framework
  - .NET
  - C#
 ---

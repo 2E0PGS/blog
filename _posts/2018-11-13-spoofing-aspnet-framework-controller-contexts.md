@@ -8,7 +8,7 @@ categories: programming
 thumbnail:
 tags:
  - API
- - Framework
+ - .NET Framework
  - .NET
  - ASP.NET
  - C#

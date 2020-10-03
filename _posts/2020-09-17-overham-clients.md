@@ -8,13 +8,14 @@ categories: programming
 thumbnail:
 tags:
  - Overham
- - Core
+ - .NET Core
  - API
  - .NET
  - ASP.NET
  - Node.js
  - MVC
  - C#
+- .NET Standard
 ---
 
 # Creating clients for the Overham API

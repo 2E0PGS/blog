@@ -9,8 +9,8 @@ thumbnail:
 tags:
  - WebHooks
  - API
- - Framework
- - Core
+ - .NET Framework
+  - .NET Core
  - ASP.NET
 ---
 

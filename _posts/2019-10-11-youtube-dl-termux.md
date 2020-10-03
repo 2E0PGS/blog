@@ -9,7 +9,6 @@ thumbnail:
 tags:
  - Android
  - Termux
- - youtube-dl
 ---
 
 # youtube-dl on Android with Termux

@@ -8,9 +8,8 @@ categories: programming
 thumbnail:
 tags:
  - Git
- - Core
- - Standard
- - Framework
+ - .NET Core
+ - .NET Framework
  - NuGet
  - .NET
  - ASP.NET

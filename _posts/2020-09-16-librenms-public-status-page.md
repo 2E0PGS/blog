@@ -9,7 +9,8 @@ thumbnail:
 tags:
  - LibreNMS
  - C#
- - Core
+ - .NET Core
+ - .NET Standard
  - API
  - .NET
  - ASP.NET

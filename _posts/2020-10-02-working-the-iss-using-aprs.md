@@ -299,7 +299,7 @@ However I am happy the ISS did hear my hack job script beacon.
 
 I should try the ISS cross band voice repeater.
 
-I should also try recieve ISS SSTV images.
+~~I should also try recieve ISS SSTV images.~~ See: [ISS expedition 63 SSTV](https://2e0pgs.github.io/blog/hamradio/2020/10/11/iss-expedition-63-sstv)
 
 ## Useful links
 

@@ -53,6 +53,31 @@ This assumes a .NET Standard 2.0 class library with `Project.csproj` package ref
 2. If you plan to consume a .NET Standard 2.0 class library in a ASP.NET Framework 4.6.1 project you will need Visual Studio 2017 or newer.
 3. If it's a MVC project you will need to run the project, stop it and then double click the binding redirect warning to update the `Web.Config` automatically with the correct bindings.
 
+### .NET Standard 2.0 class library and .NET Framework 4.6.1 Windows Form
+
+`Could not load file or assembly`
+
+This assumes a .NET Standard 2.0 class library with `Project.csproj` package references and a .NET Framework 4.6.1 Windows Form project with `package.config`.
+
+1. Migrate the .NET Framework project to `project.json`.
+2. If you plan to consume a .NET Standard 2.0 class library in a .NET Framework 4.6.1 project you will need Visual Studio 2017 or newer.
+3. If the Windows Form project has no NuGet packages you can manually create the `project.json` with the following contents:
+
+```
+{
+	"dependencies": {
+
+	},
+	"frameworks": {
+	  "net461": {}
+	},
+	  "runtimes":  {
+		  "win-anycpu": {},
+		  "win": {}
+	  }
+  }
+```
+
 ### .NET Framework 4.6.1 class library and ASP.NET Framework 4.6.1 MVC
 
 This assumes two .NET Framework 4.6.1 projects with `package.config`.

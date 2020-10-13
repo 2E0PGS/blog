@@ -22,44 +22,31 @@ tags:
 
 This doesn't use a dep injector. KISS (Keep It Simple S...): [stackoverflow.com/a/46437144](https://stackoverflow.com/a/46437144)
 
-See real example: [Salsa/Program.cs](https://bitbucket.org/2E0PGS/salsa/src/master/Salsa/Program.cs)
+Install NuGet package Microsoft.Extensions.Configuration.Json
 
-## Note worthy stuff
-
-Use camelCase to conform to JSON standards but it seems MS cant decide if they want to stick to their old school PascalCase days. 
-
-UPDATE: They seem to mostly give camelCase example code snippets now. Originally they had PascalCase JSON property names in the scaffolding templates.
-
-* Call it `appsettings.json`.
-* _Untested example migration from web.config: [stackoverflow.com/a/52341105](https://stackoverflow.com/a/52341105)_ I say untested because I believe I did try this and it didn't work however I didn't spend much time at all testing maybe 5 mins.
-
-## ASP.NET Core projects
-
-Dep injection of config: [aspnet/core/fundamentals/configuration](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2)
-
-### Setup injector in Startup.cs class
+### Program.cs
 
 ```
-var builder = new ConfigurationBuilder()
-    .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
-IConfigurationRoot configuration = builder.Build();
-```
-
-See real example: [Core/Startup.cs](https://bitbucket.org/2E0PGS/core/src/master/Core/Startup.cs)
-
-### Retrieve/consume configs from a class
-
-```
-foreach(var repo in configuration.GetSection("repositories").GetChildren())
+static void Main(string[] args)
 {
-    string projectName = repo["projectName"];
-    string repositoryId = repo["repositoryId"];
+    var builder = new ConfigurationBuilder()
+        .SetBasePath(Directory.GetCurrentDirectory())
+        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+
+    IConfigurationRoot configuration = builder.Build();
+
+    foreach(var repo in configuration.GetSection("repositories").GetChildren())
+    {
+        string projectName = repo["projectName"];
+        string repositoryId = repo["repositoryId"];
+    }
 }
 ```
 
-## Example appsettings.json
+### Example appsettings.json
+
+Ensure this files properties are set to: "Copy to Output Directory" aka `<CopyToOutputDirectory>`
 
 ```
 "repositories": [
@@ -77,3 +64,79 @@ foreach(var repo in configuration.GetSection("repositories").GetChildren())
   }
 ]
 ```
+
+See real example: [Salsa/Program.cs](https://bitbucket.org/2E0PGS/salsa/src/master/Salsa/Program.cs)
+
+## ASP.NET Core projects
+
+Dep injection of config: [aspnet/core/fundamentals/configuration](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2)
+
+### Startup.cs
+
+```
+public Startup(IConfiguration configuration)
+{
+    Configuration = configuration;
+}
+
+public IConfiguration Configuration { get; }
+
+public void ConfigureServices(IServiceCollection services)
+{
+    ...
+
+    services.Configure<MyProject.Models.AppSettings>(Configuration.GetSection("MySection"));
+}
+```
+
+### Example appsettings.json
+
+```
+{
+  "MySection": {
+    "ApiUrl": "http://api.myapp.mydomain.org",
+    "ApiVersion": 2
+  }
+}
+```
+
+### AppSettings.cs
+
+```
+public class AppSettings
+{
+    public string ApiUrl { get; set; }
+    public int ApiVersion { get; set; }
+}
+```
+
+### Controller.cs
+
+```
+public class MyController : Controller
+{
+    private readonly AppSettings _appSettings;
+
+    public MyController(IOptions<AppSettings> appSettings)
+    {
+        _appSettings = appSettings.Value;
+    }
+
+    public IActionResult Index()
+    {
+        string apiUrl = _appSettings.ApiUrl;
+        return View();
+    }
+}
+```
+
+See real example: [Core/Startup.cs](https://bitbucket.org/2E0PGS/core/src/master/Core/Startup.cs)
+
+## Note worthy stuff
+
+Use camelCase to conform to JSON standards but it seems MS cant decide if they want to stick to their old school PascalCase days. 
+
+UPDATE: They seem to mostly give camelCase example code snippets now. Originally they had PascalCase JSON property names in the scaffolding templates.
+
+* Call it: `appsettings.json`.
+* _Untested example migration from web.config: [stackoverflow.com/a/52341105](https://stackoverflow.com/a/52341105)_ I say untested because I believe I did try this and it didn't work however I didn't spend much time at all testing maybe 5 mins.

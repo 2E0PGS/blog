@@ -51,7 +51,7 @@ Ensure this files properties are set to: "Copy to Output Directory" aka `<CopyTo
 ```
 "repositories": [
   {
-    "projectName": "repo0,
+    "projectName": "repo0",
     "repositoryId": "b1821e2e-94c5-4cf0-824c-41d41966207e"
   },
   {

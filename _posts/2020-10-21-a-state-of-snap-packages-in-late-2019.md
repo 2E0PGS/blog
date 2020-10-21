@@ -14,7 +14,7 @@ tags:
 
 Ubuntu 19.10 running in a VirtualBox VM.
 
-![ubuntu-19-10](blog/assets/2020-10-21/ubuntu-19-10.png)
+![ubuntu-19-10](/blog/assets/2020-10-21/ubuntu-19-10.png)
 
 We are starting to see the turn to snaps in Ubuntu 19.10. Ubuntu has been shipping with a couple snaps for a while but we are seeing a ever increasing amount of apps becoming snaps by default. Here I install a few more and test using entirely snap where possible.
 

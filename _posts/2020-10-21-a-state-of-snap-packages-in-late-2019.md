@@ -23,3 +23,5 @@ See my comments in the screenshot vim terminal.
 I believe there were two packages for each program under the Ubuntu software store, one for snap version and one for non-snap.
 
 Looks promising, although I would like to see a bit more security from snaps such as better file system isolation or less permitted by default.
+
+Snaps are nice for added security if used right. I prefer AppImage for portability. Although the two are not the same.

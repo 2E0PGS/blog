@@ -56,7 +56,7 @@ S9 RX signal strength when passing overhead.
 
 ![PD120_20201008_115646](/blog/assets/2020-10-11/PD120_20201008_115646.png)
 
-See my YouTube video of a ISS SSTV picture being decoded in real time: ![TBA]()
+See my YouTube video of a ISS SSTV picture being decoded in real time: [ISS - RS0ISS SSTV Expedition 63](https://youtu.be/h9kOGApdnd8)
 
 ## Award
 

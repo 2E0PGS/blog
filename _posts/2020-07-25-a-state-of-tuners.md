@@ -21,57 +21,45 @@ Covering digital modes of satellite, terrestrial and amateur TV.
 
 The following software is useful for testing.
 
-[VLC](https://www.videolan.org)
-
-[mpv](https://mpv.io/)
-
-[w_scan](https://linuxtv.org/wiki/index.php/W_scan)
-
-[kaffeine](https://kde.org/applications/multimedia/org.kde.kaffeine)
-
-[SDRangel](https://github.com/f4exb/sdrangel)
-
-[Tvheadend](https://github.com/tvheadend/tvheadend)
+* [VLC](https://www.videolan.org)
+* [mpv](https://mpv.io/)
+* [w_scan](https://linuxtv.org/wiki/index.php/W_scan)
+* [kaffeine](https://kde.org/applications/multimedia/org.kde.kaffeine)
+* [SDRangel](https://github.com/f4exb/sdrangel)
+* [Tvheadend](https://github.com/tvheadend/tvheadend) See: [Tvheadend installation](#tvheadend-installation)
 
 ## Modes
 
 ### Digital
 
-DVB-T
-
-DVB-T2
-
-DVB-S
-
-DVB-S2
-
-DVB-C
+* DVB-T
+* DVB-T2
+* DVB-S
+* DVB-S2
+* DVB-C
 
 ### Analog
 
-PAL-I
+* PAL-I
 
 ## Adapters and accessories
 
 You will need a range of adapters if you wish to use RTL devices.
 
-75 Ohm coax.
-
-Bias Tee for LNB power.
-
-LNB DC power blocker. Used for connecting a passive device like a Yagi to a tuner which supplies LNB power. Do not trust the LNB power option inside the set top box settings. Sometimes there isn't even a option. See eBay listing: [F Screw Type DC Power Blocking Blocker Inline In Line Connector Coupler 100994](https://www.ebay.co.uk/itm/F-Screw-Type-DC-Power-Blocking-Blocker-Inline-In-Line-Connector-Coupler-100994/112227310735)
+* 75 Ohm coax.
+* Bias Tee for LNB power.
+* LNB DC power blocker. Used for connecting a passive device like a Yagi to a tuner which supplies LNB power. Do not trust the LNB power option inside the set top box settings. Sometimes there isn't even a option. See eBay listing: [F Screw Type DC Power Blocking Blocker Inline In Line Connector Coupler 100994](https://www.ebay.co.uk/itm/F-Screw-Type-DC-Power-Blocking-Blocker-Inline-In-Line-Connector-Coupler-100994/112227310735)
 
 ## Polarisation
 
 ### Yagi
 
-Horizontal
-
-Vertical
+* Horizontal
+* Vertical
 
 ### Special
 
-Circular
+* Circular
 
 ### Universal LNBs
 
@@ -88,11 +76,9 @@ Ref: [wiki/Low-noise_block](https://en.wikipedia.org/wiki/Low-noise_block_downco
 
 ## Antenna systems
 
-UHF Yagi. Most common for modern terrestrial DVB-T, DVB-T2 Freeview. If doing DATV DVB-S you must use a LNB DC power blocker.
-
-VHF Yagi. Old analog TV.
-
-Universal LNB + dish. Most common for satellite DVB-S, DVB-S2 Freesat. Also can be used for: QO-100/Es'hail-2
+* UHF Yagi. Most common for modern terrestrial DVB-T, DVB-T2 Freeview. If doing DATV DVB-S you must use a LNB DC power blocker.
+* VHF Yagi. Old analog TV.
+* Universal LNB + dish. Most common for satellite DVB-S, DVB-S2 Freesat. Also can be used for: QO-100/Es'hail-2
 
 ## Test signals
 
@@ -106,23 +92,19 @@ Universal LNB + dish. Most common for satellite DVB-S, DVB-S2 Freesat. Also can 
 
 Important to ensure we have the bandwidth for video.
 
-USB 2.0 revised = 60 MBps 
-
-PCI standard 32 bit = 133 MBps
-
-PCI-E x4 = 800 MBps (am I using PCI 3.0?)
+* USB 2.0 revised = 60 MBps 
+* PCI standard 32 bit = 133 MBps
+* PCI-E x4 = 800 MBps (am I using PCI 3.0?)
 
 ## Linux paths
 
-Analog video sources: `/dev/video0`
-
-Digital TV sources: `/dev/dvb/adapter0`
+* Analog video sources: `/dev/video0`
+* Digital TV sources: `/dev/dvb/adapter0`
 
 ## Other experiments
 
-Using a TV antenna for ham radio band reception.
-
-DAB decoding using RTL dongle and FOSS software using: [welle.io](https://github.com/AlbrechtL/welle.io)
+* Using a TV antenna for ham radio band reception.
+* DAB decoding using RTL dongle and FOSS software using: [welle.io](https://github.com/AlbrechtL/welle.io)
 
 ## Device table
 
@@ -142,13 +124,13 @@ Note: Generic RTL devices may require a PPM offset outside their intended use ce
 
 ## VLC DVB-T RTL
 
-Quick and simple command to view TV on VLC using a RTL dongle: `vlc dvb-t://frequency=578000000:bandwidth=0`
+* Quick and simple command to view TV on VLC using a RTL dongle: `vlc dvb-t://frequency=578000000:bandwidth=0`
+* Record `cvlc` transport stream headless: `cvlc dvb-t://frequency=578000000:bandwidth=0 :program=8384 --sout "#file{dst=/home/anon/recording.ts,no-overwrite}"`
 
 ## AsusTek - LNA Tiger Hybrid signal issues
 
-Windows VLC: Not good signal at all. Very blocky. For some reason will decode in DVB-T2 but I don't believe it really is doing V2. See screenshots of VLC codec info.
-
-Linux VLC: No decode as of yet. Sometimes syncs but never a image or error under `-vvv` console output.
+* Windows VLC: Not good signal at all. Very blocky. For some reason will decode in DVB-T2 but I don't believe it really is doing V2. See screenshots of VLC codec info.
+* Linux VLC: No decode as of yet. Sometimes syncs but never a image or error under `-vvv` console output.
 
 ## Firmware
 
@@ -180,6 +162,11 @@ sudo reboot
 ```
 
 ![pci-cards-internal.jpg](/blog/assets/2020-07-25/pci-cards-internal.jpg)
+
+## Tvheadend installation
+
+* I noticed it's easier to setup tuners if the tuner is already present with required firmware before starting Tvheadend for the first time. This is because the wizard guides you through based on the type of tuner.
+* [Install Tvheadend on Ubuntu 18.04 server](https://lintut.com/install-tvheadend-on-ubuntu-18-04-server/)
 
 ## Tvheadend found services test
 

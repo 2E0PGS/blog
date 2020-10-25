@@ -22,7 +22,7 @@ tags:
 * WhatsApp - Recently implemented E2E encryption I believe it's based on Signal Protocol. Web app is great.
 * WeChat - More commonly used in Asia.
 * SMS/MMS - It's a useful backup.
-* Email - Probably hit it's peak a long time ago, now becoming outdated.
+* Email - Probably hit its peak a long time ago, now becoming outdated.
 * Skype
 * Facebook Messenger
 * Snapchat - False sense of privacy.
@@ -31,6 +31,9 @@ tags:
 * Viber
 * LINE
 * iMessage - Apple specific.
+* Steam chat - Steam specific.
+* Xbox Live - Xbox specific.
+* PSN aka PlayStation Messages - PSN specific.
 
 ## Common team chats
 

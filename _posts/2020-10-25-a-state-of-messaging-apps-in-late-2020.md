@@ -26,7 +26,6 @@ tags:
 * Skype
 * Facebook Messenger
 * Snapchat - False sense of privacy.
-* Viber
 * Kik
 * Viber
 * LINE

@@ -85,8 +85,9 @@ Below is a table of various notebooks I have and their line spacing. All besides
 | Hamelin Paperbrands      | squared     | A5     | 5 mm²          | 3/16 in²         |
 | Hamelin Paperbrands      | lined       | A5     | 8 mm           | 5/16 in          |
 | Hamelin Paperbrands      | lined       | A4     | 8 mm           | 5/16 in          |
-| Rhino                    | squared     | A5     | 7 mm²          | 9/32 n²          |
+| Rhino                    | squared     | A5     | 7 mm²          | 9/32 in²         |
 | Rhino                    | lined       | A4     | 8 mm           | 5/16 in          |
+| Rhodia Yellow Page No19  | lined       | A4+    | 7 mm           | 9/32 in          |
 
 I also saw on Amazon that Cambridge, Oxford Campus and Oxford Black n' Red notebooks use 8 mm line spacing.
 
@@ -100,6 +101,7 @@ For school books ruling see: [rhinostationery.com/page-ruling-guides](https://ww
 * [Finding the best notebook](https://www.buzzfeed.com/josephinewolff/how-finding-the-perfect-notebook-made-me-less-anxious-about) as much as I don't want to reference this I think it's worth including it.
 * [Reddit thread on line spacing of notebooks](https://www.reddit.com/r/notebooks/comments/540t28/lets_talk_about_line_spacing/)
 * [How to use engineering paper](https://www.customessays.co.uk/blog/essay/how-to-use-an-engineering-paper)
+* [Why Are Legal Pads Yellow and Why Do Lawyers Love Them?](https://www.exhibitindexes.com/blog/why-are-legal-pads-yellow-and-why-do-lawyers-love-them/)
 
 ## Research videos
 

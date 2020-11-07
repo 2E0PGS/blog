@@ -33,7 +33,7 @@ make-smaller-titles: true
 
     {% for tag in site.tags %}
       <div class="col-md-12 content-panel articles">
-        <!-- Make sure the tag isn't a long int. Couldn't figure out variable incapsulation here. -->
+        <!-- Make sure the tag isn't a lone int. Couldn't figure out variable encapsulation here. -->
         <h2 id="{{ tag | first | slugify }}">{{ tag | first }}</h2>
           <ul>
             {% for posts in tag %}

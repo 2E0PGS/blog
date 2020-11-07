@@ -10,6 +10,7 @@ tags:
  - IC-7100
  - Hamlib
  - Linux
+ - LibreNMS
 ---
 
 # LibreNMS and rigctld

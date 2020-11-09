@@ -13,7 +13,7 @@ tags:
 
 # Notes and paper
 
-I always take notes. I find however I spread my notes across too many pieces of paper. Often a piece of scrap A4 is used for diagrams/sketches of software architecture. Other times it's Post-it Note as they were closest to hand. However I eventually end up with lots of notes spread everywhere. I realised a while back that I need to consolidate all my notes into one book. Then I always have all my notes with me. 
+I always take notes. I find however I spread my notes across too many pieces of paper. Often a piece of scrap A4 is used for diagrams/sketches of software architecture. Other times it's Post-it Notes as they were closest to hand. However I eventually end up with lots of notes spread everywhere. I realised a while back that I need to consolidate all my notes into one book. Then I always have all my notes with me. 
 
 First rule was no Post-it Notes. 
 
@@ -35,7 +35,7 @@ I wasn't strict enough on myself with notes but I was working towards improving 
 
 I noticed this new note taking system would work well with squared paper. I see Adam using plain and square paper in his examples. I was pondering which paper is the most universal. That way I was sure to only need one notebook. The paper needs to work for strongly typed notes (spaced nicely to the page), loosely typed notes (annotations), not to scale diagrams, to scale diagrams and drawings.
 
-I did a bit of research on the different paper types. I started with my own notebooks. I noticed some interesting things. Lined paper isn't always the same line spacing. Rite in the rain have a special "universal" format which I cannot find anyone else doing. It's lined with dotted less visible grid. The grid avoids visual overload but its there when required. [Click for for example](https://cdn3.volusion.com/fyqtn.tvutc/v/vspfiles/photos/RITR-774-MX-3.jpg)
+I did a bit of research on the different paper types. I started with my own notebooks. I noticed some interesting things. Lined paper isn't always the same line spacing. Rite in the rain have a special "universal" format which I cannot find anyone else doing. It's lined with dotted less visible grid. The grid avoids visual overload but its there when required: [Click here for example](https://cdn3.volusion.com/fyqtn.tvutc/v/vspfiles/photos/RITR-774-MX-3.jpg)
 
 USA notebooks use inches for spacing. UK was mm spacing. Germany has a standard of 6mm line spacing.
 
@@ -93,7 +93,19 @@ I also saw on Amazon that Cambridge, Oxford Campus and Oxford Black n' Red noteb
 
 ~~Oddly enough there isn't currently a United Kingdom subheading on the [Wikipedia ruled paper](https://en.wikipedia.org/wiki/Ruled_paper) page for line spacing.~~ I have since updated the Wikipedia page.
 
-For school books ruling see: [rhinostationery.com/page-ruling-guides](https://www.rhinostationery.com/page-ruling-guides/)
+For school books ruling codes see: [rhinostationery.com/page-ruling-guides](https://www.rhinostationery.com/page-ruling-guides/)
+
+## Lab notebook
+
+I don't touch too much on this topic in this post because science laboratory notebooks normally have a specific format and they're more focused on scientific research including a hypothesis, experiments and proof of work. This is somewhat in contrast to engineering where we focus more on practical implementation options, contention points and architecture diagrams or meeting notes. However there is some useful pointers we can glean from science lab notebooks.
+
+* [Wikipedia lab notebook](https://en.wikipedia.org/wiki/Lab_notebook)
+* [A pocket guide to electronic laboratory notebooks in the academic life sciences](https://www.researchgate.net/publication/291019385_A_pocket_guide_to_electronic_laboratory_notebooks_in_the_academic_life_sciences) Specifically around electronic laboratory notebooks (eLN).
+* [MIT - Instructions for Using Your Laboratory Notebook](http://web.mit.edu/me-ugoffice/communication/labnotebooks.pdf)
+* [University of Glasgow - Keeping a Laboratory Notebook](https://edshare.gla.ac.uk/653/1/University%20of%20Glasgow%20Lab%20Notebook%20Guidance.docx)
+* [Imperial College London - Keeping A Good Laboratory Record Book](https://www.imperial.ac.uk/pls/portallive/docs/1/7289716.PDF)
+
+I agree with adding a date, subject heading and a index or in my case a page marker aka filing flag for long running or often revisited sections.
 
 ## Research links
 
@@ -120,3 +132,4 @@ For school books ruling see: [rhinostationery.com/page-ruling-guides](https://ww
 * [LEUCHTTURM1917 344783 (A5), 249 numbered pages, squared, anthracite](https://www.amazon.co.uk/gp/product/B00FWRICHE/) 5 mm square
 * [AmazonBasics Classic Notebook, Plain 240 pages, Large](https://www.amazon.co.uk/gp/product/B01DN8TB5U) basically A5 size
 * [AmazonBasics Classic Notebook, Squared 240 pages, Large](https://www.amazon.co.uk/gp/product/B01DN8TEA2) 5 mm square, my current notebook at time of writing.
+* [Rhodia Yellow Page Notepad, No19 A4+, Lined](https://www.amazon.co.uk/Rhodia-Stapled-Yellow-paper-Lined/dp/B001DCDSTY) Yellow legal pad

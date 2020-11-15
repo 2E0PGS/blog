@@ -39,7 +39,7 @@ This is basically my general naming convention. Program source files have their 
 ## References
 
 * [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf)
-* [Uniform Resource Locators (URL)](https://tools.ietf.org/html/rfc1738)
+* [RFC1738 - Uniform Resource Locators (URL)](https://tools.ietf.org/html/rfc1738)
 * [Jekyll structure](https://jekyllrb.com/docs/structure)
 * [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html#file-name)
 * [Angular coding style guide](https://angular.io/guide/styleguide#symbols-and-file-names)

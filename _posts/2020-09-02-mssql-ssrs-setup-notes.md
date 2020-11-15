@@ -45,7 +45,7 @@ Map this login to each DB the reporting service will be retrieving data from.
 
 Add execution permissions to your user if reporting service will call store procedures:
 
-```
+```sql
 USE [MyDb]
 GO
 GRANT EXECUTE TO [MyUser]

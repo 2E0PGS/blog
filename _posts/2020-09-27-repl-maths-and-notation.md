@@ -71,7 +71,7 @@ You will run into int based calculations unless specifying decimal variables/inp
 
 Console application example
 
-```
+```csharp
 Console.WriteLine((decimal)5 / (decimal)6);
 
 Console.WriteLine((int)5 / (decimal)6);
@@ -98,7 +98,7 @@ Console.WriteLine(int1 / decimal1);
 
 Output
 
-```
+```csharp
 dotnet run
 0.8333333333333333333333333333
 0.8333333333333333333333333333
@@ -117,7 +117,7 @@ System.Decimal
 
 Interactive window example
 
-```
+```csharp
 > 5/6
 0
 > 5m/6m
@@ -153,7 +153,7 @@ In interactive mode the last output is in variable: `.Last.Value`
 
 ### SQL
 
-```
+```sql
 select 6+8 as ans
 ```
 
@@ -180,14 +180,14 @@ Can also be used on Termux on Android see my blog post: [Everyday Termux uses](h
 
 #### Python2.7
 
-```
+```python
 >>> 5/6
 0
 ```
 
 #### Python3.6
 
-```
+```python
 >>> 5/6
 0.8333333333333334
 ```

@@ -32,7 +32,7 @@ Looking at the official Jekyll docs we get some pointers on how to setup the loc
 * `Gemfile` and `.gitignore` is really all it adds, you should still run with `--force` so the URLs are `localhost` not `github.io`
 * I just scrap the changes in `git` from `jekyll new` besides the ones I manually made to patch the bugs once I am done debugging.
 
-```
+```sh
 git clone https://github.com/2E0PGS/blog.git
 
 jekyll new blog --force

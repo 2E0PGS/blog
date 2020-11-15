@@ -25,7 +25,7 @@ Three projects involved:
 
 ## RTL-SDR installation
 
-```
+```sh
 git clone git://git.osmocom.org/rtl-sdr.git
 
 cd rtl-sdr/
@@ -49,7 +49,7 @@ sudo ldconfig
 
 ## multimon-ng installation
 
-```
+```sh
 git clone https://github.com/EliasOenal/multimon-ng.git
 
 cd multimon-ng/
@@ -70,7 +70,7 @@ sudo make install
 
 ## pymultimonaprs installation
 
-```
+```sh
 git clone https://github.com/asdil12/pymultimonaprs.git
 
 cd multimon-ng/

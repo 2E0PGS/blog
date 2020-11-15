@@ -18,7 +18,7 @@ tags:
 
 Create a password file for basic auth.
 
-```
+```sh
 ubuntu@graylog:/etc/nginx/sites-enabled$ sudo vim /etc/nginx/.htpasswd
 ```
 
@@ -30,7 +30,7 @@ foo:$apr1$vqJ3Ea4I$fHhdVhmLBKflt.3wyKpLu/
 
 Change default site on nginx.
 
-```
+```sh
 ubuntu@graylog:/etc/nginx/sites-enabled$ sudo vim default
 ```
 
@@ -70,7 +70,7 @@ server {
 
 Restart the service
 
-```
+```sh
 ubuntu@graylog:/etc/nginx/sites-enabled$ sudo service nginx restart
 ```
 
@@ -80,17 +80,17 @@ if you get errors check syslog.
 
 Normal http gelf on port 12202
 
-```
+```sh
 peter@desktop:~$ curl 192.168.2.22:12202/gelf -X POST -H 'Content-Type: application/json' -d '{ "short_message": "A short message", "level": 5 }'
 ```
 
 Checking http reverse proxy on port 80
 
-```
+```sh
 peter@desktop:~$ curl 192.168.2.22:80/sgelf -X POST -H 'Content-Type: application/json' -d '{ "short_message": "from sgelf", "level": 5 }'
 ```
 
-```
+```html
 <html>
 <head><title>401 Authorization Required</title></head>
 <body bgcolor="white">
@@ -102,7 +102,7 @@ peter@desktop:~$ curl 192.168.2.22:80/sgelf -X POST -H 'Content-Type: applicatio
 
 Try with auth now
 
-```
+```sh
 peter@desktop:~$ curl 192.168.2.22:80/sgelf -X POST -H 'Content-Type: application/json' -H "Authorization: Basic $(echo -n foo:bar | base64)" -d '{ "short_message": "from sgelf with pass", "level": 5 }'
 ```
 
@@ -129,7 +129,7 @@ Remove default-site.
 
 ### Add Let's Encrypt SSL
 
-```
+```sh
 sudo add-apt-repository ppa:certbot/certbot
 
 sudo apt-get update
@@ -141,7 +141,7 @@ sudo certbot --nginx -d logger.example.com
 
 ### Checking it (CURL)
 
-```
+```sh
 peter@desktop:~$ curl https://logger.example.com -X POST -H 'Content-Type: application/json' -H "Authorization: Basic $(echo -n foo:bar | base64)" -d '{ "short_message": "https reverse basic auth proxy", "level": 5 }'
 ```
 
@@ -151,7 +151,7 @@ I wrote a C# library for Graylog which also supports reverse proxies: [graylog-c
 
 ### Example
 
-```
+```csharp
 using System;
 using System.Diagnostics;
 

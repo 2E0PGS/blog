@@ -26,7 +26,7 @@ Using `IdentityServer4.AccessTokenValidation` NuGet packages to auth against Ide
 
 ### Startup.cs
 
-```
+```csharp
 services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
 .AddJwtBearer(
 options =>
@@ -56,7 +56,7 @@ Using `IdentityServer4.AccessTokenValidation` NuGet packages to auth against Ide
 
 ### Startup.cs
 
-```
+```csharp
 // If you need to fix claim mapping to be backwards compatible.
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap = new Dictionary<string, string>
 {
@@ -102,7 +102,7 @@ Angular can use [IdentityModel/oidc-client-js](https://github.com/IdentityModel/
 
 ### environment.ts
 
-```
+```typescript
   openIdConnectSettings: {
     authority: 'https://youridentityserver3instance.com/identity',
     client_id: 'myclient',

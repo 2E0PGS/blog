@@ -27,7 +27,7 @@ Disable the button on the lock screen using ini: `/usr/share/mate-screensaver/lo
 
 Change the line `<property name="visible">True</property>` to `<property name="visible">False</property>` in the following block like so.
 
-```
+```xml
 <child>
 	<object class="GtkButton" id="auth-note-button">
 		<property name="label" translatable="yes">_Leave Message</property>

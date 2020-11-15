@@ -22,7 +22,7 @@ This is useful if you need to make use of Rotativa in a ASP.NET Framework Web AP
 
 ## The fake controller context helper class
 
-```
+```csharp
 namespace MyProject.Models
 {
     public class FakeController : Controller
@@ -42,9 +42,10 @@ namespace MyProject.Models
     }
 }
 ```
+
 ## Example of another class making use of our fake controller context helper class
 
-```
+```csharp
 // Create new controller instance that you want to spoof.
 MagicController magicController = new MagicController();
 

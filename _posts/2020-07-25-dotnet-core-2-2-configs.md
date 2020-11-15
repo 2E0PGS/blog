@@ -26,8 +26,7 @@ Install NuGet package Microsoft.Extensions.Configuration.Json
 
 ### Program.cs
 
-```
-
+```csharp
 static void Main(string[] args)
 {
     var builder = new ConfigurationBuilder()
@@ -48,7 +47,7 @@ static void Main(string[] args)
 
 Ensure this files properties are set to: "Copy to Output Directory" aka `<CopyToOutputDirectory>`
 
-```
+```json
 "repositories": [
   {
     "projectName": "repo0",
@@ -73,7 +72,7 @@ Dep injection of config: [aspnet/core/fundamentals/configuration](https://docs.m
 
 ### Startup.cs
 
-```
+```csharp
 public Startup(IConfiguration configuration)
 {
     Configuration = configuration;
@@ -91,7 +90,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ### Example appsettings.json
 
-```
+```json
 {
   "MySection": {
     "ApiUrl": "http://api.myapp.mydomain.org",
@@ -102,7 +101,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ### AppSettings.cs
 
-```
+```csharp
 public class AppSettings
 {
     public string ApiUrl { get; set; }
@@ -112,7 +111,7 @@ public class AppSettings
 
 ### Controller.cs
 
-```
+```csharp
 public class MyController : Controller
 {
     private readonly AppSettings _appSettings;

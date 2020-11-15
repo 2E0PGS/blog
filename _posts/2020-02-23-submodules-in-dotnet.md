@@ -63,7 +63,7 @@ This assumes a .NET Standard 2.0 class library with `Project.csproj` package ref
 2. If you plan to consume a .NET Standard 2.0 class library in a .NET Framework 4.6.1 project you will need Visual Studio 2017 or newer.
 3. If the Windows Form project has no NuGet packages you can manually create the `project.json` with the following contents:
 
-```
+```json
 {
 	"dependencies": {
 

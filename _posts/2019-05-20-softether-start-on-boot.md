@@ -17,7 +17,7 @@ Based on a Debian crontab.
 
 The SoftEther client requires a manual DHCP client call after starting to get an IP.
 
-```
+```sh
 @reboot /home/anon/vpnclient/vpnclient start
 
 @reboot sleep 10; /sbin/dhclient vpn_vpn

@@ -26,11 +26,13 @@ See my community suggestion: [Services that are not checked colour](https://comm
 
 SQL to assign them to another device id:
 
-```
+```sh
 sudo su
 
 mysql
+```
 
+```sql
 use librenms
 
 select * from services where device_id = 44;

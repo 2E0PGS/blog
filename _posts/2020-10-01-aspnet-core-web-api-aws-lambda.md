@@ -51,7 +51,7 @@ So its not just me who removes the extra bits or creates the API Gateway manuall
 
 Blueprint method signature:
 
-```
+```csharp
 [HttpGet("{id}")]
 public string Get(int id)
 ```
@@ -68,7 +68,7 @@ Based on ASP.NET Core 3.1
 
 ##### Request
 
-```
+```sh
 curl --request POST \
   --url https://redacted.execute-api.eu-west-1.amazonaws.com/default/v1/values \
   --header 'content-type: application/json' \
@@ -80,7 +80,7 @@ curl --request POST \
 
 ##### Response
 
-```
+```json
 {
     "motd": "Hello from AWS serverless.",
     "data": "testing",
@@ -109,7 +109,7 @@ Blueprint method signature: `public string FunctionHandler(RequestModel requestM
 
 #### Example
 
-```
+```csharp
 public string FunctionHandler(RequestModel requestModel, ILambdaContext context)
 {
     return requestModel.lowercase?.ToUpper();
@@ -128,7 +128,7 @@ I would have to discern the request type based on `request.HttpMethod`. I am not
 
 #### Modified example
 
-```
+```csharp
 public APIGatewayProxyResponse Post(APIGatewayProxyRequest request, ILambdaContext context)
 {
     context.Logger.LogLine("Post Request\n");
@@ -180,24 +180,24 @@ They probably prefer you using the `serverless.template` because it adds the met
 
 Doesn't work, returns 405 method not allowed.
 
-```
+```csharp
 [HttpPost]
 public string Post([FromBody]string value)
 ```
 
 The below do work, returns 200. This appears to be a routing issue.
 
-```
+```csharp
 [HttpPost("{id}")]
 public string Post([FromBody]string value)
 ```
 
-```
+```csharp
 [HttpPost("{anything}")]
 public string Post([FromBody]string value)
 ```
 
-```
+```csharp
 [HttpPost]
 [Route("{anything}")]
 public string Post([FromBody]string value)
@@ -211,7 +211,7 @@ It will return unsupported media type for POST unless you send with header `Cont
 
 Working routing on this without ASP "route template" if using `{proxy+}`
 
-```
+```csharp
     [Route("v1/values")]
     public class ValuesController : ControllerBase
     {

@@ -36,7 +36,7 @@ My hack job script below got my packet on the map using a IC-7100 running 25 w i
 
 I have a previous blog post on rigctl: [here](https://2e0pgs.github.io/blog/programming/2018/12/17/ic7100-hamlib/)
 
-```
+```sh
 $ cat aprs-tx.sh 
 #!/bin/bash
 
@@ -45,7 +45,7 @@ mpv aprs-2e0pgs-6.mp3 --audio-device='pulse/alsa_output.usb-Burr-Brown_from_TI_U
 /usr/local/bin/rigctl -r /dev/ttyUSB0 -m 370 T 0
 ```
 
-```
+```sh
 watch -n 60 ./aprs-tx.sh
 ```
 
@@ -95,7 +95,7 @@ The [PDF User Guide](https://github.com/wb2osz/direwolf/blob/master/doc/User-Gui
 
 Let's set up a more proper TX and RX APRS modem with iGate and SatGate function. I believe SatGate is just a fancy term for a iGate listening on satellite frequencies e.g. 145.825
 
-```
+```sh
 sudo apt-get install libasound2-dev
 git clone https://www.github.com/wb2osz/direwolf
 cd direwolf

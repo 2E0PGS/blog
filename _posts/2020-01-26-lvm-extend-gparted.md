@@ -61,7 +61,7 @@ Run the following commands.
 
 Check `/dev` for the correct device names. It normally includes the initial system hostname.
 
-```
+```sh
 sudo lvextend -l+100%FREE /dev/minecraft-vg/root
 
 sudo resize2fs /dev/mapper/minecraft--vg-root

@@ -136,7 +136,7 @@ Note: Generic RTL devices may require a PPM offset outside their intended use ce
 
 ### AsusTek - LNA Tiger Hybrid
 
-```
+```sh
 wget https://github.com/OpenELEC/dvb-firmware/blob/master/firmware/dvb-fe-tda10046.fw?raw=true -O dvb-fe-tda10046.fw
 sudo cp dvb-fe-tda10046.fw /lib/firmware
 sudo reboot
@@ -144,7 +144,7 @@ sudo reboot
 
 ### Xbox One - Digital TV Tuner
 
-```
+```sh
 wget http://palosaari.fi/linux/v4l-dvb/firmware/MN88472/02/latest/dvb-demod-mn88472-02.fw
 sudo cp dvb-demod-mn88472-02.fw /lib/firmware
 sudo reboot
@@ -154,7 +154,7 @@ sudo reboot
 
 Ref: [github.com/ljalves/linux_media](https://github.com/ljalves/linux_media/wiki/CX24117-firmware)
 
-```
+```sh
 wget http://www.tbsdtv.com/download/document/common/tbs-linux-drivers_v130901.zip
 unzip -p tbs-linux-drivers_v130901.zip linux-tbs-drivers.tar.bz2 | tar jxOf - linux-tbs-drivers/v4l/tbs6981fe_driver.o.x86_64 | dd bs=1 skip=10144 count=55486 of=dvb-fe-cx24117.fw
 sudo cp dvb-fe-cx24117.fw /lib/firmware

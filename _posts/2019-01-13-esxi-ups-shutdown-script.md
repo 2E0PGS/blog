@@ -35,4 +35,4 @@ echo "$(date) - UPS started ESXi shutdown" >> esxi-ups-log.txt
 poweroff
 ```
 
-The poweroff command is fine for ESXi version 4 and above: https://kb.vmware.com/s/article/1013193
+The `poweroff` command is fine for ESXi version 4 and above: https://kb.vmware.com/s/article/1013193

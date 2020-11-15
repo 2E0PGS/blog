@@ -24,7 +24,7 @@ These commands maybe of use to someone as I recall it was slightly tricky to fig
 
 Useful corefx documentation: [advanced-inner-loop-testing.md](https://github.com/dotnet/corefx/blob/master/Documentation/building/advanced-inner-loop-testing.md)
 
-```
+```sh
 cd ~/repos/corefx/
 
 ./build.sh -release

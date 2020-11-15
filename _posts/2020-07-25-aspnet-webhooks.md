@@ -50,7 +50,7 @@ See below example in `Startup.cs`
 
 ## Startup.cs
 
-```
+```csharp
 // Initialize MS WebHook Apis.
 config.InitializeCustomWebHooks();
 config.InitializeCustomWebHooksSqlStorage();

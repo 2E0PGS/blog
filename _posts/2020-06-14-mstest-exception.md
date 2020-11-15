@@ -26,7 +26,7 @@ In old .NET Framework test library you don't have the Assert.Throws.
 
 So use below try catch return.
 
-```
+```csharp
 [TestMethod]
 public void GetStuff_ThrowsException()
 {

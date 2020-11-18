@@ -22,8 +22,8 @@ tags:
 * WhatsApp - WhatsApp Web is great.
 	* [Open Whisper Systems partners with WhatsApp to provide end-to-end encryption](https://signal.org/blog/whatsapp/)
 	* [WhatsApp's Signal Protocol integration is now complete](https://signal.org/blog/whatsapp-complete/)
-	* > Media and messages you back up aren't protected by WhatsApp end-to-end encryption while in iCloud.
-	* > Media and messages you back up aren't protected by WhatsApp end-to-end encryption while in Google Drive.
+	* \> Media and messages you back up aren't protected by WhatsApp end-to-end encryption while in iCloud.
+	* \> Media and messages you back up aren't protected by WhatsApp end-to-end encryption while in Google Drive.
 * WeChat - More commonly used in Asia.
 * SMS/MMS - It's a useful backup.
 * Email - Probably hit its peak a long time ago, now becoming outdated.
@@ -90,7 +90,7 @@ tags:
 * DeltaChat - IM style PGP email. 
 	* Uses Signal's user interface classes so looks similar.
 	* [Does Delta Chat support end-to-end-encryption?](https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption)
-	* > Delta Chat implements the Autocrypt Level 1 standard
+	* \> Delta Chat implements the Autocrypt Level 1 standard
 * Session - Very cool as it only requires a GUID to chat, although their servers had uptime issues.
 * Keybase - The social network for PGP key owners.
 	* [Keybase Crypto Documents - SaltPack](https://book.keybase.io/docs/crypto#saltpack-message-format)

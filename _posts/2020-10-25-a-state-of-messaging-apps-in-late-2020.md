@@ -19,12 +19,18 @@ tags:
 
 ## Common
 
-* WhatsApp - Recently implemented E2E encryption I believe it's based on Signal Protocol. Web app is great.
+* WhatsApp - WhatsApp Web is great.
+	* [Open Whisper Systems partners with WhatsApp to provide end-to-end encryption](https://signal.org/blog/whatsapp/)
+	* [WhatsApp's Signal Protocol integration is now complete](https://signal.org/blog/whatsapp-complete/)
+	* > Media and messages you back up aren't protected by WhatsApp end-to-end encryption while in iCloud.
+	* > Media and messages you back up aren't protected by WhatsApp end-to-end encryption while in Google Drive.
 * WeChat - More commonly used in Asia.
 * SMS/MMS - It's a useful backup.
 * Email - Probably hit its peak a long time ago, now becoming outdated.
 * Skype
+	* [Signal partners with Microsoft to bring end-to-end encryption to Skype](https://signal.org/blog/skype-partnership/)
 * Facebook Messenger
+	* [Facebook Messenger deploys Signal Protocol for end-to-end encryption](https://signal.org/blog/facebook-messenger/)
 * Snapchat - False sense of privacy.
 * Kik
 * Viber
@@ -42,6 +48,8 @@ tags:
 * Microsoft Teams - Typing latency but decent VOIP.
 * Google Meets
 * Google Hangouts
+	* Could also mention Google Allo and Google Duo.
+	* [Open Whisper Systems partners with Google on end-to-end encryption for Allo](https://signal.org/blog/allo/)
 * Slack - The VOIP sucks but chat is great.
 * Gitter - Specific to OSS development for the most part.
 * Discord - Also implements a half decent VOIP. Although it's webRTC based which can cause issues with routing.
@@ -64,7 +72,7 @@ tags:
 
 ## Decentralised focused team chats
 
-* Riot.im aka Matrix aka element - They boast a huge selection of bridges/connectors which allow you to link various chat systems.
+* Riot.im aka Matrix aka Element.io - They boast a huge selection of bridges/connectors which allow you to link various chat systems.
 * rocket.chat - Self hosted Discord/Slack alternative.
 * Jami
 * Mattermost
@@ -74,14 +82,21 @@ tags:
 ## Privacy focused
 
 * Signal - Probably the forerunner in this category.
+* Silence.im - Fork of Signal focusing on SMS and no Google push service dependency.
 * FireChat - Mesh networking.
 * Briar - A modern version of FireChat imo.
 * Telegram
 * BCM - Blockchain messenger.
-* DeltaChat - IM style PGP email.
+* DeltaChat - IM style PGP email. 
+	* Uses Signal's user interface classes so looks similar.
+	* [Does Delta Chat support end-to-end-encryption?](https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption)
+	* > Delta Chat implements the Autocrypt Level 1 standard
 * Session - Very cool as it only requires a GUID to chat, although their servers had uptime issues.
 * Keybase - The social network for PGP key owners.
+	* [Keybase Crypto Documents - SaltPack](https://book.keybase.io/docs/crypto#saltpack-message-format)
 * Tox - Not tested.
 * PGP/GPG email - A classic but rather involved setup email encryption solution.
+	* [SKS poisoning, keys.openpgp.org / Hagrid and other non-solutions](https://blogs.gentoo.org/mgorny/2019/07/04/sks-poisoning-keys-openpgp-org-hagrid-and-other-non-solutions/)
+	* [SKS Keyserver Network Under Attack](https://gist.github.com/rjhansen/67ab921ffb4084c865b3618d6955275f#the-consequences)
 * Wire - Not tested.
 * Threema - Not tested.

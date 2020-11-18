@@ -44,7 +44,7 @@ update services set device_id = 41 where device_id = 44;
 
 * For HTTP I suggest: `-t 30` 
 * For HTTPS I suggest: `-S --sni -t 30` 
-* Certificate I suggest: `-C 27`
+* For certificate I suggest: `-C 27 --sni -t 30`
 
 From the man page: [man/check_http](https://www.monitoring-plugins.org/doc/man/check_http.html)
 

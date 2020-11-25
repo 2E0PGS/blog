@@ -43,4 +43,4 @@ Will soon support my [Raspberry Pi Python Flask web API](https://bitbucket.org/2
 
 ## Also see
 
-* My blog post on [Arduino USB serial]() TBA
+* TODO: My blog post on [Arduino USB serial]() TBA

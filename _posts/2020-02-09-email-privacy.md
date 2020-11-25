@@ -176,8 +176,8 @@ You will need to re add a security key for adding another alias email on that do
 
 ### Related blog posts
 
-* [preventing-365-exchange-spoofing.md](https://github.com/2E0PGS/blog/blob/master/_drafts/preventing-365-exchange-spoofing.md)
-* [mail-server-spoofing-using-hmail.md](https://github.com/2E0PGS/blog/blob/master/_drafts/mail-server-spoofing-using-hmail.md)
+* TODO: [preventing-365-exchange-spoofing.md](https://github.com/2E0PGS/blog/blob/master/_drafts/preventing-365-exchange-spoofing.md)
+* TODO: [mail-server-spoofing-using-hmail.md](https://github.com/2E0PGS/blog/blob/master/_drafts/mail-server-spoofing-using-hmail.md)
 
 ### Useful tools for testing
 
@@ -199,6 +199,7 @@ You will need to re add a security key for adding another alias email on that do
 
 * [PayPal sharing my email address](https://www.paypal-community.com/t5/About-Protections/sharing-my-email-address/td-p/1304609#)
 * [Office 365 email anti-spam protection](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spam-protection)
+* [What is the difference between SPF ~all and -all?](https://dmarcian.com/what-is-the-difference-between-spf-all-and-all/)
 
 ### PTR resources
 

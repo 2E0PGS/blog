@@ -36,6 +36,8 @@ tags:
 * Viber
 * LINE
 * iMessage - Apple specific.
+* Android Messages - Android specific.
+	* [Google is rolling out end-to-end encryption for RCS in Android Messages beta](https://www.theverge.com/2020/11/19/21574451/android-rcs-encryption-message-end-to-end-beta)
 * Steam chat - Steam specific.
 * Xbox Live - Xbox specific.
 * PSN aka PlayStation Messages - PSN specific.
@@ -53,6 +55,7 @@ tags:
 * Slack - The VOIP sucks but chat is great.
 * Gitter - Specific to OSS development for the most part.
 * Discord - Also implements a half decent VOIP. Although it's webRTC based which can cause issues with routing.
+	* [Discord message encryption plugin - SimpleDiscordCrypt](https://gitlab.com/An0/SimpleDiscordCrypt#)
 
 ## Early IM
 
@@ -93,7 +96,8 @@ tags:
 	* \> Delta Chat implements the Autocrypt Level 1 standard
 * Session - Very cool as it only requires a GUID to chat, although their servers had uptime issues.
 * Keybase - The social network for PGP key owners.
-	* [Keybase Crypto Documents - SaltPack](https://book.keybase.io/docs/crypto#saltpack-message-format)
+	* [Keybase Crypto Documents - saltpack](https://book.keybase.io/docs/crypto#saltpack-message-format)
+	* [saltpack GitHub repo](https://github.com/keybase/saltpack)
 * Tox - Not tested.
 * PGP/GPG email - A classic but rather involved setup email encryption solution.
 	* [SKS poisoning, keys.openpgp.org / Hagrid and other non-solutions](https://blogs.gentoo.org/mgorny/2019/07/04/sks-poisoning-keys-openpgp-org-hagrid-and-other-non-solutions/)

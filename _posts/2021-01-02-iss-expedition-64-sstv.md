@@ -39,7 +39,7 @@ This time it's expedition 64 and the SSTV images are celebrating 20 years of ARI
 
 ## Award
 
-TBA
+![ariss-sstv-award-2e0pgs](/blog/assets/2021-01-02/ariss-sstv-award-2e0pgs.png)
 
 ## See also
 

@@ -351,7 +351,7 @@ Because most of this document covers these two frameworks, this heading will onl
 * This mostly covers new features in .NET 5 however some features already released or not directly related maybe mentioned under other headings.
 * And now .NET 5 is unifying everything, I guess MS realised things could be getting a bit "bitty". However let's hope the package management, project/solution management, build tools and such can be unified.
 * [IAmTimCorey - What is the Future of .NET? Is .NET Framework Dead? Is .NET Core Dead?](https://www.youtube.com/watch?v=ZwxWCiW5uO4)
-* [Introducing .NET 5 | .NET Blog](https://devblogs.microsoft.com/dotnet/introducing-net-5/)
+* [Introducing .NET 5 \| .NET Blog](https://devblogs.microsoft.com/dotnet/introducing-net-5/)
 
 Some interesting points from the .NET blog post include:
 

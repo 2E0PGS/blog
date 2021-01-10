@@ -376,7 +376,7 @@ Some interesting points from [.NET Conf 2020](https://www.dotnetconf.net/) inclu
 * Xamarin not merged till .NET 6?
 * Linux debugging with VS on Windows and WSL 2 or remote Linux debugging over SSH.
 * `dotnet dump` for memory dumps on .NET Core, dumps can be analysed on other platforms.
-* EF Core with tooling. Lots of providers: https://docs.microsoft.com/en-us/ef/core/providers/?tabs=dotnet-core-cli
+* EF Core with tooling. Lots of providers: [Entity Framework Core - Database Providers](https://docs.microsoft.com/en-us/ef/core/providers/?tabs=dotnet-core-cli)
 * The new [YARP](https://github.com/microsoft/reverse-proxy) reverse proxy middleware/toolkit written in C# with good extensibility. Relates to IIS ARR (see my blog post: [IIS reverse proxy server](https://2e0pgs.github.io/blog/sysadmin/2020/06/04/iis-reverse-proxy/)) and [Kestrel](https://github.com/aspnet/KestrelHttpServer). Will this replace NGINX reverse proxy for many use cases?
 * [Bringing .NET Interactive to Azure Data Studio Notebooks](https://youtu.be/938jBJ-tK3c)
 

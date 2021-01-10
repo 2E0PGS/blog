@@ -382,7 +382,7 @@ Some interesting points from [.NET Conf 2020](https://www.dotnetconf.net/) inclu
 
 #### .NET Standard
 
-* [The future of .NET Standard | .NET Blog](https://devblogs.microsoft.com/dotnet/the-future-of-net-standard/)
+* [The future of .NET Standard \| .NET Blog](https://devblogs.microsoft.com/dotnet/the-future-of-net-standard/)
 * Continue using .NET Standard 2.0+ for portable libraries across .NET Framework and .NET Core.
 * Going forwards when projects are migrated to .NET 5 there will be no need for .NET Standard.
 

@@ -154,6 +154,8 @@ Nothing here is suggesting that 365 does a PTR against my "sender" domain.
 
 **Update: 2020-04-24 15:57:** Mailbox.org: "We have opened a bugreport with Open Xchange".
 
+**Update: 2020-12-10 13:51:** After a lot of back and forth of emails. I sent lots of detailed information to help them debug it including calendar `.ics` exports and screenshots of received calendar reminders this is finally resolved. Mailbox.org: "We had a misconfiguration in our cluster, but one of our administrators has fixed the issue."
+
 ### Greylisting 
 
 Had me confused for a while why my emails weren't getting through. Eventually they all came through once the sending server retries. See: [Spam protection through greylisting](https://kb.mailbox.org/m/mobile.action#page/1181556) 
@@ -176,8 +178,8 @@ You will need to re add a security key for adding another alias email on that do
 
 ### Related blog posts
 
-* TODO: [preventing-365-exchange-spoofing.md](https://github.com/2E0PGS/blog/blob/master/_drafts/preventing-365-exchange-spoofing.md)
-* TODO: [mail-server-spoofing-using-hmail.md](https://github.com/2E0PGS/blog/blob/master/_drafts/mail-server-spoofing-using-hmail.md)
+* TODO: [TBA - preventing-365-exchange-spoofing.md]()
+* TODO: [TBA - mail-server-spoofing-using-hmail.md]()
 
 ### Useful tools for testing
 

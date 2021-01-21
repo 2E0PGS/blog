@@ -83,6 +83,20 @@ Otherwise useful as a historic reference for frameworks built on these stacks.
 	* [wikipedia.org/wiki/ASP.NET](https://en.wikipedia.org/wiki/ASP.NET)		
 		* \> The ASP.NET releases history tightly correlates with the .NET Framework releases
 		* See the versions section.
+* Session, TempData, ViewBag and ViewData
+	* TODO: One day explain some MVC recommendations and why to avoid evil ViewBags or hidden fields for certain things.
+		* [Asp.Net MVC ViewBag is BAD!!](https://tech.trailmax.info/2013/12/asp-net-mvc-viewbag-is-bad/)
+	* ViewBag isn't available in Razor Pages.
+		* [Add ViewBag to PageModel](https://github.com/aspnet/Mvc/issues/6754)
+	* ASP.NET Core prefers ViewData over ViewBag in it's MVC project scaffolding this is probably because it's strongly typed.
+	* You have to manually serialise TempData due to different in memory backing options in ASP.NET Core , I personally use Newtonsoft.Json.
+		* [Complex Objects and TempData using .NET Core 2](https://dotnetevolved.com/2017/08/complex-objects-and-tempdata-using-net-core-2/)
+	* \>The [ViewData attribute](https://www.learnrazorpages.com/razor-pages/viewdata#viewdata-attribute) was introduced in ASP.NET Core 2.1
+	* Session in ASP.NET Core is a bit different to .NET Framework.
+		* [Session and state management in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-2.2#session-state)
+		* [An introduction to Session storage in ASP.NET Core](https://andrewlock.net/an-introduction-to-session-storage-in-asp-net-core/)
+		* `using Microsoft.AspNetCore.Http;`
+		* `HttpContext.Session.SetString("key", "value");`
 
 ### Areas
 
@@ -220,6 +234,12 @@ I personally stick with the way .NET Framework projects where historically laid 
 
 * My blog post on: [MSTest for exception thrown](https://2e0pgs.github.io/blog/programming/2020/06/14/mstest-exception/)  in .NET Core and .NET Framework.
 
+## DI (Dependency Injection)
+
+* DI is built into ASP.NET Core which is nice, this should help consolidate and eliminate the need to know the intricacies of various DI frameworks across multiple projects in an organisation.
+* [Dependency injection in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.1)
+* TODO: My blog post on: [TBA - Portable data layer library - DI example]()
+
 ## Service reference/Web service/WCF
 
 * "Web Reference" - .NET Framework
@@ -326,6 +346,7 @@ Otherwise using the compiler option: `-langversion:7.1`
 * [Try .NET](https://github.com/dotnet/try)
 * [.NET In-Browser](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1)
 * My blog post: [REPL maths and notation](https://2e0pgs.github.io/blog/programming/2020/09/27/repl-maths-and-notation/)
+	* [Immediate Window](https://docs.microsoft.com/en-us/visualstudio/ide/reference/immediate-window?view=vs-2019) are they going to replace this entirely with Interactive Window I wonder.
 * Rather hard to find this package. Seems to be Microsoft's version of Jupyter notebooks. It's aka ".NET notebooks" or "native notebook" [.NET Interactive Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) also see: [GitHub Issue Notebook](https://code.visualstudio.com/updates/v1_45#_github-issue-notebook)
 * One of the only videos I have seen on ".NET Interactive Notebooks": [F# as a Better Python - Phillip Carter - NDC Oslo 2020](https://youtu.be/_QnbV6CAWXc?t=2367) besides a mention By Phillip in [.NET Conf 2020](#net-conf-2020)
 * There is also regular Jupyter file support using a "kernel" in other words a Jupyter server: [Working with Jupyter Notebooks in Visual Studio Code](https://code.visualstudio.com/docs/python/jupyter-support)
@@ -341,10 +362,6 @@ Because most of this document covers these two frameworks, this heading will onl
 
 * [.NET Core is the Future of .NET ](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/)
 	* \> New applications should be built on .NET Core. .NET Core is where future investments in .NET will happen. Existing applications are safe to remain on .NET Framework which will be supported.
-* TODO: Session, TempData, Viewbag (evil Viewbags)? 
-	* TODO: One day explain some MVC recommendations and why to avoid Viewbags or hidden fields for certain things.
-* TODO: Manually serialise TempData due to different in memory backing. I use Newtonsoft.
-	* [Complex Objects and TempData using .NET Core 2](https://dotnetevolved.com/2017/08/complex-objects-and-tempdata-using-net-core-2/)
 
 ### .NET 5
 
@@ -437,9 +454,10 @@ Solution File                                     sln                           
 * AWS, see my blog post: [ASP.NET Core Web API AWS Lambda](https://2e0pgs.github.io/blog/programming/2020/10/01/aspnet-core-web-api-aws-lambda/)
 * TODO: Azure
 
-## WebHooks
+## WebHooks/API
 
 * See my blog post: [ASP.NET WebHooks](https://2e0pgs.github.io/blog/programming/2020/07/25/aspnet-webhooks/)
+* [Pascalcase vs Camelcase in ASP.net Core](https://dotnetcoretutorials.com/2017/01/02/pascalcase-vs-camelcase-asp-net-core/) this is more specifically about JSON and API properties/model serialisation. I also briefly mention PascalCase vs CamelCase under my blog post: [.NET Core 2.2 configs](https://2e0pgs.github.io/blog/programming/2020/07/25/dotnet-core-2-2-configs/)
 
 ## Diagrams
 

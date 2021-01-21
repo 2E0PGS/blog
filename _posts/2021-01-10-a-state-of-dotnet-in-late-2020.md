@@ -88,7 +88,7 @@ Otherwise useful as a historic reference for frameworks built on these stacks.
 		* [Asp.Net MVC ViewBag is BAD!!](https://tech.trailmax.info/2013/12/asp-net-mvc-viewbag-is-bad/)
 	* ViewBag isn't available in Razor Pages.
 		* [Add ViewBag to PageModel](https://github.com/aspnet/Mvc/issues/6754)
-	* ASP.NET Core prefers ViewData over ViewBag in it's MVC project scaffolding this is probably because it's strongly typed.
+	* ASP.NET Core prefers ViewData over ViewBag in it's MVC project scaffolding, this is probably because it's strongly typed.
 	* You have to manually serialise TempData due to different in memory backing options in ASP.NET Core , I personally use Newtonsoft.Json.
 		* [Complex Objects and TempData using .NET Core 2](https://dotnetevolved.com/2017/08/complex-objects-and-tempdata-using-net-core-2/)
 	* \>The [ViewData attribute](https://www.learnrazorpages.com/razor-pages/viewdata#viewdata-attribute) was introduced in ASP.NET Core 2.1

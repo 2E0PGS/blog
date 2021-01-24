@@ -125,13 +125,15 @@ Note: Generic RTL devices may require a PPM offset outside their intended use ce
 
 ## VLC DVB-T
 
-* Quick and simple command to view TV on VLC using a RTL dongle: `vlc dvb-t://frequency=578000000:bandwidth=0`
+* ITV: `vlc dvb-t://frequency=578000000:bandwidth=0`
 * The docs state it should be in KHz but I get: `dtv stream error: 578000 Hz carrier frequency is too low.` so it looks like it's actually using Hz.
 * Record `cvlc` transport stream headless: `cvlc dvb-t://frequency=578000000:bandwidth=0 :program=8384 --sout "#file{dst=/home/anon/recording.ts,no-overwrite}"`
 
 ## VLC DVB-S
 
-* I found I had to specify polarity voltage and FEC: `vlc dvb-s://frequency=10714000000:srate=22000000:dvb-fec=5:voltage=18`
+* I found I had to specify polarity voltage and FEC.
+* Channel 4: `vlc dvb-s://frequency=10714000000:srate=22000000:dvb-fec=5:voltage=18`
+* ITV: `vlc dvb-s://frequency=10758000000:srate=22000000:dvb-fec=5:voltage=13`
 * The docs state it should be in KHz but I get: `dtv stream error: 10714000 Hz carrier frequency is too low.` so it looks like it's actually using Hz.
 
 ## AsusTek - LNA Tiger Hybrid signal issues

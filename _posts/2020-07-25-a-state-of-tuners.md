@@ -82,11 +82,11 @@ Ref: [wiki/Low-noise_block](https://en.wikipedia.org/wiki/Low-noise_block_downco
 
 ## Test signals
 
-| Station            | Type  | GHz   | MHz  | KHz     |
-|--------------------|-------|-------|------|---------|
-| GB3ZZ              | DVB-S | 1.316 | 1316 | 1316000 |
-| Broadcast Freeview | DVB-T | 0.578 | 578  | 578000  |
-| Broadcast Freesat  | DVB-S |       |      |         |
+| Station                     | Type  | GHz    | MHz   | KHz      | Hz          | Polarity      | Megasymbols/s | Kilosymbols/s | Symbols/s | FEC |
+|-----------------------------|-------|--------|-------|----------|-------------|---------------|---------------|---------------|-----------|-----|
+| GB3ZZ                       | DVB-S | 1.316  | 1316  | 1316000  | 1316000000  | Horizonal     | 4             | 4000          | 4000000   | 1/2 |
+| Broadcast Freeview ITV      | DVB-T | 0.578  | 578   | 578000   | 578000000   | Horizonal     |               |               |           |     |
+| Broadcast Freesat Channel 4 | DVB-S | 10.714 | 10714 | 10714000 | 10714000000 | Low Horizonal | 22            | 22000         | 22000000  | 5/6 |
 
 ## Bus speeds for tuner devices
 
@@ -100,6 +100,7 @@ Important to ensure we have the bandwidth for video.
 
 * Analog video sources: `/dev/video0`
 * Digital TV sources: `/dev/dvb/adapter0`
+* Useful Linux command to list DVB devices: `dmesg | grep adapter`
 
 ## Other experiments
 
@@ -108,24 +109,30 @@ Important to ensure we have the bandwidth for video.
 
 ## Device table
 
-| Type                 | Brand                 | Model            | Chipset           | Frequency range | Modes                | Inputs                                                | OS             | Driver           | Software support    | PPM offset | Docs                                                                                   | Notes                        |
-|----------------------|-----------------------|------------------|-------------------|-----------------|----------------------|-------------------------------------------------------|----------------|------------------|---------------------|------------|----------------------------------------------------------------------------------------|------------------------------|
-| PCI-E                | Hauppauge             | WinTV-HVR-1200   | NXP TDA10048HN    |                 | DVB-T                | Belling-Lee, F-type, RCA, 3.5 mm jack and S-Video DIN | Linux          | V4L2             | Kaffeine, Tvheadend |            | [linuxtv](https://linuxtv.org/wiki/index.php/Hauppauge_WinTV-HVR-1200)                 |                              |
-| PCI universal 32 bit | AsusTek               | LNA Tiger Hybrid | Philips TDA10046H | 51 - 858 MHz    | DVB-T, Analog        | Belling-Lee                                           | Windows, Linux | DirectShow, V4L2 | VLC, Tvheadend      |            |                                                                                        | Firmware required for Linux. |
-| USB 2                | EasyCAP Somagic       | SMI-2021CBE      |                   |                 | Analog               | RCA                                                   |                |                  |                     |            | [linuxtv](https://linuxtv.org/wiki/index.php/Easycap)                                  | Designed for CCTV DVR.       |
-| USB 2                | NewGen                | RTL2832          |                   | 25 - 1760 MHz   | DVB-T                | SMA                                                   | Linux          | V4L2             | VLC, Tvheadend      | 0.5        | [linuxtv](https://www.linuxtv.org/wiki/index.php/RealTek_RTL2832U)                     |                              |
-| USB 2                | DVB-T+FM+DAB          | 820T2            |                   |                 | DVB-T                | MCX                                                   | Linux          | V4L2             | VLC, Tvheadend      |            |                                                                                        |                              |
-| USB 2                | Dual                  | RTL              |                   |                 | DVB-T                | SMA, SMA                                              | Linux          | V4L2             | VLC, Tvheadend      |            |                                                                                        |                              |
-| USB 2                | Xbox One              | Digital TV Tuner | Panasonic MN88472 |                 | DVB-T, DVB-T2, DVB-C | Belling-Lee                                           | Linux          | V4L2             | Kaffeine, Tvheadend |            | [linuxtv](https://www.linuxtv.org/wiki/index.php/Xbox_One_Digital_TV_Tuner)            | Firmware required for Linux. |
-| PCI universal 32 bit | Pinnacle PCTV Systems | 4000i            |                   |                 | DVB-S                | F-type                                                | Windows        |                  |                     |            | [linuxtv](https://www.linuxtv.org/wiki/index.php/Pinnacle_PCTV_Dual_Sat_Pro_PCI_4000I) | No Linux support as of yet.  |
-| PCI-E                | TBS                   | TBS-6980         |                   |                 | DVB-S, DVB-S2        | F-type, F-type                                        | Linux          | V4L2             | Tvheadend           |            | [linuxtv](https://linuxtv.org/wiki/index.php/TBS6980)                                  | Firmware required for Linux. |
+| Type                 | Brand                 | Model            | Chipset           | Frequency range | Modes                | Inputs                                                | OS             | Driver           | Software support    | Docs                                                                                   | Notes                        |
+|----------------------|-----------------------|------------------|-------------------|-----------------|----------------------|-------------------------------------------------------|----------------|------------------|---------------------|----------------------------------------------------------------------------------------|------------------------------|
+| PCI-E                | Hauppauge             | WinTV-HVR-1200   | NXP TDA10048HN    |                 | DVB-T                | Belling-Lee, F-type, RCA, 3.5 mm jack and S-Video DIN | Linux          | V4L2             | Kaffeine, Tvheadend | [linuxtv](https://linuxtv.org/wiki/index.php/Hauppauge_WinTV-HVR-1200)                 |                              |
+| PCI universal 32 bit | AsusTek               | LNA Tiger Hybrid | Philips TDA10046H | 51 - 858 MHz    | DVB-T, Analog        | Belling-Lee                                           | Windows, Linux | DirectShow, V4L2 | VLC, Tvheadend      |                                                                                        | Firmware required for Linux. |
+| USB 2                | EasyCAP Somagic       | SMI-2021CBE      |                   |                 | Analog               | RCA                                                   |                |                  |                     | [linuxtv](https://linuxtv.org/wiki/index.php/Easycap)                                  | Designed for CCTV DVR.       |
+| USB 2                | NewGen                | RTL2832          |                   | 25 - 1760 MHz   | DVB-T                | SMA                                                   | Linux          | V4L2             | VLC, Tvheadend      | [linuxtv](https://www.linuxtv.org/wiki/index.php/RealTek_RTL2832U)                     |                              |
+| USB 2                | DVB-T+FM+DAB          | 820T2            |                   |                 | DVB-T                | MCX                                                   | Linux          | V4L2             | VLC, Tvheadend      |                                                                                        |                              |
+| USB 2                | Dual                  | RTL              |                   |                 | DVB-T                | SMA, SMA                                              | Linux          | V4L2             | VLC, Tvheadend      |                                                                                        |                              |
+| USB 2                | Xbox One              | Digital TV Tuner | Panasonic MN88472 |                 | DVB-T, DVB-T2, DVB-C | Belling-Lee                                           | Linux          | V4L2             | Kaffeine, Tvheadend | [linuxtv](https://www.linuxtv.org/wiki/index.php/Xbox_One_Digital_TV_Tuner)            | Firmware required for Linux. |
+| PCI universal 32 bit | Pinnacle PCTV Systems | 4000i            |                   |                 | DVB-S                | F-type                                                | Windows        |                  |                     | [linuxtv](https://www.linuxtv.org/wiki/index.php/Pinnacle_PCTV_Dual_Sat_Pro_PCI_4000I) | No Linux support as of yet.  |
+| PCI-E                | TBS                   | TBS-6980         |                   |                 | DVB-S, DVB-S2        | F-type, F-type                                        | Linux          | V4L2             | VLC, Tvheadend      | [linuxtv](https://linuxtv.org/wiki/index.php/TBS6980)                                  | Firmware required for Linux. |
 
-Note: Generic RTL devices may require a PPM offset outside their intended use center frequency.
+Note: Generic RTL devices may require a PPM offset outside their intended use center frequency. For example the 820T2 mentioned above requires a PPM offset of 0.5 for UHF amateur bands.
 
-## VLC DVB-T RTL
+## VLC DVB-T
 
 * Quick and simple command to view TV on VLC using a RTL dongle: `vlc dvb-t://frequency=578000000:bandwidth=0`
+* The docs state it should be in KHz but I get: `dtv stream error: 578000 Hz carrier frequency is too low.` so it looks like it's actually using Hz.
 * Record `cvlc` transport stream headless: `cvlc dvb-t://frequency=578000000:bandwidth=0 :program=8384 --sout "#file{dst=/home/anon/recording.ts,no-overwrite}"`
+
+## VLC DVB-S
+
+* I found I had to specify polarity voltage and FEC: `vlc dvb-s://frequency=10714000000:srate=22000000:dvb-fec=5:voltage=18`
+* The docs state it should be in KHz but I get: `dtv stream error: 10714000 Hz carrier frequency is too low.` so it looks like it's actually using Hz.
 
 ## AsusTek - LNA Tiger Hybrid signal issues
 
@@ -212,7 +219,9 @@ It's a shame it's not lowercase but it's as good as I can hope for.
 
 ## RTSP in Tvheadend
 
-`pipe:///usr/bin/ffmpeg -loglevel fatal -i rtsp://admin:password@192.168.1.40:80/stream -vcodec copy -acodec copy -metadata service_provider=cctv -metadata service_name=ch01 -f mpegts -tune zerolatency pipe:1`
+```sh
+pipe:///usr/bin/ffmpeg -loglevel fatal -i rtsp://admin:password@192.168.1.40:80/stream -vcodec copy -acodec copy -metadata service_provider=cctv -metadata service_name=ch01 -f mpegts -tune zerolatency pipe:1
+```
 
 Here I reference my [RTSP blog post](https://2e0pgs.github.io/blog/networking/2019/10/07/rtsp-ip-tables/) but this time im using Tvheadend instead of a desktop running MPV as a client.
 
@@ -315,12 +324,15 @@ There are several benefits. I can see both channels at once unlike with most set
 
 ![tvheadend-gb3zz-dual.png](/blog/assets/2020-07-25/tvheadend-gb3zz-dual.png)
 
-## DATV QO-100/Es'hail-2
+## Useful links
 
-Coming soon...
+* [en.SatExpat.com - List of Television Channels on Satellites Astra 2E/2F/2G 28.2° East](https://en.satexpat.com/sat/east/28.2/)
+* [TP 10714 H — Satellite Astra 2E 28.2° East](https://en.satexpat.com/tp/28.2e/10714H)
+* [VLC Documentation - Streaming a DVB Channel](https://wiki.videolan.org/Documentation:Streaming_HowTo/Stream_a_DVB_Channel/)
 
 ## TODO
 
 * Include VLC codec screenshots.
 * Megasymbols. etc
-* 28.2E : Astra 2A/2C/2E/2F/Eutelsat 28A
+* DVBlast
+* DATV QO-100/Es'hail-2 seperate blog post

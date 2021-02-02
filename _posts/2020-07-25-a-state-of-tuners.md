@@ -331,6 +331,7 @@ There are several benefits. I can see both channels at once unlike with most set
 * [en.SatExpat.com - List of Television Channels on Satellites Astra 2E/2F/2G 28.2° East](https://en.satexpat.com/sat/east/28.2/)
 * [TP 10714 H — Satellite Astra 2E 28.2° East](https://en.satexpat.com/tp/28.2e/10714H)
 * [VLC Documentation - Streaming a DVB Channel](https://wiki.videolan.org/Documentation:Streaming_HowTo/Stream_a_DVB_Channel/)
+* [dream Player for TVHeadend](https://play.google.com/store/apps/details?id=de.cyberdream.tvh.player&hl=en&gl=US)
 
 ## TODO
 

@@ -346,7 +346,7 @@ Otherwise using the compiler option: `-langversion:7.1`
 * [What's new in C# 9.0](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
 * [Microsoft Developer YouTube Channel - Future of C#](https://youtu.be/kU-t1qsEbqk)
 * I believe it requires VS 2019.
-* The language is becoming less "belts and braces", looking like you can use C# in more of a scripting way with less overhead of entry method declarations. 
+* The language is becoming less "belts and braces", looking like you can use C# in more of a scripting way with less overhead of entry method declarations. _Reminds me of Python._
 * `record` and `with` expressions to mutate objects safely. A bit like shallow copying.
 * Method params creating members automatically.
 * [New C#9 keywords ‘and’ ‘or’ ‘not’](https://blog.ndepend.com/csharp9-new-keywords-for-pattern-matching-and-or-not/) could be confused with T-SQL, I have seen other developers put T-SQL syntax/logical operators into C# by mistake.

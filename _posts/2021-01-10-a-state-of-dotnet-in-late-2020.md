@@ -53,6 +53,7 @@ Otherwise useful as a historic reference for frameworks built on these stacks.
 
 * [Windows Forms](https://github.com/dotnet/winforms)
 * Still relevant for Windows native .NET Framework programs and Microsoft recently added support for .NET Core WinForms.
+* Drag and drop UI visual designer.
 
 ## WebForms
 
@@ -62,12 +63,22 @@ Otherwise useful as a historic reference for frameworks built on these stacks.
 
 ## WPF
 
-* TODO: Deprecated? Was once promoted above WinForms?
+* [Platform comparison: UWP, WPF, and Windows Forms](https://docs.microsoft.com/en-us/windows/apps/desktop/choose-your-platform)
+* More powerful and advance UI over WinForms if you need flashy design.
+* Native .NET Framework calls like WinForms.
+* Works on .NET Core.
+* XAML based.
 
 ## UWP
 
 * [Microsoft Confirms UWP is Not the Future of Windows Apps](https://www.thurrott.com/dev/206351/microsoft-confirms-uwp-is-not-the-future-of-windows-apps)
-* 
+* Going to be replaced by .NET MAUI? See: [Cross Platform UI](#cross-platform-ui)
+* Going to be transitioned into WinUI 3.0? Windows only.
+* [Building Modern & Performant Desktop Apps—Is WinUI 3.0 the Way to Go?](https://www.telerik.com/blogs/building-modern-performant-desktop-apps-winui-30-the-way-to-go)
+* Doesn't support Win32 calls due to abstracted set of APIs. See: [Project Reunion](https://github.com/microsoft/ProjectReunion)
+* Specifically designed to only run on Windows 10, Windows RT (tablets), Xbox and Windows Phone (now defunct).
+* Sandboxed access to IO. Permissions model.
+* XAML based.
 
 ## MVC
 

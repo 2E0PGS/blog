@@ -250,6 +250,12 @@ Can't seem to find a data sheet or product brochure unfortunately. So no way to 
 * tar has interactive mode so you can swap tapes or other medium and specify it's path when it reaches the end of tape 1.
 * Useful for large files which would span more than one medium on their own.
 
+### 7-Zip
+
+1. Add to archive
+2. Compression level use `Store` for a `tar` like substitute otherwise use default for compressible files.
+3. Split into blocks of, you can choose DVD or select one from the list then manually change the size.
+
 ### dirsplit
 
 * [linux.die.net/man/1/dirsplit](https://linux.die.net/man/1/dirsplit)

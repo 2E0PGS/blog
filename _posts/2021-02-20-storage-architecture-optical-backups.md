@@ -206,16 +206,20 @@ Can't seem to find a data sheet or product brochure unfortunately. So no way to 
 * [DVD+R DL x 25 DR8I8B25F](https://www.amazon.co.uk/Philips-DR8I8B25F-DVD-DL-25-8-5/dp/B0010S8WTW) although several bad reviews.
 * [DVD-R x 100 DM4S6B00F/00](https://www.amazon.co.uk/gp/product/B000E0LLCM/)
 
-## Filesystems
+## File systems
 
-* K3B `File System` `Linux/Unix only` seems to read back just fine on Windows 10.
-
-### TODO
-
-* Check FS options on Imgburn as it's different to K3B.
-* Check what `Windows+Linux` file system option is in K3B.
-* Check Julia vs other FS.
-* Duplicate of this heading? [Disc formats](#disc-formats)
+* K3B `Linux/Unix only` seems to read back just fine on Windows 10. It looks to be ISO 9660 Level 3 + Rock Ridge extensions.
+* K3B `Linux/Unix + Windows` is ISO 9660 Level 3 + Rock Ridge extensions + Joliet extensions. 
+* ~~ISO 1999?~~
+* [ISO 9660](https://wiki.osdev.org/ISO_9660) file system
+* [Joliet](https://wiki.osdev.org/Joliet) extension to ISO 9660.
+* [Rock Ridge](https://wiki.osdev.org/ISO_9660#Rock_Ridge_and_Joliet) extension to ISO 9660.
+* [UDF](https://wiki.osdev.org/UDF) file system
+* [UDF with K3B](https://dirkmittler.homeip.net/blog/archives/4120)
+* ImgBurn ISO 9660 + Joliet for MP3 data disks.
+* ImgBurn UDF 1.02
+* [ImgBurn UDF + ISO 9660 - Bridge disc](https://forum.imgburn.com/index.php?/topic/11599-difference-between-udf-102-and-iso-9660udf-102/) TODO: Same as UDF structures on K3B?
+* Brasero uses ISO 9660 Level 2? But will switch to Level 3 when you add files over 2 GB and you accept the warning message.
 
 ## Scripts
 
@@ -380,6 +384,8 @@ $ bc -l
 * [mass-to-discs](https://pastebin.com/5asZ4tzp?fbclid=IwAR2B-nPP10VpquXRLSpcvr0GpfRT5PENc4TuRVILmLJBvK9NAy9pIEwqzP8) by 2E0EOL, it's similar to `dirsplit`.
 * [chksum-all-recursive.sh](https://pastebin.com/S3tBzFbK?fbclid=IwAR13VcR2n8jLe9B3QTSka_OvfXhOFrOdrN4R1sFTbYo9LUE4wk7obQXhvhY) by 2E0EOL, parallel checksum using multiple algorithms.
 * `eject` and `eject -t` are useful for controlling the CD tray opening and closing via CLI.
+* `less /proc/sys/dev/cdrom/info` list cdrom info under Linux.
+* `dmesg | grep "CD-ROM"` list model of cdrom drive under Linux.
 * `md5sum * > md5.txt` create a md5 checksum of all files in the current directory.
 
 ### TODO: Some kinda what tool for what job consolidation
@@ -406,15 +412,7 @@ $ bc -l
 ### Disc vs Disk
 
 * Disc, discus, round, optical disc, compact disc
-* Disk, diskette, floppy disk, hard disk drive 
-
-## Disc formats
-
-* ~~ISO 1999?~~
-* [UDF](https://wiki.osdev.org/UDF)
-* [Joliet](https://wiki.osdev.org/Joliet)
-* [ISO 9660](https://wiki.osdev.org/ISO_9660)
-* [UDF with K3B](https://dirkmittler.homeip.net/blog/archives/4120)
+* Disk, diskette, floppy disk, hard disk drive
 
 ## Related playback video links
 
@@ -443,6 +441,8 @@ I couldn't find much on Blu-ray/Blueray colour/color rings/bands burn line colou
 >
 > Sorry, I didn't save the log and I went through five discs that burned up to 90% before write error occured, all had increasingly lighter "bands" where they were written to. Sixth disc worked right away, no strange patterns on the disc, same looking surface on all the burnt area. So, I guess it's the discs, but thanks for the feedback, I'll see to it that I upgrade again then.
 
+### CAV vs CLV
+
 [DVD Burning and Media Quality Concepts](http://www.digitalfaq.com/guides/media/dvd-media-concepts.htm)
 
 > With the advent of 8x media, Z-CLV (zonal constant linear velocity) and P-CAV (partial constant angular velocity) were introduced. Z-CLV starts at a speed like 4x, then at a certain point in the media, jumps to 6x, then 8x, etc., until it reaches the maximum speed. Sometimes a 16x Z-CLV burn will only burn a few hundred MB at 16x, which is why “x” speeds mean almost nothing anymore. P-CAV is similar, but does not jump speed. It increases velocity from 4x to 4.5x to 5x, etc., until it reaches it’s top speed. Much like Z-CLV, it may not hit max speed until the last 30 seconds worth of burning. This is why a 12x burn is almost an identical wait time to the speed of a 16x burn.
@@ -463,6 +463,17 @@ This Polish website goes above and beyond with testing it:
 
 * [cdrinfo.pl - BDR212 - Introduction](https://www.cdrinfo.pl/artykuly/artykulPioneerBDR212S12X12English/index.php)
 * [cdrinfo.pl - BDR212 - Record Blu-Ray](https://www.cdrinfo.pl/artykuly/artykulPioneerBDR212S12X12English/strona15.php)
+
+Interestingly my SU-208GB drive supports DVD DL and this website shows it using a different tracking for DVD DL [mydvddrives.com/tsstcorp-cddvdw-su-208gb-su208gb](https://www.mydvddrives.com/tsstcorp-cddvdw-su-208gb-su208gb-sata-cd-dvd-rw-drive-burner-105313.html)
+
+> * DVD+R 8x ( CAV )
+> * DVD+R DL 6x ( ZCLV )
+
+* [DVD-Writer-vs-Recorder-CAV-vs-CLV](https://forum.videohelp.com/threads/214141-DVD-Writer-vs-Recorder-CAV-vs-CLV)
+* [Which purpose has P-CAV and Z-CLV?](https://forum.videohelp.com/threads/385866-Disc-writing-speeds-Which-purpose-has-P-CAV-and-Z-CLV)
+* [wikipedia.org/wiki/Constant_angular_velocity](https://en.wikipedia.org/wiki/Constant_angular_velocity)
+* [wikipedia.org/wiki/Constant_linear_velocity](https://en.wikipedia.org/wiki/Constant_linear_velocity)
+* [wikipedia.org/wiki/Zone_bit_recording](https://en.wikipedia.org/wiki/Zone_bit_recording)
 
 ### Create image test
 

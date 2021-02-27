@@ -475,21 +475,37 @@ Interestingly my SU-208GB drive supports DVD DL and this website shows it using 
 * [wikipedia.org/wiki/Constant_linear_velocity](https://en.wikipedia.org/wiki/Constant_linear_velocity)
 * [wikipedia.org/wiki/Zone_bit_recording](https://en.wikipedia.org/wiki/Zone_bit_recording)
 
+Below are some tests I did with Verbatim BD-R Datalife 43812 to try reproduce colour some rings by toggling local image cache before write to hopefully change buffer times.
+
 ### Create image test
+
+Before write
 
 ![2021-01-08-create-image-test-before-write.png](/blog/assets/2021-02-20/2021-01-08-create-image-test-before-write.png)
 
+Cover
+
 ![2021-01-08-create-image-test-cover.png](/blog/assets/2021-02-20/2021-01-08-create-image-test-cover.png)
+
+After write with local image cache
 
 ![2021-01-08-create-image-test-k3b-write.png](/blog/assets/2021-02-20/2021-01-08-create-image-test-k3b-write.png)
 
 ### Identical test
 
+Before write
+
 ![2021-01-08-identical-test-before-write.png](/blog/assets/2021-02-20/2021-01-08-identical-test-before-write.png)
+
+Cover
 
 ![2021-01-08-identical-test-cover.png](/blog/assets/2021-02-20/2021-01-08-identical-test-cover.png)
 
+After write with no local image cache image 1
+
 ![2021-01-08-identical-test-k3b-write-1.png](/blog/assets/2021-02-20/2021-01-08-identical-test-k3b-write-1.png)
+
+After write with no local image cache image 2
 
 ![2021-01-08-identical-test-k3b-write-2.png](/blog/assets/2021-02-20/2021-01-08-identical-test-k3b-write-2.png)
 

@@ -194,23 +194,15 @@ Can also be used on Termux on Android see my blog post: [Everyday Termux uses](h
 
 ## Graphing
 
-Julia programming language.
-
-[GNU Octave](https://www.gnu.org/software/octave/) like MATLAB but open source.
-
-[GNU Octave plot issues](https://stackoverflow.com/a/25733323)
-
-[GNU Plot CSV files](https://raymii.org/s/tutorials/GNUplot_tips_for_nice_looking_charts_from_a_CSV_file.html)
-
-[GNU Plot examples](http://www.malinc.se/math/octave/threeden.php)
-
-RMarkdown
-
-[Jupyter Notebook](https://jupyter.org/)
-
-[Jupyer with .NET Core](https://github.com/dotnet/interactive#notebooks-with-net-core)
-
-Wolfram Mathematica?
+* Julia programming language.
+* [GNU Octave](https://www.gnu.org/software/octave/) like MATLAB but open source.
+	* [GNU Octave plot issues](https://stackoverflow.com/a/25733323)
+* [GNU Plot CSV files](https://raymii.org/s/tutorials/GNUplot_tips_for_nice_looking_charts_from_a_CSV_file.html)
+* [GNU Plot examples](http://www.malinc.se/math/octave/threeden.php)
+* RMarkdown
+* [Jupyter Notebook](https://jupyter.org/)
+* [Jupyter with .NET Core](https://github.com/dotnet/interactive#notebooks-with-net-core)
+* Wolfram Mathematica?
 
 ## First floor weight
 

@@ -42,4 +42,4 @@ This post has been a draft a while and is relevant to Arduino IDE versions aroun
 
 A friend of mine recently ran into a library versioning issue so I thought I better finally get this post out.
  
-Seems the new Ardunio IDE version 2.0.0-beta.3 is based on VS Code. Everything is slowing going this way it seems. Something I touched on in my blog post: [A state of text editors in late 2019](https://2e0pgs.github.io/blog/programming/2019/12/07/a-state-of-text-editors-in-late-2019/)
+Seems the new Arduino IDE version 2.0.0-beta.3 is based on VS Code. Everything is slowing going this way it seems. Something I touched on in my blog post: [A state of text editors in late 2019](https://2e0pgs.github.io/blog/programming/2019/12/07/a-state-of-text-editors-in-late-2019/)

@@ -7,7 +7,7 @@ summary: How I backup Arduino IDE and libraries on Linux
 categories: programming
 thumbnail:
 tags:
- - Ardunio
+ - Arduino
  - Bash
 ---
 

@@ -88,10 +88,6 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-If you are accessing a few things in the `Startup.cs` such as [adding auth](https://2e0pgs.github.io/blog/programming/2020/09/27/aspnet-core-2-2-angular-identityserver3/) you can use the following to retrieve one string from `appsettings.json`:
-
-* `Configuration.GetValue<string>("IdentityServiceUri");`
-
 ### Example appsettings.json
 
 ```json
@@ -135,11 +131,23 @@ public class MyController : Controller
 
 See real example: [Core/Startup.cs](https://bitbucket.org/2E0PGS/core/src/master/Core/Startup.cs)
 
+### Single string
+
+If you are just accessing a few things in the `Startup.cs` such as [adding auth](https://2e0pgs.github.io/blog/programming/2020/09/27/aspnet-core-2-2-angular-identityserver3/) you can use the following to retrieve one string:
+
+* `Configuration.GetValue<string>("Authority");`
+
+```json
+{
+  "Authority": "https://youridentityserver3instance.com/identity",
+}
+```
+
 ## Note worthy stuff
 
 Use camelCase to conform to JSON standards but it seems MS cant decide if they want to stick to their old school PascalCase days. 
 
 UPDATE: They seem to mostly give camelCase example code snippets now. Originally they had PascalCase JSON property names in the scaffolding templates.
 
-* Call it: `appsettings.json`.
+* Call it: `appsettings.json`
 * _Untested example migration from web.config: [stackoverflow.com/a/52341105](https://stackoverflow.com/a/52341105)_ I say untested because I believe I did try this and it didn't work however I didn't spend much time at all testing maybe 5 mins.

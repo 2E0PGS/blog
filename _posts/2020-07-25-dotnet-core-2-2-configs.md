@@ -139,7 +139,7 @@ If you are just accessing a few things in the `Startup.cs` such as [adding auth]
 
 ```json
 {
-  "Authority": "https://youridentityserver3instance.com/identity",
+  "Authority": "https://youridentityserver3instance.com/identity"
 }
 ```
 

@@ -22,7 +22,10 @@ tags:
 
 ## ASP.NET Core 2.2 Web API
 
-Using `IdentityServer4.AccessTokenValidation` NuGet packages to auth against IdentityServer3.
+* Using the following NuGet packages to auth against IdentityServer3:
+    * `IdentityServer4`
+    * `IdentityServer4.AccessTokenValidation`
+* For more information about `options.Audience` see: [here](https://docs.identityserver.io/en/latest/topics/apis.html).
 
 ### Startup.cs
 
@@ -34,8 +37,9 @@ options =>
     options.Authority = "https://youridentityserver3instance.com/identity";
     //options.RequireHttpsMetadata = false; // If you don't use HTTPS uncomment.
     options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters();
-    //options.TokenValidationParameters.ValidateAudience = false; // Try uncomment this if it's not working.
-    options.SaveToken = true; // Allows the API to reuse it's token later in client calls.
+    options.SaveToken = true;  // Allows the API to reuse it's token later in client calls.
+    options.TokenValidationParameters.ValidateAudience = false; // Comment this out if supplying an audience.
+    //options.Audience = "myservicename";
 
     // If you need to fix claim mapping to be backwards compatible.
     options.SecurityTokenValidators.Clear();
@@ -50,9 +54,14 @@ options =>
 });
 ```
 
+* You will also need to add this line: `app.UseAuthentication();`
+* Make sure it's order is before `app.UseMvc();` see: [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Authorization failed for the request at filter](https://stackoverflow.com/a/46890346)
+
 ## ASP.NET Core 2.2 MVC
 
-Using `IdentityServer4.AccessTokenValidation` NuGet packages to auth against IdentityServer3.
+* Using the following NuGet packages to auth against IdentityServer3:
+    * `IdentityServer4`
+    * `IdentityServer4.AccessTokenValidation`
 
 ### Startup.cs
 
@@ -95,6 +104,9 @@ services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
         options.Scope.Add("roles");
     });
 ```
+
+* You will also need to add this line: `app.UseAuthentication();`
+* Make sure it's order is before `app.UseMvc();` see: [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Authorization failed for the request at filter](https://stackoverflow.com/a/46890346)
 
 ## Angular 7
 

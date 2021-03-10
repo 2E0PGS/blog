@@ -25,7 +25,7 @@ tags:
 * Using the following NuGet packages to auth against IdentityServer3:
     * `IdentityServer4`
     * `IdentityServer4.AccessTokenValidation`
-* For more information about `options.Audience` see: [here](https://docs.identityserver.io/en/latest/topics/apis.html).
+* For more information about `options.Audience` see: [here](https://docs.identityserver.io/en/latest/topics/apis.html)
 
 ### Startup.cs
 

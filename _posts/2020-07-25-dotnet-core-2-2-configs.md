@@ -22,7 +22,7 @@ tags:
 
 This doesn't use a dep injector. KISS (Keep It Simple S...): [stackoverflow.com/a/46437144](https://stackoverflow.com/a/46437144)
 
-Install NuGet package Microsoft.Extensions.Configuration.Json
+Install NuGet package: `Microsoft.Extensions.Configuration.Json`
 
 ### Program.cs
 
@@ -87,6 +87,10 @@ public void ConfigureServices(IServiceCollection services)
     services.Configure<MyProject.Models.AppSettings>(Configuration.GetSection("MySection"));
 }
 ```
+
+If you are accessing a few things in the `Startup.cs` such as [adding auth](https://2e0pgs.github.io/blog/programming/2020/09/27/aspnet-core-2-2-angular-identityserver3/) you can use the following to retrieve one string from `appsettings.json`:
+
+* `Configuration.GetValue<string>("IdentityServiceUri");`
 
 ### Example appsettings.json
 

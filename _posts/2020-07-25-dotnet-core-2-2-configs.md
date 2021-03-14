@@ -150,8 +150,10 @@ If you want to retrieve a nested single string you can do the following. Notice 
 `Configuration["ConnectionStrings:MyDatabase"];`
 
 ```json
-"ConnectionStrings": {
-  "MyDatabase": "Data Source=localhost;Initial Catalog=MyDatabase;Integrated Security=True"
+  {
+  "ConnectionStrings": {
+    "MyDatabase": "Data Source=localhost;Initial Catalog=MyDatabase;Integrated Security=True"
+  }
 }
 ```
 

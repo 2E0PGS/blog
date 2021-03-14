@@ -425,7 +425,9 @@ Some interesting points from [.NET Conf 2020](https://www.dotnetconf.net/) inclu
 
 * Shame all 3 words get thrown around a bit. Could be a more consolidated term.
 * Anyway I noticed these have changed a fair bit for .NET Core projects. Specifically for MVC projects.
-* `dotnet new` is for blueprints in .NET Core. You can get extra ones online for example: [AWS blueprints](https://github.com/aws/aws-lambda-dotnet/blob/master/Blueprints/README.md)
+* You can get extra ones online for example: [AWS blueprints](https://github.com/aws/aws-lambda-dotnet/blob/master/Blueprints/README.md)
+* You can use this command to list installed templates and their versions: `dotnet new -u` 
+* `dotnet new` will list available templates for .NET Core.
 
 ### Example
 

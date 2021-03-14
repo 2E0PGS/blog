@@ -135,11 +135,23 @@ See real example: [Core/Startup.cs](https://bitbucket.org/2E0PGS/core/src/master
 
 If you are just accessing a few things in the `Startup.cs` such as [adding auth](https://2e0pgs.github.io/blog/programming/2020/09/27/aspnet-core-2-2-angular-identityserver3/) you can use the following to retrieve one string:
 
-* `Configuration.GetValue<string>("Authority");`
+`Configuration.GetValue<string>("Authority");`
 
 ```json
 {
   "Authority": "https://youridentityserver3instance.com/identity"
+}
+```
+
+#### Nested single string
+
+If you want to retrieve a nested single string you can do the following. Notice how here we are using a index style access `[]` instead of the `GetValue` or `GetSection` methods. This is yet another way to retrieve config strings. If you used XML `Web.config` in .NET Framework this will be more familiar.
+
+`Configuration["ConnectionStrings:MyDatabase"];`
+
+```json
+"ConnectionStrings": {
+  "MyDatabase": "Data Source=localhost;Initial Catalog=MyDatabase;Integrated Security=True"
 }
 ```
 

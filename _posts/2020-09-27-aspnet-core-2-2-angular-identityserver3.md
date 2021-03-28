@@ -36,8 +36,8 @@ options =>
 {
     options.Authority = "https://youridentityserver3instance.com/identity";
     //options.RequireHttpsMetadata = false; // If you don't use HTTPS uncomment.
-    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters();
     options.SaveToken = true;  // Allows the API to reuse it's token later in client calls.
+    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters();
     options.TokenValidationParameters.ValidateAudience = false; // Comment this out if supplying an audience.
     //options.Audience = "myservicename";
 

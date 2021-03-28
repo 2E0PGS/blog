@@ -84,7 +84,7 @@ public void ConfigureServices(IServiceCollection services)
 {
     ...
 
-    services.Configure<MyProject.Models.AppSettings>(Configuration.GetSection("MySection"));
+    services.Configure<MyProject.Models.AppSettingsModel>(Configuration.GetSection("MySection"));
 }
 ```
 
@@ -99,10 +99,10 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-### AppSettings.cs
+### AppSettingsModel.cs
 
 ```csharp
-public class AppSettings
+public class AppSettingsModel
 {
     public string ApiUrl { get; set; }
     public int ApiVersion { get; set; }
@@ -114,9 +114,9 @@ public class AppSettings
 ```csharp
 public class MyController : Controller
 {
-    private readonly AppSettings _appSettings;
+    private readonly AppSettingsModel _appSettings;
 
-    public MyController(IOptions<AppSettings> appSettings)
+    public MyController(IOptions<AppSettingsModel> appSettings)
     {
         _appSettings = appSettings.Value;
     }

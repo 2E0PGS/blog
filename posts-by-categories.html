@@ -22,6 +22,14 @@ make-smaller-titles: true
       </div>
 
     </small></h2>
+
+    <div class="col-md-12 content-panel articles">
+      <h2>Categories</h2>
+      {% for category in site.categories %}
+        <a href="{{ site.baseurl }}/posts-by-categories/#{{ category | first | slugify }}">{{ category | first }}</a>,
+      {% endfor %}
+    </div>
+
       {% for category in site.categories %}
       <div class="col-md-12 content-panel articles">
         <h2 id="{{ category | first }}-ref">{{ category | first }}</h2>

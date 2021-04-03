@@ -70,10 +70,13 @@ During my testing I noticed some disparities between ADS and VS Code Python kern
 * Why Python behaves differently?
 	* Perhaps ADS has some different flags enabled on the Python interpreter?
 	* Perhaps ADS uses IPython and VS Code uses regular Python? The prior maybe less strict with indentation?
+	* Perhaps Python version differences?
 * VS Code seems to use system installs whereas Azure Data Studio has a pre-bundled Python?
 * I tried creating fresh notebooks in each instead of creating in one and opening in other. The same behaviour was observed.
 
-Invoking the ADS bundled Python manually, it behaves as expected.
+### Invoking the ADS bundled Python manually
+
+_Behaves as expected. Python forcing us to indent properly for readability and in some cases functionality due to lack of braces in the language._
 
 ```python
 C:\Users\peter\azuredatastudio-python\0.0.1\python.exe Desktop\test.py
@@ -83,7 +86,9 @@ C:\Users\peter\azuredatastudio-python\0.0.1\python.exe Desktop\test.py
 IndentationError: unexpected indent
 ```
 
-Invoking the system installation of Python manually, it behaves as expected.
+Invoking the system installation of Python manually.
+
+_Behaves as expected._
 
 ```python
 C:\Windows\py.exe Desktop\test.py
@@ -92,23 +97,37 @@ C:\Windows\py.exe Desktop\test.py
 IndentationError: unexpected indent
 ```
 
-ADS
+### ADS Python
 
-![ads](/blog/assets/2021-04-03/ads.png)
+_Surprised it didn't moan at me._
 
-VS Code
+![azure-data-studio-python](/blog/assets/2021-04-03/azure-data-studio-python.png)
 
-![vs-code](/blog/assets/2021-04-03/vs-code.png)
+### VS Code Python
 
-Digging a bit further I tried this in [binder](#other-tools) and noticed something similar that points to IPython or Python versioning.
+_Behaves as expected._
 
-Binder classic notebook IPython
+![vs-code-python](/blog/assets/2021-04-03/vs-code-python.png)
+
+Digging a bit further I tried this in [binder](#other-tools) and noticed something similar.
+
+### Binder classic notebook IPython
+
+_Surprised it didn't moan at me._
 
 ![binder-ipython-classic](/blog/assets/2021-04-03/binder-ipython-classic.png)
 
-Binder new JupyterLab Python 3
+### Binder new JupyterLab Python 3
+
+_Behaves as expected._
 
 ![binder-python3-new](/blog/assets/2021-04-03/binder-python3-new.png)
+
+### ADS .NET 5 C# 
+
+_Behaves as expected. We use braces for scope therefore it's never forcing us to whitespace indent properly which is useful for quickly commenting out a few blocks of surrounding code for debugging purposes. See: [C# if-else statement: Curly braces or not? An in-depth analysis](https://social.technet.microsoft.com/wiki/contents/articles/37763.c-if-else-statement-curly-braces-or-not-an-in-depth-analysis.aspx)_
+
+![azure-data-studio-csharp](/blog/assets/2021-04-03/azure-data-studio-csharp.png)
 
 ## Articles
 

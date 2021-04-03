@@ -147,8 +147,8 @@ Binder new JupyterLab Python 3
 	* Interactive apps using notebooks and REPLs.
 * XPlot F# graphing lib.
 * [Use Jupyter with .NET Interactive on Binder](https://github.com/dotnet/interactive/blob/main/docs/NotebooksOnBinder.md)
-	 * [mybinder.org/v2/gh/dotnet/interactive](https://mybinder.org/v2/gh/dotnet/interactive/main?urlpath=lab)
-	 	* No syntax highlighting on the mybinder currently.
+	* [mybinder.org/v2/gh/dotnet/interactive](https://mybinder.org/v2/gh/dotnet/interactive/main?urlpath=lab)
+		* No syntax highlighting on the mybinder currently.
 * [binder](https://mybinder.org/) "Turn a Git repo into a collection of interactive notebooks"
 * [Azure Notebooks](https://notebooks.azure.com/)
 * [replit](https://repl.it/repls) online REPL environment.

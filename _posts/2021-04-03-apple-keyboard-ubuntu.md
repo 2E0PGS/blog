@@ -14,6 +14,8 @@ tags:
 
 I cannot recall which of the two methods I used most recently. I suspect the `hid_apple.conf` method is a better first bet. I provide two methods in case one works in the instance the other doesn't.
 
+Both methods aim to allow the use of `F1-F12` function keys by setting the `fnmode` so they only act like media buttons when the `fn` key is held. They also aim to fix the layout to have the correct position for UK `<, >, @, #, ~, £, $` keys
+
 ## hid_apple.conf method
 
 You can add the following lines to: `/etc/modprobe.d/hid_apple.conf`

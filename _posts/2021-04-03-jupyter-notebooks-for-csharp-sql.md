@@ -112,9 +112,9 @@ Binder new JupyterLab Python 3
 
 ## Articles
 
-* [How to Use .NET Interactive Jupyter Notebooks in Daily Work-Life | Data Exposed: MVP Edition](https://www.youtube.com/watch?v=W-F0gO7dVOE)
+* [How to Use .NET Interactive Jupyter Notebooks in Daily Work-Life \| Data Exposed: MVP Edition](https://www.youtube.com/watch?v=W-F0gO7dVOE)
 	* Show preview kernels for current notebook provider.
-* [.NET Interactive is here! | .NET Notebooks Preview 2](https://devblogs.microsoft.com/dotnet/net-interactive-is-here-net-notebooks-preview-2/)
+* [.NET Interactive is here! \| .NET Notebooks Preview 2](https://devblogs.microsoft.com/dotnet/net-interactive-is-here-net-notebooks-preview-2/)
 * [Jupyter kernels - List of available kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
 * [Jupyter notebook with multiple languages](https://z-uo.medium.com/jupyter-with-multiple-languages-1ae58e98dc8e)
 * [The November 2019 release of Azure Data Studio is now available](https://cloudblogs.microsoft.com/sqlserver/2019/11/05/the-november-2019-release-of-azure-data-studio-is-now-available/?ocid=AID754288&wt.mc_id=azfr-c9-scottha&wt.mc_id=CFID0530)
@@ -135,9 +135,9 @@ Binder new JupyterLab Python 3
 ## Videos
 
 * [Bringing .NET Interactive to Azure Data Studio Notebooks](https://www.youtube.com/watch?v=938jBJ-tK3c)
-* [Jupyter Notebooks in Azure Data studio | Azure Data Studio Tutorial](https://www.youtube.com/watch?v=I5Qz9jLnAqk)
-* [Introduction to Azure Data Studio Notebooks | Data Exposed](https://www.youtube.com/watch?v=Nt4kIHQ0IOc)
-* [How to use Jupyter Notebooks in Azure Data Studio | Azure Friday](https://youtu.be/pHuRj9ty9cI)
+* [Jupyter Notebooks in Azure Data studio \| Azure Data Studio Tutorial](https://www.youtube.com/watch?v=I5Qz9jLnAqk)
+* [Introduction to Azure Data Studio Notebooks \| Data Exposed](https://www.youtube.com/watch?v=Nt4kIHQ0IOc)
+* [How to use Jupyter Notebooks in Azure Data Studio \| Azure Friday](https://youtu.be/pHuRj9ty9cI)
 * [Plotting Graphs in C# with XPlot and Jupyter](https://www.youtube.com/watch?v=dUPpm-2KINE)
 * [VSCode's Python Interactive mode is AMAZING!](https://www.youtube.com/watch?v=lwN4-W1WR84)
 

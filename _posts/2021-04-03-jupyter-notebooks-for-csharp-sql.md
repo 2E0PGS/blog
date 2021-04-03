@@ -98,7 +98,7 @@ ADS
 
 VS Code
 
-![vs-code](blog/assets/2021-04-03/vs-code.png)
+![vs-code](/blog/assets/2021-04-03/vs-code.png)
 
 Digging a bit further I tried this in [binder](#other-tools) and noticed something similar that points to IPython or Python versioning.
 

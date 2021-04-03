@@ -16,8 +16,10 @@ tags:
 
 ## Burning software
 
-* Passing through a optical disc drive to guest for burning inside a VM: [forums.virtualbox.org/viewtopic.php?f=2&t=28871](https://forums.virtualbox.org/viewtopic.php?f=2&t=28871)
 * [Disc spanning](https://en.wikipedia.org/wiki/Disc_spanning)
+* Passing through a optical disc drive to guest for burning inside a VM: [forums.virtualbox.org/viewtopic.php?f=2&t=28871](https://forums.virtualbox.org/viewtopic.php?f=2&t=28871)
+
+![virtualbox-passthrough](/blog/assets/2021-02-20/virtualbox-passthrough.jpg)
 
 ### Brasero
 

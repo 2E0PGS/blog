@@ -27,6 +27,7 @@ tags:
 * Works on CD-R and DVD-R but not BD-R discs.
 * Enabling the `burn the image directly without saving it to disc` option will skip making a local ISO cache before burning to disc in `/tmp`
 * CD-R write speeds are one of the fastest I have tested so far as high as 34x. Using Pioneer, VM passthrough Windows host -> Linux guest and Sony 700 MB.
+* Had it ask if I want to rename files for full Windows compatibility, I press **okay** it creates a checksum and then says do I want to continue **without** full Windows compatibility **OK** or **Cancel**. Normally this works fine so there must be some edge case.
 
 ### K3B 
 
@@ -37,6 +38,8 @@ tags:
 * Enabling `Create image` option will make a local ISO cache before burning to disc in `/tmp`.
 * You will need to manually enable verify disc. This should really be on by default.
 * DB-R write speeds only seen as high as 3x but have seen it dip to 1.7x. Using Pioneer, VM passthrough Windows host -> Linux guest and Verbatim 25 GB 6x.
+* ["cdrecord has no permission to open the device"](https://askubuntu.com/questions/1032903/problem-with-k3b-in-18-04-releases-cdrecord-has-no-permission-to-open-the-devi)
+* Calls mkisofs
 
 ### Windows Explorer
 
@@ -66,22 +69,22 @@ tags:
 
 | Id | Date       | Disc brand | Disc type | Write software | File source | IO type                              | Project type         | File type               | Write device | Write speed max | Write speed average | Result                      |
 |----|------------|------------|-----------|----------------|-------------|--------------------------------------|----------------------|-------------------------|--------------|-----------------|---------------------|-----------------------------|
-| 16 | 2020-12-07 | Philips    | DVD-R     | K3B            | USB3        | Linux direct                         | Data                 | MP4                     | DU-8A5LH     |                 |                     | OK                          |
-| 15 | 2020-12-06 | Philips    | DVD-R     | Brasero        | USB3        | Linux direct                         | Data                 | MP3                     | SU-208GB     |                 |                     | OK                          |
-| 14 | 2020-12-07 | Sony       | CD-R      | Brasero        | USB3        | Linux direct                         | Data                 | MP3                     | SU-208GB     |                 |                     | OK                          |
-| 13 | 2020-12-14 | Sony       | CD-R      | Windows        | Local cache | Windows direct                       | Data                 | MP3                     | BDR-212M     | N/A             | N/A                 | OK                          |
-| 12 | 2020-12-14 | Sony       | CD-R      | Brasero        | Local cache | Windows -> VM passthrough -> Linux   | Data                 | MP3                     | BDR-212M     | 34x             | 24.9x               | OK                          |
-| 11 | 2020-12-14 | Philips    | DVD-R     | Brasero        | Local cache | Windows -> VM passthrough -> Linux   | Data                 | MP3                     | BDR-212M     | 16x             | 10.9x               | OK                          |
-| 10 | 2020-12-14 | Philips    | DVD-R     | K3B            | Local cache | Windows -> VM passthrough -> Linux   | Data                 | MP3                     | BDR-212M     | 15x             |                     | OK                          |
-| 9  | 2020-12-14 | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data                 | MP3                     | BDR-212M     | 13.4x           |                     | OK                          |
-| 8  | 2020-12-14 | Sony       | CD-R      | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data                 | MP3                     | BDR-212M     | N/A             | N/A                 | ERROR                       |
-| 7  | 2020-12-14 | Sony       | CD-R      | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data                 | MP3                     | BDR-212M     | N/A             | N/A                 | ERROR                       |
-| 6  | 2020-12-14 | Verbatim   | BD-R      | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data                 | MP3                     | BDR-212M     | 8.1x            |                     | OK                          |
-| 5  | 2020-12-12 | Verbatim   | BD-R      | K3B            | Remote SMB  | Windows -> VM passthrough -> Linux   | Data                 | MP3                     | BDR-212M     | 2.4x            |                     | OK                          |
-| 4  | 2020-12-12 | Verbatim   | BD-R      | K3B            | Local cache | Live Linux USB direct                | Data (FS Linux only) | MP4/MOV                 | BDR-212M     | 3.3x            |                     | OK                          |
-| 3  | 2020-12-12 | Verbatim   | BD-R      | Windows        | Local cache | Windows direct                       | Data                 | MP4/MOV                 | BDR-212M     | N/A             | N/A                 | OK                          |
-| 2  | 2020-12-12 | Verbatim   | BD-R      | K3B            | Remote SMB  | Windows -> VM passthrough -> Linux   | Data                 | MP4, MOV, JPG, TNL, MTS | BDR-212M     |                 |                     | ERROR Ran out of disc space |
 | 1  | 2020-12-12 | Verbatim   | BD-R      | K3B            | Local cache | Live Linux USB direct                | Data                 | MP4, MOV                | BDR-212M     | 3.3x            |                     | OK                          |
+| 2  | 2020-12-12 | Verbatim   | BD-R      | K3B            | Remote SMB  | Windows -> VM passthrough -> Linux   | Data                 | MP4, MOV, JPG, TNL, MTS | BDR-212M     |                 |                     | ERROR Ran out of disc space |
+| 3  | 2020-12-12 | Verbatim   | BD-R      | Windows        | Local cache | Windows direct                       | Data                 | MP4/MOV                 | BDR-212M     | N/A             | N/A                 | OK                          |
+| 4  | 2020-12-12 | Verbatim   | BD-R      | K3B            | Local cache | Live Linux USB direct                | Data (FS Linux only) | MP4/MOV                 | BDR-212M     | 3.3x            |                     | OK                          |
+| 5  | 2020-12-12 | Verbatim   | BD-R      | K3B            | Remote SMB  | Windows -> VM passthrough -> Linux   | Data                 | MP3                     | BDR-212M     | 2.4x            |                     | OK                          |
+| 6  | 2020-12-14 | Verbatim   | BD-R      | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data                 | MP3                     | BDR-212M     | 8.1x            |                     | OK                          |
+| 7  | 2020-12-14 | Sony       | CD-R      | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data                 | MP3                     | BDR-212M     | N/A             | N/A                 | ERROR                       |
+| 8  | 2020-12-14 | Sony       | CD-R      | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data                 | MP3                     | BDR-212M     | N/A             | N/A                 | ERROR                       |
+| 9  | 2020-12-14 | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data                 | MP3                     | BDR-212M     | 13.4x           |                     | OK                          |
+| 10 | 2020-12-14 | Philips    | DVD-R     | K3B            | Local cache | Windows -> VM passthrough -> Linux   | Data                 | MP3                     | BDR-212M     | 15x             |                     | OK                          |
+| 11 | 2020-12-14 | Philips    | DVD-R     | Brasero        | Local cache | Windows -> VM passthrough -> Linux   | Data                 | MP3                     | BDR-212M     | 16x             | 10.9x               | OK                          |
+| 12 | 2020-12-14 | Sony       | CD-R      | Brasero        | Local cache | Windows -> VM passthrough -> Linux   | Data                 | MP3                     | BDR-212M     | 34x             | 24.9x               | OK                          |
+| 13 | 2020-12-14 | Sony       | CD-R      | Windows        | Local cache | Windows direct                       | Data                 | MP3                     | BDR-212M     | N/A             | N/A                 | OK                          |
+| 14 | 2020-12-07 | Sony       | CD-R      | Brasero        | USB3        | Linux direct                         | Data                 | MP3                     | SU-208GB     |                 |                     | OK                          |
+| 15 | 2020-12-06 | Philips    | DVD-R     | Brasero        | USB3        | Linux direct                         | Data                 | MP3                     | SU-208GB     |                 |                     | OK                          |
+| 16 | 2020-12-07 | Philips    | DVD-R     | K3B            | USB3        | Linux direct                         | Data                 | MP4                     | DU-8A5LH     |                 |                     | OK                          |
 
 * BDR-212M is a Pioneer drive.
 * SU-208GB is a TSSTcorp drive.

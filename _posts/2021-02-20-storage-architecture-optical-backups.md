@@ -227,8 +227,8 @@ Can't seem to find a data sheet or product brochure unfortunately. So no way to 
 * [UDF with K3B](https://dirkmittler.homeip.net/blog/archives/4120)
 * ImgBurn ISO 9660 + Joliet: MP3 data disks
 * ImgBurn UDF 1.02
-* ImbBurn ISO 9660 + Joilet: DivX video disc
-	* [ImgBurn UDF + ISO 9660 - Bridge disc](https://forum.imgburn.com/index.php?/topic/11599-difference-between-udf-102-and-iso-9660udf-102/) TODO: Same as UDF structures on K3B?
+* ImbBurn ISO 9660 + UDF: DivX video disc
+	* [ImgBurn ISO 9660 + UDF - Bridge disc](https://forum.imgburn.com/index.php?/topic/11599-difference-between-udf-102-and-iso-9660udf-102/) TODO: Same as UDF structures on K3B?
 * [ISO 9660 + Joliet + UDF - vs doing each separate](https://forum.imgburn.com/index.php?/topic/17600-iso9660jolietudf-vs-separate-of-them/)
 * Brasero uses ISO 9660 Level 2? But will switch to Level 3 when you add files over 2 GB and you accept the warning message.
 
@@ -621,3 +621,24 @@ N/A
 		* My friend 2E0EOL says tsMuxer warned him to use AC3.
 	* MP4 seems to mostly use aac audio and avc1 video in my sample set.
 	* MKV is mostly opus audio in my sample set.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+With regards to finding a format for a friends player:
+
+* MP3 only I would fire out: `ISO 9660+Joilet`
+* Anything else like MP4, MKV I would fire out UDF.
+* If you're really worried about compatibility then just use: `ISO 9660+Joliet+UDF` if that doesn't work its probably not worth debugging further as you will expend 8 discs for each combination of file type and file system type if you wanted a unique combination test.

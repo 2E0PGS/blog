@@ -409,7 +409,7 @@ $ bc -l
 * _Encrypted or unencrypted?_
 * _Owner_
 * _Method of backup e.g. tar, split or is this obvious from file extensions?_
-* _File system type_
+* _File system type e.g. ISO 9660_
 * _Write software_
 * _Alphabetic range if storing music dumps e.g. A-E_
 * _Unique int id number which can then be stored in a central index e.g. spreadsheet or CSV along with other metadata._

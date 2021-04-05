@@ -615,30 +615,15 @@ N/A
 * [Sony - Supported File Formats for DLNA® and USB Compatible Blu-ray Disc™ Players and Network Media Players](https://www.sony.com/electronics/support/articles/S1F0959)
 	* They don't confirm what formats work on disc however.
 	* In my testing it seems to support the same as USB compatible formats.
-* Id:2 seems possibly size related as it's 17G however a 11G MP4 file worked...
+* Id:2 seems to be due to 5.1 audio or file size however it's only 17G and a 11G file worked.
 * Id:3 seems to be due to MKV opus instead of using MP3, MPEG or AAC audio. 
 	* AC3 apparently works.
 		* My friend 2E0EOL says tsMuxer warned him to use AC3.
 	* MP4 seems to mostly use aac audio and avc1 video in my sample set.
 	* MKV is mostly opus audio in my sample set.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 With regards to finding a format for a friends player:
 
 * MP3 only I would fire out: `ISO 9660+Joilet`
-* Anything else like MP4, MKV I would fire out UDF.
+* Anything else like MP4, MKV I would fire out `UDF`.
 * If you're really worried about compatibility then just use: `ISO 9660+Joliet+UDF` if that doesn't work its probably not worth debugging further as you will expend 8 discs for each combination of file type and file system type if you wanted a unique combination test.

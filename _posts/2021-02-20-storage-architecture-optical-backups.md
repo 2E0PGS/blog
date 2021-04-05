@@ -17,7 +17,10 @@ tags:
 ## Burning software
 
 * [Disc spanning](https://en.wikipedia.org/wiki/Disc_spanning)
-* Passing through a optical disc drive to guest for burning inside a VM: [forums.virtualbox.org/viewtopic.php?f=2&t=28871](https://forums.virtualbox.org/viewtopic.php?f=2&t=28871)
+* Had some issues getting FLAC onto a CD-R audio project without codecs.
+* Proxmox supports cd-rom passthrough but I had issues where it seemed the guest didn't have full control.
+* VirtualBox works flawlessly so far.
+	* Passing through a optical disc drive to guest for burning inside a VM: [forums.virtualbox.org/viewtopic.php?f=2&t=28871](https://forums.virtualbox.org/viewtopic.php?f=2&t=28871)
 
 ![virtualbox-passthrough](/blog/assets/2021-02-20/virtualbox-passthrough.jpg)
 
@@ -28,6 +31,7 @@ tags:
 * Enabling the `burn the image directly without saving it to disc` option will skip making a local ISO cache before burning to disc in `/tmp`
 * CD-R write speeds are one of the fastest I have tested so far as high as 34x. Using Pioneer, VM passthrough Windows host -> Linux guest and Sony 700 MB.
 * Had it ask if I want to rename files for full Windows compatibility, I press **okay** it creates a checksum and then says do I want to continue **without** full Windows compatibility **OK** or **Cancel**. Normally this works fine so there must be some edge case.
+* Crashes on audio projects often.
 
 ### K3B 
 
@@ -221,9 +225,11 @@ Can't seem to find a data sheet or product brochure unfortunately. So no way to 
 * [Rock Ridge](https://wiki.osdev.org/ISO_9660#Rock_Ridge_and_Joliet) extension to ISO 9660.
 * [UDF](https://wiki.osdev.org/UDF) file system
 * [UDF with K3B](https://dirkmittler.homeip.net/blog/archives/4120)
-* ImgBurn ISO 9660 + Joliet for MP3 data disks.
+* ImgBurn ISO 9660 + Joliet: MP3 data disks
 * ImgBurn UDF 1.02
-* [ImgBurn UDF + ISO 9660 - Bridge disc](https://forum.imgburn.com/index.php?/topic/11599-difference-between-udf-102-and-iso-9660udf-102/) TODO: Same as UDF structures on K3B?
+* ImbBurn ISO 9660 + Joilet: DivX video disc
+	* [ImgBurn UDF + ISO 9660 - Bridge disc](https://forum.imgburn.com/index.php?/topic/11599-difference-between-udf-102-and-iso-9660udf-102/) TODO: Same as UDF structures on K3B?
+* [ISO 9660 + Joliet + UDF - vs doing each separate](https://forum.imgburn.com/index.php?/topic/17600-iso9660jolietudf-vs-separate-of-them/)
 * Brasero uses ISO 9660 Level 2? But will switch to Level 3 when you add files over 2 GB and you accept the warning message.
 
 ## Scripts
@@ -533,3 +539,85 @@ I noticed a few imperfections so I now check the blank medium before using it.
 ![imperfection-4.png](/blog/assets/2021-02-20/imperfection-4.png)
 
 ![imperfection-5.png](/blog/assets/2021-02-20/imperfection-5.png)
+
+## Further compatibility testing
+
+### Data set 1 write
+
+| Id | Date       | Disc brand | Disc type | Write software | File source | IO type                              | Project type | File system         | File type                                                                       | Write device | Write speed max | Write speed average | Result |
+|----|------------|------------|-----------|----------------|-------------|--------------------------------------|--------------|---------------------|---------------------------------------------------------------------------------|--------------|-----------------|---------------------|--------|
+| 18 | 2021-02-27 | Kodak      | DVD+R DL  | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | UDF 1.02            | MP4                                                                             | BDR-212M     |                 |                     | OK     |
+| 19 |            | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | UDF 1.02            | MP4                                                                             | BDR-212M     |                 |                     | OK     |
+| 20 |            | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+UDF        | MP4                                                                             | BDR-212M     |                 |                     | OK     |
+| 21 |            | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet+UDF | MP4                                                                             | BDR-212M     |                 |                     | OK     |
+| 22 | 2021-02-27 | Kodak      | DVD+R DL  | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet     | MP3                                                                             | BDR-212M     |                 |                     | OK     |
+| 23 |            | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet+UDF | FLAC, TXT, WAV, M4A, AIFF, JPG, PNG, GIF, MKV, MP4, AVI, MP3, WEBM              | BDR-212M     |                 |                     | OK     |
+| 24 |            | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet     | FLAC, TXT, WAV, M4A, AIFF, JPG, PNG, GIF, MKV, MP4, AVI, MP3, WEBM              | BDR-212M     |                 |                     | OK     |
+| 25 |            | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+UDF 1.02   | FLAC, TXT, WAV, M4A, AIFF, JPG, PNG, GIF, MKV, MP4, AVI, MP3, WEBM              | BDR-212M     |                 |                     | OK     |
+| 26 |            | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | UDF 1.02            | FLAC, TXT, WAV, M4A, AIFF, JPG, PNG, GIF, MKV, MP4, AVI, MP3, WEBM              | BDR-212M     |                 |                     | OK     |
+| 27 |            | Kodak      | DVD+R DL  | Brasero        | Remote SMB  | Linux direct                         | Data         | ISO 9660            | JPG, MP3, 3PG, OGG, PNG, FLV, WAV, M4A, FLAC, MOV, MP4, MKV, AVI, AAC, UMX, MD5 | SU-208GB     |                 |                     | OK     |
+
+* "Data set 1" is a continuation of the data set mentioned in [Write speed tests](#write-speed-tests) and [Compatibility/playback tests](#compatibilityplayback-tests)
+* 23, 24, 26, 27 are the most useful test disks.
+* TODO: Need a BB-R and BD-R DL multi file test disk.
+* 25 was a accidental burn because I wasn't planning on testing that FS combo. However I thought id test it anyway.
+
+### Data set 1 read
+
+| WriteId | Read device              | Result | Readable file types |
+|---------|--------------------------|--------|---------------------|
+| 18      | PS3                      | OK     | MP4                 |
+| 18      | LG DVD/CD Player DVX392H | Err    |                     |
+| 19      | LG DVD/CD Player DVX392H | Err    |                     |
+| 20      | LG DVD/CD Player DVX392H | Err    |                     |
+| 21      | LG DVD/CD Player DVX392H | Err    |                     |
+| 22      | LG DVD/CD Player DVX392H | OK     | MP3                 |
+| 23      | LG DVD/CD Player DVX392H | OK     | MP3, JPG, AVI       |
+| 24      | LG DVD/CD Player DVX392H | OK     | MP3, JPG, AVI       |
+| 25      | LG DVD/CD Player DVX392H | OK     | MP3, JPG, AVI       |
+| 26      | LG DVD/CD Player DVX392H | OK     | MP3, JPG, AVI       |
+| 27      | LG DVD/CD Player DVX392H | OK     | MP3, JPG, AVI       |
+
+### Data set 2 write
+
+| Id | Date       | Disc brand | Disc type | Write software | File source | IO type                              | Project type | File system     | File type | Write device | Write speed max | Write speed average | Result |
+|----|------------|------------|-----------|----------------|-------------|--------------------------------------|--------------|-----------------|-----------|--------------|-----------------|---------------------|--------|
+| 65 | 2021-03-03 | MediaRange | BD-R DL   | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | binary    | BDR-212M     | 8x              | 6.6x                | OK     |
+
+### Data set 2 read
+
+N/A
+
+### Data set 3 write
+
+| Id | Date       | Disc brand | Disc type | Write software | File source | IO type                              | Project type | File system     | File type | Write device | Write speed max | Write speed average | Result |
+|----|------------|------------|-----------|----------------|-------------|--------------------------------------|--------------|-----------------|-----------|--------------|-----------------|---------------------|--------|
+| 1  | 2021-02-24 | Verbatim   | BD-R      | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | MP3       | BDR-212M     |                 |                     | OK     |
+| 2  | 2021-02-24 | Verbatim   | BD-R      | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | UDF 1.02        | MP4       | BDR-212M     |                 |                     | OK     |
+| 3  | 2021-02-24 | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | UDF 1.02        | MKV       | BDR-212M     |                 |                     | OK     |
+| 5  | 2021-02-24 | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | MP3       | BDR-212M     |                 |                     | OK     |
+| 6  | 2021-02-24 | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | MP3       | BDR-212M     |                 |                     | OK     |
+| 7  | 2021-02-24 | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | MP3       | BDR-212M     |                 |                     | OK     |
+| 8  | 2021-03-08 | Kodak      | DVD+R DL  | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | MP3       | BDR-212M     |                 |                     | OK     |
+
+### Data set 3 read
+
+| WriteId | Read device    | Result | Readable file types | Notes                                                                                           |
+|---------|----------------|--------|---------------------|-------------------------------------------------------------------------------------------------|
+| 1       | Sony BDP-S1500 | OK     | MP3                 |                                                                                                 |
+| 2       | Sony BDP-S1500 | OK     | MP4                 | One MP4 file didn't work: "The file is corrupt or unsupported.". The rest were working perfect. |
+| 3       | Sony BDP-S1500 | OK     | MKV                 | Videos with no audio present: "Audio format not supported."                                     |
+| 5       | Sony BDP-S1500 | OK     | MP3                 |                                                                                                 |
+| 6       | Sony BDP-S1500 | OK     | MP3                 |                                                                                                 |
+| 7       | Sony BDP-S1500 | OK     | MP3                 |                                                                                                 |
+| 8       | Sony BDP-S1500 | OK     | MP3                 |                                                                                                 |
+
+* [Sony - Supported File Formats for DLNA® and USB Compatible Blu-ray Disc™ Players and Network Media Players](https://www.sony.com/electronics/support/articles/S1F0959)
+	* They don't confirm what formats work on disc however.
+	* In my testing it seems to support the same as USB compatible formats.
+* Id:2 seems possibly size related as it's 17G however a 11G MP4 file worked...
+* Id:3 seems to be due to MKV opus instead of using MP3, MPEG or AAC audio. 
+	* AC3 apparently works.
+		* My friend 2E0EOL says tsMuxer warned him to use AC3.
+	* MP4 seems to mostly use aac audio and avc1 video in my sample set.
+	* MKV is mostly opus audio in my sample set.

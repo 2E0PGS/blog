@@ -68,6 +68,7 @@ You will run into int based calculations unless specifying decimal variables/inp
 * [REPL console application feature request](https://github.com/dotnet/interactive/issues/335)
 * [OmniSharp C# REPL feature request](https://github.com/OmniSharp/omnisharp-vscode/issues/1239)
 * [dotnet-script](https://github.com/filipw/dotnet-script)
+* [cs-script](https://github.com/oleg-shilo/cs-script)
 
 Console application example
 
@@ -113,6 +114,7 @@ System.Decimal
 
 #### .NET Framework
 
+* [cs-script.net-framework](https://github.com/oleg-shilo/cs-script.net-framework)
 * [REPL for full .NET Framework using C# interactive window in VS](https://odetocode.com/blogs/scott/archive/2020/01/21/the-c-interactive-window.aspx)
 
 Interactive window example
@@ -132,6 +134,7 @@ Interactive window example
 
 * [Mono REPL](https://www.mono-project.com/docs/tools+libraries/tools/repl/)
 * [Online REPL repl.it/languages/csharp](https://repl.it/languages/csharp)
+* [C# Shell (C# Offline Compiler)](https://play.google.com/store/apps/details?id=com.radinc.csharpshell) Android PlayStore app (closed-source?)
 
 Run Mono's REPL using command: `csharp`
 
@@ -178,19 +181,31 @@ Can also be used on Termux on Android see my blog post: [Everyday Termux uses](h
 
 ### Python
 
-#### Python2.7
+#### Python 2.7
 
 ```python
 >>> 5/6
 0
 ```
 
-#### Python3.6
+#### Python 3.6
+
+* [Pydroid 3 - IDE for Python 3](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3) Android PlayStore app (closed-source?)
 
 ```python
 >>> 5/6
 0.8333333333333334
 ```
+
+### C++
+
+* [The cling C++ interpreter](https://github.com/root-project/cling)
+* [Interactive GCC - C/C++ REPL](https://github.com/alexandru-dinu/igcc)
+* [Cxxdroid - C++ compiler IDE for mobile development](https://play.google.com/store/apps/details?id=ru.iiec.cxxdroid) Android PlayStore app (closed-source?)
+
+### C
+
+* [a C read-eval-print loop](https://github.com/evmar/c-repl)
 
 ## Graphing
 

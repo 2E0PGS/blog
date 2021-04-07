@@ -170,8 +170,5 @@ _Behaves as expected. We use braces for scope therefore it's never forcing us to
 		* No syntax highlighting on the mybinder currently.
 * [binder](https://mybinder.org/) "Turn a Git repo into a collection of interactive notebooks"
 * [Azure Notebooks](https://notebooks.azure.com/)
-* [replit](https://repl.it/repls) online REPL environment.
-* [C# Shell (C# Offline Compiler)](https://play.google.com/store/apps/details?id=com.radinc.csharpshell) Android PlayStore app.
 * [IPython](https://ipython.org/) Interactive Python
 * [Jupyter - Try Jupyter](https://jupyter.org/try)
-

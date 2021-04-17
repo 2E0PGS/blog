@@ -98,42 +98,42 @@ tags:
 
 ## Compatibility/playback tests
 
-| WriteId | Read device              | Result           |
-|---------|--------------------------|------------------|
-| 1       | PS3                      | OK               |
-| 1       | Xbox One S               | Error 0x80820002 |
-| 3       | PS3                      | OK               |
-| 3       | Xbox One S               | Error 0x80820002 |
-| 4       | PS3                      | OK               |
-| 4       | Xbox One S               | Error 0x80820002 |
-| 5       | PS3                      | OK               |
-| 5       | Xbox One S               | Error 0x80820002 |
-| 6       | PS3                      | OK               |
-| 6       | Xbox One S               | Error 0x80820002 |
-| 9       | PS3                      | OK               |
-| 9       | Xbox One S               | Error 0x80820002 |
-| 9       | LG DVD/CD Player DVX392H | OK               |
-| 10      | PS3                      | OK               |
-| 10      | Xbox One S               | Error 0x80820002 |
-| 10      | LG DVD/CD Player DVX392H | OK               |
-| 11      | PS3                      | OK               |
-| 11      | Xbox One S               | Error 0x80820002 |
-| 11      | LG DVD/CD Player DVX392H | OK               |
-| 12      | PS3                      | OK               |
-| 12      | Xbox One S               | Error 0x80820002 |
-| 12      | LG DVD/CD Player DVX392H | OK               |
-| 13      | PS3                      | OK               |
-| 13      | Xbox One S               | Error 0x80820002 |
-| 13      | LG DVD/CD Player DVX392H | OK               |
-| 14      | PS3                      | OK               |
-| 14      | Xbox One S               | Error 0x80820002 |
-| 14      | LG DVD/CD Player DVX392H | OK               |
-| 15      | PS3                      | OK               |
-| 15      | Xbox One S               | Error 0x80820002 |
-| 15      | LG DVD/CD Player DVX392H | OK               |
-| 16      | PS3                      | OK               |
-| 16      | Xbox One S               | Error 0x80820002 |
-| 16      | LG DVD/CD Player DVX392H | Err              |
+| WriteId | Read device | Result           |
+|---------|-------------|------------------|
+| 1       | PS3         | OK               |
+| 1       | Xbox One S  | Error 0x80820002 |
+| 3       | PS3         | OK               |
+| 3       | Xbox One S  | Error 0x80820002 |
+| 4       | PS3         | OK               |
+| 4       | Xbox One S  | Error 0x80820002 |
+| 5       | PS3         | OK               |
+| 5       | Xbox One S  | Error 0x80820002 |
+| 6       | PS3         | OK               |
+| 6       | Xbox One S  | Error 0x80820002 |
+| 9       | PS3         | OK               |
+| 9       | Xbox One S  | Error 0x80820002 |
+| 9       | LG DVX392H  | OK               |
+| 10      | PS3         | OK               |
+| 10      | Xbox One S  | Error 0x80820002 |
+| 10      | LG DVX392H  | OK               |
+| 11      | PS3         | OK               |
+| 11      | Xbox One S  | Error 0x80820002 |
+| 11      | LG DVX392H  | OK               |
+| 12      | PS3         | OK               |
+| 12      | Xbox One S  | Error 0x80820002 |
+| 12      | LG DVX392H  | OK               |
+| 13      | PS3         | OK               |
+| 13      | Xbox One S  | Error 0x80820002 |
+| 13      | LG DVX392H  | OK               |
+| 14      | PS3         | OK               |
+| 14      | Xbox One S  | Error 0x80820002 |
+| 14      | LG DVX392H  | OK               |
+| 15      | PS3         | OK               |
+| 15      | Xbox One S  | Error 0x80820002 |
+| 15      | LG DVX392H  | OK               |
+| 16      | PS3         | OK               |
+| 16      | Xbox One S  | Error 0x80820002 |
+| 16      | LG DVX392H  | Err              |
 
 * 1, 3 and 4 the PS3 wouldn't find the MOV files but this is a separate issue relating to PS3 codecs not a medium issue. It did however play MP4 just fine.
 
@@ -225,10 +225,10 @@ Can't seem to find a data sheet or product brochure unfortunately. So no way to 
 * [Rock Ridge](https://wiki.osdev.org/ISO_9660#Rock_Ridge_and_Joliet) extension to ISO 9660.
 * [UDF](https://wiki.osdev.org/UDF) file system
 * [UDF with K3B](https://dirkmittler.homeip.net/blog/archives/4120)
-* ImgBurn ISO 9660 + Joliet: MP3 data disks
 * ImgBurn UDF 1.02
-* ImbBurn ISO 9660 + UDF: DivX video disc
-	* [ImgBurn ISO 9660 + UDF - Bridge disc](https://forum.imgburn.com/index.php?/topic/11599-difference-between-udf-102-and-iso-9660udf-102/) TODO: Same as UDF structures on K3B?
+* ImgBurn ISO 9660 + Joliet: MP3 data disks
+* ImbBurn ISO 9660 + Joliet: DivX video disc
+* [ImgBurn ISO 9660 + UDF - Bridge disc](https://forum.imgburn.com/index.php?/topic/11599-difference-between-udf-102-and-iso-9660udf-102/) TODO: Same as UDF structures on K3B?
 * [ISO 9660 + Joliet + UDF - vs doing each separate](https://forum.imgburn.com/index.php?/topic/17600-iso9660jolietudf-vs-separate-of-them/)
 * Brasero uses ISO 9660 Level 2? But will switch to Level 3 when you add files over 2 GB and you accept the warning message.
 
@@ -564,19 +564,19 @@ I noticed a few imperfections so I now check the blank medium before using it.
 
 ### Data set 1 read
 
-| WriteId | Read device              | Result | Readable file types |
-|---------|--------------------------|--------|---------------------|
-| 18      | PS3                      | OK     | MP4                 |
-| 18      | LG DVD/CD Player DVX392H | Err    |                     |
-| 19      | LG DVD/CD Player DVX392H | Err    |                     |
-| 20      | LG DVD/CD Player DVX392H | Err    |                     |
-| 21      | LG DVD/CD Player DVX392H | Err    |                     |
-| 22      | LG DVD/CD Player DVX392H | OK     | MP3                 |
-| 23      | LG DVD/CD Player DVX392H | OK     | MP3, JPG, AVI       |
-| 24      | LG DVD/CD Player DVX392H | OK     | MP3, JPG, AVI       |
-| 25      | LG DVD/CD Player DVX392H | OK     | MP3, JPG, AVI       |
-| 26      | LG DVD/CD Player DVX392H | OK     | MP3, JPG, AVI       |
-| 27      | LG DVD/CD Player DVX392H | OK     | MP3, JPG, AVI       |
+| WriteId | Read device | Result | Readable file types |
+|---------|-------------|--------|---------------------|
+| 18      | PS3         | OK     | MP4                 |
+| 18      | LG DVX392H  | Err    |                     |
+| 19      | LG DVX392H  | Err    |                     |
+| 20      | LG DVX392H  | Err    |                     |
+| 21      | LG DVX392H  | Err    |                     |
+| 22      | LG DVX392H  | OK     | MP3                 |
+| 23      | LG DVX392H  | OK     | MP3, JPG, AVI       |
+| 24      | LG DVX392H  | OK     | MP3, JPG, AVI       |
+| 25      | LG DVX392H  | OK     | MP3, JPG, AVI       |
+| 26      | LG DVX392H  | OK     | MP3, JPG, AVI       |
+| 27      | LG DVX392H  | OK     | MP3, JPG, AVI       |
 
 ### Data set 2 write
 
@@ -612,6 +612,8 @@ N/A
 | 7       | Sony BDP-S1500 | OK     | MP3                 |                                                                                                 |
 | 8       | Sony BDP-S1500 | OK     | MP3                 |                                                                                                 |
 
+### Sony BDP-S1500
+
 * [Sony - Supported File Formats for DLNA® and USB Compatible Blu-ray Disc™ Players and Network Media Players](https://www.sony.com/electronics/support/articles/S1F0959)
 	* They don't confirm what formats work on disc however.
 	* In my testing it seems to support the same as USB compatible formats.
@@ -627,3 +629,4 @@ With regards to finding a format for a friends player:
 * MP3 only I would fire out: `ISO 9660+Joilet`
 * Anything else like MP4, MKV I would fire out `UDF`.
 * If you're really worried about compatibility then just use: `ISO 9660+Joliet+UDF` if that doesn't work its probably not worth debugging further as you will expend 8 discs for each combination of file type and file system type if you wanted a unique combination test.
+* It seems most systems these days are not worried about file system type but are more worried about codec.

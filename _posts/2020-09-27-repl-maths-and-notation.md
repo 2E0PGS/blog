@@ -7,7 +7,7 @@ summary: Maths, notation, calculators and REPL programming
 categories: programming
 thumbnail:
 tags:
- - Maths
+ - maths
  - C#
  - SQL
  - .NET

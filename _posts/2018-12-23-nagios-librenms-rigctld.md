@@ -11,6 +11,7 @@ tags:
  - Hamlib
  - Linux
  - LibreNMS
+ - graphing
 ---
 
 # LibreNMS and rigctld

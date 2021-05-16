@@ -66,7 +66,7 @@ Humidity, Temp, Heat index
 ...
 ```
 
-![2021-02-15-kitchen--gnuplot.png](/blog/assets/2021-05-16/2021-02-15-kitchen-gnuplot.png)
+![2021-02-15-kitchen-gnuplot.png](/blog/assets/2021-05-16/2021-02-15-kitchen-gnuplot.png)
 
 ## Extra line smoothing options and points
 
@@ -95,7 +95,7 @@ plot '2021-02-13-bedroom-floor-day-night-morning.csv' using 0:2 smooth csplines,
 
 I wish LibreOffice Calc `ctrl + a` did a select on only the rows/columns adjacent like Microsoft Excel does instead of selecting the entire sheet. 
 
-Below is the same data set but graphed using LibreOffice line graphs.
+Below is the same kitchen data set but graphed using LibreOffice line graphs.
 
 ![2021-02-15-kitchen-libreoffice.png](/blog/assets/2021-05-16/2021-02-15-kitchen-libreoffice.png)
 

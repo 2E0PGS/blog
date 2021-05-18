@@ -20,7 +20,9 @@ If you switch between the two frameworks often and use MS test you may find this
 
 ## Old MSTest
 
-`C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll`
+```
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+```
 
 In old .NET Framework test library you don't have the Assert.Throws.
 
@@ -47,7 +49,9 @@ public void GetStuff_ThrowsException()
 
 ## New MSTest
 
-`C:\Users\peter\.nuget\packages\mstest.testframework\1.3.2\lib\netstandard1.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll`
+```
+C:\Users\peter\.nuget\packages\mstest.testframework\1.3.2\lib\netstandard1.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+```
 
 In new .NET Core test library you can use the following methods.
 

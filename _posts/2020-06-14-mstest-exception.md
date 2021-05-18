@@ -51,6 +51,22 @@ public void GetStuff_ThrowsException()
 
 In new .NET Core test library you can use the following methods.
 
-`Assert.ThrowsExceptionAsync`
+```csharp
+[TestMethod]
+public void GetStuff_ThrowsException_Async()
+{
+    string foobarString = "testing stuff";
+    decimal foobarDecimal = 21;
+    await Assert.ThrowsExceptionAsync<Exception>(() => _myController.GetStuffAsync(foobarString, foobarDecimal));
+}
+```
 
-`Assert.ThrowsException`
+```csharp
+[TestMethod]
+public void GetStuff_ThrowsException()
+{
+    string foobarString = "testing stuff";
+    decimal foobarDecimal = 21;
+    Assert.ThrowsException<Exception>(() => _myController.GetStuff(foobarString, foobarDecimal));
+}
+```

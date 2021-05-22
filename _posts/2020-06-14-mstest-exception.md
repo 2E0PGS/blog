@@ -57,7 +57,7 @@ In new .NET Core test library you can use the following methods.
 
 ```csharp
 [TestMethod]
-public void GetStuff_ThrowsException_Async()
+public Task GetStuff_ThrowsException_Async()
 {
     string foobarString = "testing stuff";
     decimal foobarDecimal = 21;

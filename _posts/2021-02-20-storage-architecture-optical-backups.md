@@ -284,7 +284,7 @@ Can't seem to find a data sheet or product brochure unfortunately. So no way to 
 ```
 $ dirsplit -s 200m -L -S camera/
 Building file list, please wait...
-Too large object(s) (15574072797) for the given max size: /media/anon/camera/large-file-1.mp4 (maybe coalesced in arrays, check manually)
+Too large object(s) (15574072797) for the given max size: /media/peter/camera/large-file-1.mp4 (maybe coalesced in arrays, check manually)
 ```
 
 #### mkisofs catalog example

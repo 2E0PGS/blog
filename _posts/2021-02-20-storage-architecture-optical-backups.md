@@ -98,44 +98,53 @@ tags:
 
 ## Compatibility/playback tests
 
-| WriteId | Read device | Result           |
-|---------|-------------|------------------|
-| 1       | PS3         | OK               |
-| 1       | Xbox One S  | Error 0x80820002 |
-| 3       | PS3         | OK               |
-| 3       | Xbox One S  | Error 0x80820002 |
-| 4       | PS3         | OK               |
-| 4       | Xbox One S  | Error 0x80820002 |
-| 5       | PS3         | OK               |
-| 5       | Xbox One S  | Error 0x80820002 |
-| 6       | PS3         | OK               |
-| 6       | Xbox One S  | Error 0x80820002 |
-| 9       | PS3         | OK               |
-| 9       | Xbox One S  | Error 0x80820002 |
-| 9       | LG DVX392H  | OK               |
-| 10      | PS3         | OK               |
-| 10      | Xbox One S  | Error 0x80820002 |
-| 10      | LG DVX392H  | OK               |
-| 11      | PS3         | OK               |
-| 11      | Xbox One S  | Error 0x80820002 |
-| 11      | LG DVX392H  | OK               |
-| 12      | PS3         | OK               |
-| 12      | Xbox One S  | Error 0x80820002 |
-| 12      | LG DVX392H  | OK               |
-| 13      | PS3         | OK               |
-| 13      | Xbox One S  | Error 0x80820002 |
-| 13      | LG DVX392H  | OK               |
-| 14      | PS3         | OK               |
-| 14      | Xbox One S  | Error 0x80820002 |
-| 14      | LG DVX392H  | OK               |
-| 15      | PS3         | OK               |
-| 15      | Xbox One S  | Error 0x80820002 |
-| 15      | LG DVX392H  | OK               |
-| 16      | PS3         | OK               |
-| 16      | Xbox One S  | Error 0x80820002 |
-| 16      | LG DVX392H  | Err              |
+| WriteId | Read device      | Result           |
+|---------|------------------|------------------|
+| 1       | PS3              | OK               |
+| 1       | Xbox One S       | Error 0x80820002 |
+| 1       | Sony BDP-S1500   | OK               |
+| 3       | PS3              | OK               |
+| 3       | Xbox One S       | Error 0x80820002 |
+| 4       | PS3              | OK               |
+| 4       | Xbox One S       | Error 0x80820002 |
+| 4       | Xbox One S (app) | Error 0x91d70000 |
+| 4       | Sony BDP-S1500   | OK               |
+| 5       | PS3              | OK               |
+| 5       | Xbox One S       | Error 0x80820002 |
+| 6       | PS3              | OK               |
+| 6       | Xbox One S       | Error 0x80820002 |
+| 6       | Xbox One S (app) | Error 0x91d70000 |
+| 9       | PS3              | OK               |
+| 9       | Xbox One S       | Error 0x80820002 |
+| 9       | Xbox One S (app) | Error 0x91d70000 |
+| 9       | LG DVX392H       | OK               |
+| 10      | PS3              | OK               |
+| 10      | Xbox One S       | Error 0x80820002 |
+| 10      | LG DVX392H       | OK               |
+| 11      | PS3              | OK               |
+| 11      | Xbox One S       | Error 0x80820002 |
+| 11      | LG DVX392H       | OK               |
+| 12      | PS3              | OK               |
+| 12      | Xbox One S       | Error 0x80820002 |
+| 12      | LG DVX392H       | OK               |
+| 13      | PS3              | OK               |
+| 13      | Xbox One S       | Error 0x80820002 |
+| 13      | LG DVX392H       | OK               |
+| 14      | PS3              | OK               |
+| 14      | Xbox One S       | Error 0x80820002 |
+| 14      | LG DVX392H       | OK               |
+| 15      | PS3              | OK               |
+| 15      | Xbox One S       | Error 0x80820002 |
+| 15      | LG DVX392H       | OK               |
+| 16      | PS3              | OK               |
+| 16      | Xbox One S       | Error 0x80820002 |
+| 16      | Xbox One S (app) | Error 0x91d70000 |
+| 16      | LG DVX392H       | Err              |
+| 16      | Sony BDP-S1500   | OK               |
 
-* 1, 3 and 4 the PS3 wouldn't find the MOV files but this is a separate issue relating to PS3 codecs not a medium issue. It did however play MP4 just fine.
+* 1, 3 and 4 the `PS3` wouldn't find the MOV files but this is a separate issue relating to PS3 codecs not a medium issue. It did however play MP4 just fine.
+* Read device: `Xbox One S (app)` indicates the use of the Xbox `Blu-ray Player` app.
+* 16, 4 and 1 `Sony BDP-S1500` plays with video/audio as it can be picky with audio codecs.
 
 ## Optical medium models
 
@@ -564,19 +573,30 @@ I noticed a few imperfections so I now check the blank medium before using it.
 
 ### Data set 1 read
 
-| WriteId | Read device | Result | Readable file types |
-|---------|-------------|--------|---------------------|
-| 18      | PS3         | OK     | MP4                 |
-| 18      | LG DVX392H  | Err    |                     |
-| 19      | LG DVX392H  | Err    |                     |
-| 20      | LG DVX392H  | Err    |                     |
-| 21      | LG DVX392H  | Err    |                     |
-| 22      | LG DVX392H  | OK     | MP3                 |
-| 23      | LG DVX392H  | OK     | MP3, JPG, AVI       |
-| 24      | LG DVX392H  | OK     | MP3, JPG, AVI       |
-| 25      | LG DVX392H  | OK     | MP3, JPG, AVI       |
-| 26      | LG DVX392H  | OK     | MP3, JPG, AVI       |
-| 27      | LG DVX392H  | OK     | MP3, JPG, AVI       |
+| WriteId | Read device      | Result           | Readable file types                                                   |
+|---------|------------------|------------------|-----------------------------------------------------------------------|
+| 18      | PS3              | OK               | MP4                                                                   |
+| 18      | LG DVX392H       | Err              |                                                                       |
+| 19      | LG DVX392H       | Err              |                                                                       |
+| 20      | LG DVX392H       | Err              |                                                                       |
+| 21      | LG DVX392H       | Err              |                                                                       |
+| 22      | LG DVX392H       | OK               | MP3                                                                   |
+| 23      | LG DVX392H       | OK               | MP3, JPG, AVI                                                         |
+| 23      | Xbox One S (app) | Error 0x91d70000 |                                                                       |
+| 23      | Sony BDP-S1500   | OK               | JPG, GIF, PNG, MP3, FLAC, WAV, M4A, AIFF, MKV, MP4, AVI               |
+| 24      | LG DVX392H       | OK               | MP3, JPG, AVI                                                         |
+| 24      | Xbox One S (app) | Error 0x91d70000 |                                                                       |
+| 24      | Sony BDP-S1500   | OK               | JPG, GIF, PNG, MP3, FLAC, WAV, M4A, AIFF, MKV, MP4, AVI               |
+| 25      | LG DVX392H       | OK               | MP3, JPG, AVI                                                         |
+| 26      | LG DVX392H       | OK               | MP3, JPG, AVI                                                         |
+| 26      | Xbox One S (app) | Error 0x91d70000 |                                                                       |
+| 26      | Sony BDP-S1500   | OK               | JPG, GIF, PNG, MP3, FLAC, WAV, M4A, AIFF, MKV, MP4, AVI               |
+| 27      | LG DVX392H       | OK               | MP3, JPG, AVI                                                         |
+| 27      | Xbox One S (app) | Error 0x91d70000 |                                                                       |
+| 27      | Sony BDP-S1500   | OK               | JPG, PNG, MP3, OGG, WAV, M4A, FLAC, AAC, 3GP, FLV, MOV, MP4, MKV, AVI |
+
+* The GIF image was static not animated on `Sony BDP-S1500`.
+* `Sony BDP-S1500` all play with video/audio as it can be picky with audio codecs.
 
 ### Data set 2 write
 

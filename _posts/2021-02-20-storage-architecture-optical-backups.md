@@ -237,8 +237,8 @@ Can't seem to find a data sheet or product brochure unfortunately. So no way to 
 ### ffmpeg
 
 * [How can I use ffmpeg to split MPEG video into 10 minute chunks?](https://unix.stackexchange.com/a/212518/220886)
-* Below is a adaptation I used for DVD splits of long 6 hour mp4 video files. Some work is needed still since this causes issues on the time stamps.
-* One downside with this is using this for data disc project wont make use of the disks full capacity as the disc can fit more mp4 runtime than 120 mins in DVD VIDEO_TS mode.
+* Below is a adaptation I used for DVD splits of long 6 hour MP4 video files. Some work is needed still since this causes issues on the time stamps.
+* One downside with this is using this for data disc project wont make use of the disks full capacity as the disc can fit more MP4 runtime than 120 mins in DVD VIDEO_TS mode.
 * 1: `ffmpeg -i "$1" -c copy -map 0 -segment_time 01:18:00 -f segment %03d"$1"`
 * That creates a file around: 3.6 GB (3604783722 bytes) in size although it will depend how compressed your source file is. 
 * 2: `ffmpeg -i "$1" -c:v copy -c:a copy -segment_time 01:18:00 -f segment %03d"$1"`
@@ -614,14 +614,16 @@ N/A
 
 ### Sony BDP-S1500
 
+#### Initial notes
+
 * [Sony - Supported File Formats for DLNA® and USB Compatible Blu-ray Disc™ Players and Network Media Players](https://www.sony.com/electronics/support/articles/S1F0959)
 	* They don't confirm what formats work on disc however.
 	* In my testing it seems to support the same as USB compatible formats.
-* Id:2 seems to be due to 5.1 audio or file size however it's only 17G and a 11G file worked.
-* Id:3 seems to be due to MKV opus instead of using MP3, MPEG or AAC audio. 
+* Data set 3 Id:2 seems to be due to file size or runtime however it's only 17G and a 11G file worked.
+* Data set 3 Id:3 seems to be due to MKV opus 5.1 instead of using MP3, MP2 (MPEG), AC3 or AAC audio. 
 	* AC3 apparently works.
 		* My friend 2E0EOL says tsMuxer warned him to use AC3.
-	* MP4 seems to mostly use aac audio and avc1 video in my sample set.
+	* MP4 seems to mostly use AAC audio and avc1 video in my sample set.
 	* MKV is mostly opus audio in my sample set.
 
 With regards to finding a format for a friends player:
@@ -630,3 +632,189 @@ With regards to finding a format for a friends player:
 * Anything else like MP4, MKV I would fire out `UDF`.
 * If you're really worried about compatibility then just use: `ISO 9660+Joliet+UDF` if that doesn't work its probably not worth debugging further as you will expend 8 discs for each combination of file type and file system type if you wanted a unique combination test.
 * It seems most systems these days are not worried about file system type but are more worried about codec.
+
+#### Things to watch out for
+
+* File system
+	* ISO 9660
+		* Version 3 for certain size files (Brasero)? macOS doesn't work with version 3?
+	* UDF
+		* File size limit big.
+* File type
+	* Container
+		* .mp4
+		* .mkv
+	* Codec video
+		* h.264
+	* Codec audio
+		* AAC
+		* AC3
+		* Opus		
+	* Video frame rate
+		* 25 fps
+		* 30 fps
+		* 50 fps
+		* 60 fps
+		* variable
+	* Video colour space
+		* PAL, NTSC
+		* [Color Hell: Ffmpeg Transcoding and Preserving BT.601](https://kdenlive.org/en/project/color-hell-ffmpeg-transcoding-and-preserving-bt-601/)
+		* `yuvj420p(pc, bt470bg/bt470bg/smpte170m)`
+		* `yuv420p(tv, bt709)`
+		* `yuvj420p(pc)`
+		* `yuv420p`
+		* `yuvj420p(pc, progressive)`
+		* `yuv420p(tv, bt709, progressive),`
+	* Video aspect ratio
+		* `DAR 16:9`
+		* `DAR 9:16`
+			* Doesn't work. Use transpose: [Rotating videos with FFmpeg](https://stackoverflow.com/questions/3937387/rotating-videos-with-ffmpeg)
+	* Audio/video bit rates
+	* Audio channels
+		* 5.1 surround
+		* Stereo
+		* Mono
+* ffmpeg
+	* Re-encode for correcting timestamps on TS streams.
+		* See heading: [ffmpeg](#ffmpeg)
+	* `-report` flag
+	* `-map` choose the right stream index?
+	* `-c` specify codec for streams or specific with `a` then `copy` it or use `aac` etc
+	* TODO: List all the other transforms and useful no video flags.
+* ffprobe
+
+#### Script for mass checking codecs
+
+ffprobe and ffmpeg you have to redirect the stdout in order to pipe it.
+
+```sh
+echo "MP4"
+for i in *.mp4; do 
+	echo "$i"
+	ffprobe -i "$i" 2>&1 | grep Video --color
+	ffprobe -i "$i" 2>&1 | grep Audio --color
+done
+
+echo "MKV"
+for i in *.mkv; do
+	echo "$i"
+	ffprobe -i "$i" 2>&1 | grep Video --color
+	ffprobe -i "$i" 2>&1 | grep Audio --color
+done
+```
+
+#### Extended testing notes
+
+* Vertical vs horizontal trays... Go horizontal... Xbox, writing etc
+* It seems to expose the USB the same as a BD or DVD. 
+	* This allowed me to move to testing via USB instead of disc for these edge case issues I wanted to narrow down to the specific cause. 
+	* Confirmed results on DVD on refined test data set.
+	* I could use rewritable media as 2E0EOL points out.
+	* It's still important to retain a directory listing of the files so you can refer back to them if further analysis is required. Not a problem if you burn everything to a set of test disks like I mostly did.
+* moto-g test was crap due to vertical video 9:16 issue. Re test it I guess using the GC video.
+* Colour space doesn't appear to be an issue.	
+* [2E0EOL convert script](https://pastebin.com/MWWm0PE4) so his script seems mostly fine provided original video doesn't have a bad aspect ratio.
+* FPS didn't seem to be a issue either.
+* AC3 playback is louder than AAC.
+* The "Return" button works on audio and pictures but only the "Stop" button will work on videos.
+* The following codecs all work on both MP4 and MKV with 5.1 _and presumably stereo_: MP3, MP2 (MPEG), AC3, AAC
+* MP3 playback is louder than MP2 (MPEG)
+* OBS files worked as I dont have remux to MP4 turned on. So they're AAC MKVs.
+* Use pen only, indellible markers. No labels due to weight imbalance.
+* Bit rate doesn't seem to be a issue nor 48000 Hz vs 44100 Hz.
+* ogg != opus but you can use libvorbis and libopus. Both can be stored in `.ogg` but `.opus` is recommended file extension for the latter.
+* `opus in MP4 support is experimental, add '-strict -2' if you want to use it.` so no Opus MP4 tested.
+* Vorbis (libvorbis) 2 channel stereo works on MKV but not MP4 where it gives silent video. 
+	* 5.1 doesn't work on either video.
+	* It works audio only too however 5.1 doesn't but stereo does work.
+* Opus (libopus) 2 channel stereo works on MKV.
+	* 5.1 doesn't work but 2 channel stereo does.
+	* It wont play audio only in `.ogg` or `.opus`
+* MKV isn't subject to the below MP4 file size/runtime issues.
+
+#### MP4 file size or runtime issue
+
+Generated using the following by swapping the `-t` flag value.
+
+```
+ffmpeg -i "gatecrasher on rapture tv nec 2001.mp4" -c:v copy -c:a copy -t 22400 gatecrasher-rapture-22400.mp4 -report
+```
+
+* The following path is a local HDD for scratch space: `/media/peter/bulk-drive/temp-burning-2`
+* The following path is a USB I was using for testing on the player: `/media/peter/testing`
+* I did `md5sum` on the USB to ensure it matched the source file after playback test to rule out copy corruption or playback corruption.
+	* I did have one test get thrown out as a corrupt file however `md5sum` confirmed it was actually corrupted upon copy not related to the test case.
+* \> Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+* Could it be a file name length or spaces issue... Nope tried that, it's not file name.
+
+##### Not working
+
+```
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ md5sum gatecrasher-rapture-22800.mp4
+1b5f8ade378963ced05e1f1ff9cbade9  gatecrasher-rapture-22800.mp4
+
+peter@desktop:/media/peter/testing$ md5sum gatecrasher-rapture-22800.mp4 
+1b5f8ade378963ced05e1f1ff9cbade9  gatecrasher-rapture-22800.mp4
+
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ du -B KB gatecrasher-rapture-22800.mp4
+16722961kB	gatecrasher-rapture-22800.mp4
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ du -B K gatecrasher-rapture-22800.mp4
+16331016K	gatecrasher-rapture-22800.mp4
+
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ ffprobe -i gatecrasher-rapture-22800.mp4
+Duration: 06:20:00.02, start: 0.000000, bitrate: 5867 kb/s
+```
+
+The below was tested twice.
+
+```
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ md5sum gatecrasher-rapture-22600.mp4 
+90df26b7186c7da02dee5da88217a934  gatecrasher-rapture-22600.mp4
+
+peter@desktop:/media/peter/testing$ md5sum gatecrasher-rapture-22600.mp4 
+90df26b7186c7da02dee5da88217a934  gatecrasher-rapture-22600.mp4
+
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ du -B KB gatecrasher-rapture-22600.mp4
+16567682kB	gatecrasher-rapture-22600.mp4
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ du -B K gatecrasher-rapture-22600.mp4
+16179376K	gatecrasher-rapture-22600.mp4
+
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ ffprobe gatecrasher-rapture-22600.mp4
+Duration: 06:16:40.02, start: 0.000000, bitrate: 5864 kb/s
+```
+
+##### Working
+
+```
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ md5sum gatecrasher-rapture-22400.mp4 
+7ae86b0b637c94740147c3ca2e1d8ce4  gatecrasher-rapture-22400.mp4
+
+peter@desktop:/media/peter/testing$ md5sum gatecrasher-rapture-22400.mp4 
+7ae86b0b637c94740147c3ca2e1d8ce4  gatecrasher-rapture-22400.mp4
+
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ du -B KB gatecrasher-rapture-22400.mp4 
+16420013kB	gatecrasher-rapture-22400.mp4
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ du -B K gatecrasher-rapture-22400.mp4 
+16035168K	gatecrasher-rapture-22400.mp4
+
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ ffprobe gatecrasher-rapture-22400.mp4
+Duration: 06:13:20.02, start: 0.000000, bitrate: 5864 kb/s
+```
+
+The below was tested twice.
+
+```
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ md5sum gatecrasher-rapture-22200.mp4
+b7503a44e34798f8a518e7da43a241b3  gatecrasher-rapture-22200.mp4
+
+peter@desktop:/media/peter/testing$ md5sum gatecrasher-rapture-22200.mp4 
+b7503a44e34798f8a518e7da43a241b3  gatecrasher-rapture-22200.mp4
+
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ du -B KB gatecrasher-rapture-22200.mp4
+16267891kB	gatecrasher-rapture-22200.mp4
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ du -B K gatecrasher-rapture-22200.mp4
+15886612K	gatecrasher-rapture-22200.mp4
+
+peter@desktop:/media/peter/bulk-drive/temp-burning-2$ ffprobe -i gatecrasher-rapture-22200.mp4
+Duration: 06:10:00.02, start: 0.000000, bitrate: 5862 kb/s
+```

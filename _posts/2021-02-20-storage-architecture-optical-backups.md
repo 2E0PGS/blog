@@ -740,7 +740,8 @@ done
 * moto-g test was crap due to vertical video 9:16 issue. Re tested using the 16:9 GC video.
 	* DAR 9:16 doesn't work. Use transpose: [Rotating videos with FFmpeg](https://stackoverflow.com/questions/3937387/rotating-videos-with-ffmpeg)
 * Colour space doesn't appear to be an issue.	
-* [2E0EOL convert script](https://pastebin.com/MWWm0PE4) so his script seems mostly fine provided original video doesn't have a bad aspect ratio.
+* [2E0EOL convert script](https://pastebin.com/MWWm0PE4) 
+	* Based on my findings and tests this script will prevent audio issues but won't solve video issues if the input file has a unsupported aspect ratio or codec.
 * FPS didn't seem to be a issue either.
 * AC3 playback is louder than AAC.
 * The "Return" button works on audio and pictures but only the "Stop" button will work on videos.

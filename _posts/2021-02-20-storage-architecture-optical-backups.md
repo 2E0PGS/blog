@@ -666,10 +666,15 @@ With regards to finding a format for a friends player:
 		* .mkv
 	* Codec video
 		* h.264
+		* h.265
+		* vp9
 	* Codec audio
 		* AAC
 		* AC3
-		* Opus		
+		* Opus
+		* Vorbis
+		* MP3
+		* MP2 (MPEG)
 	* Video frame rate
 		* 25 fps
 		* 30 fps
@@ -688,7 +693,6 @@ With regards to finding a format for a friends player:
 	* Video aspect ratio
 		* `DAR 16:9`
 		* `DAR 9:16`
-			* Doesn't work. Use transpose: [Rotating videos with FFmpeg](https://stackoverflow.com/questions/3937387/rotating-videos-with-ffmpeg)
 	* Audio/video bit rates
 	* Audio channels
 		* 5.1 surround
@@ -701,6 +705,8 @@ With regards to finding a format for a friends player:
 	* `-map` choose the right stream index?
 	* `-c` specify codec for streams or specific with `a` then `copy` it or use `aac` etc
 	* TODO: List all the other transforms and useful no video flags.
+		* `-ac 2`
+		* `-vn`
 * ffprobe
 
 #### Script for mass checking codecs
@@ -731,7 +737,8 @@ done
 	* Confirmed results on DVD on refined test data set.
 	* I could use rewritable media as 2E0EOL points out.
 	* It's still important to retain a directory listing of the files so you can refer back to them if further analysis is required. Not a problem if you burn everything to a set of test disks like I mostly did.
-* moto-g test was crap due to vertical video 9:16 issue. Re test it I guess using the GC video.
+* moto-g test was crap due to vertical video 9:16 issue. Re tested using the 16:9 GC video.
+	* DAR 9:16 doesn't work. Use transpose: [Rotating videos with FFmpeg](https://stackoverflow.com/questions/3937387/rotating-videos-with-ffmpeg)
 * Colour space doesn't appear to be an issue.	
 * [2E0EOL convert script](https://pastebin.com/MWWm0PE4) so his script seems mostly fine provided original video doesn't have a bad aspect ratio.
 * FPS didn't seem to be a issue either.
@@ -742,15 +749,16 @@ done
 * OBS files worked as I dont have remux to MP4 turned on. So they're AAC MKVs.
 * Use pen only, indellible markers. No labels due to weight imbalance.
 * Bit rate doesn't seem to be a issue nor 48000 Hz vs 44100 Hz.
-* ogg != opus but you can use libvorbis and libopus. Both can be stored in `.ogg` but `.opus` is recommended file extension for the latter.
-* `opus in MP4 support is experimental, add '-strict -2' if you want to use it.` so no Opus MP4 tested.
+* ogg != opus but you can use libvorbis and libopus. 
+	* Both can be stored in `.ogg` however `.opus` is technically the recommended file extension for the latter.
+	* With that being said the player doesn't recognise the `.opus` file extension.
 * Vorbis (libvorbis) 2 channel stereo works on MKV but not MP4 where it gives silent video. 
-	* 5.1 doesn't work on either video.
-	* It works audio only too however 5.1 doesn't but stereo does work.
-* Opus (libopus) 2 channel stereo works on MKV.
-	* 5.1 doesn't work but 2 channel stereo does.
-	* It wont play audio only in `.ogg` or `.opus`
+	* 5.1 doesn't work on either video or audio only.
+	* Stereo audio only works with `.ogg` extension.
+* Opus (libopus) 2 channel stereo or 5.1 doesn't work on MKV or `.ogg` or `.opus` audio only.
+	* `opus in MP4 support is experimental, add '-strict -2' if you want to use it.` so no Opus MP4 was tested.
 * MKV isn't subject to the below MP4 file size/runtime issues.
+* VP9 video codec doesn't work.
 
 #### MP4 file size or runtime issue
 

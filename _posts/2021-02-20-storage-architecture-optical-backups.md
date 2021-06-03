@@ -794,8 +794,6 @@ peter@desktop:/media/peter/bulk-drive/temp-burning-2$ ffprobe -i gatecrasher-rap
 Duration: 06:20:00.02, start: 0.000000, bitrate: 5867 kb/s
 ```
 
-The below was tested twice.
-
 ```
 peter@desktop:/media/peter/bulk-drive/temp-burning-2$ md5sum gatecrasher-rapture-22600.mp4 
 90df26b7186c7da02dee5da88217a934  gatecrasher-rapture-22600.mp4
@@ -829,8 +827,6 @@ peter@desktop:/media/peter/bulk-drive/temp-burning-2$ du -B K gatecrasher-raptur
 peter@desktop:/media/peter/bulk-drive/temp-burning-2$ ffprobe gatecrasher-rapture-22400.mp4
 Duration: 06:13:20.02, start: 0.000000, bitrate: 5864 kb/s
 ```
-
-The below was tested twice.
 
 ```
 peter@desktop:/media/peter/bulk-drive/temp-burning-2$ md5sum gatecrasher-rapture-22200.mp4

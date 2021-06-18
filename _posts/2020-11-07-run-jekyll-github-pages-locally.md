@@ -37,6 +37,8 @@ git clone https://github.com/2E0PGS/blog.git
 
 jekyll new blog --force
 
+cd blog
+
 bundle exec jekyll serve
 ```
 

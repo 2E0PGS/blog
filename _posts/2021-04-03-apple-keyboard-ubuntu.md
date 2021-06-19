@@ -18,6 +18,8 @@ Both methods aim to allow the use of `F1-F12` function keys by setting the `fnmo
 
 ## hid_apple.conf method
 
+Create the file if it doesn't exist.
+
 You can add the following lines to: `/etc/modprobe.d/hid_apple.conf`
 
 ```sh
@@ -26,7 +28,13 @@ options hid_apple fnmode=2
 options hid_apple iso_layout=0
 ```
 
+Then run `sudo update-initramfs -u -k all` and `sudo reboot`
+
+Similar article: [Change Function Key behavior](https://help.ubuntu.com/community/AppleKeyboard#Change_Function_Key_behavior)
+
 ## rc.local method
+
+This is the older method as newer distros don't have a rc.local.
 
 You can add the following lines to: `/etc/rc.local`
 

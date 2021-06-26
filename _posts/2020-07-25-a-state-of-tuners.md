@@ -128,6 +128,7 @@ Note: Generic RTL devices may require a PPM offset outside their intended use ce
 * ITV: `vlc dvb-t://frequency=578000000:bandwidth=0`
 * The docs state it should be in KHz but I get: `dtv stream error: 578000 Hz carrier frequency is too low.` so it looks like it's actually using Hz.
 * Record `cvlc` transport stream headless: `cvlc dvb-t://frequency=578000000:bandwidth=0 :program=8384 --sout "#file{dst=/home/anon/recording.ts,no-overwrite}"`
+	* There must be a spare before `:program`
 
 ## VLC DVB-S
 
@@ -135,6 +136,9 @@ Note: Generic RTL devices may require a PPM offset outside their intended use ce
 * Channel 4: `vlc dvb-s://frequency=10714000000:srate=22000000:dvb-fec=5:voltage=18`
 * ITV: `vlc dvb-s://frequency=10758000000:srate=22000000:dvb-fec=5:voltage=13`
 * The docs state it should be in KHz but I get: `dtv stream error: 10714000 Hz carrier frequency is too low.` so it looks like it's actually using Hz.
+* GB3ZZ: `vlc dvb-s://frequency=1316000000:srate=4000000:dvb-fec=1:voltage=0 :program=1 :dvb-adapter=1`
+	* There must be a spare before `:program`
+	* I am using the second tuner on my card so `:dvb-adapter=1` instead of `:dvb-adapter=0` which is the default. Ensure a space before this flag.
 
 ## AsusTek - LNA Tiger Hybrid signal issues
 
@@ -332,10 +336,12 @@ There are several benefits. I can see both channels at once unlike with most set
 * [TP 10714 H — Satellite Astra 2E 28.2° East](https://en.satexpat.com/tp/28.2e/10714H)
 * [VLC Documentation - Streaming a DVB Channel](https://wiki.videolan.org/Documentation:Streaming_HowTo/Stream_a_DVB_Channel/)
 * [dream Player for TVHeadend](https://play.google.com/store/apps/details?id=de.cyberdream.tvh.player&hl=en&gl=US)
+* [Freesat spoken audio](https://tvheadend.org/boards/5/topics/18961)
+* [G8YMM/Severnside group 1.3 GHz Yagi antenna](https://www.qsl.net/g8ymm/aerials.htm)
 
 ## TODO
 
-* Include VLC codec screenshots.
-* Megasymbols. etc
-* DVBlast
-* DATV QO-100/Es'hail-2 seperate blog post
+* Include VLC codec screenshots, separate blog post.
+* DVBlast, separate blog post.
+* DATV QO-100/Es'hail-2, separate blog post.
+* More tuners blog post.

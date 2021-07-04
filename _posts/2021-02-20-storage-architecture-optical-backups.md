@@ -248,10 +248,10 @@ Can't seem to find a data sheet or product brochure unfortunately. So no way to 
 * [How can I use ffmpeg to split MPEG video into 10 minute chunks?](https://unix.stackexchange.com/a/212518/220886)
 * Below is a adaptation I used for DVD splits of long 6 hour MP4 video files. Some work is needed still since this causes issues on the time stamps.
 * One downside with this is using this for data disc project wont make use of the disks full capacity as the disc can fit more MP4 runtime than 120 mins in DVD VIDEO_TS mode.
-* 1: `ffmpeg -i "$1" -c copy -map 0 -segment_time 01:18:00 -f segment %03d"$1"`
-* That creates a file around: 3.6 GB (3604783722 bytes) in size although it will depend how compressed your source file is. 
-* 2: `ffmpeg -i "$1" -c:v copy -c:a copy -segment_time 01:18:00 -f segment %03d"$1"`
+* 1: `ffmpeg -i "$1" -c:v copy -c:a copy -segment_time 01:18:00 -f segment %03d"$1"`
 	* `ffmpeg -i 001out.mp4 -c:v copy -c:a copy 001out-reprocessed.mp4` this will fix the timestamps must be some flag im missing on original line.
+	* That creates a file around: 3.6 GB (3604783722 bytes) in size although it will depend how compressed your source file is.
+* 2: UPDATE: `-reset_timestamps` is the flag: `ffmpeg -i "$1" -c:v copy -c:a copy -f segment -segment_time 08:30:00 -reset_timestamps 1 %03d"$1"`
 
 ### Tar compress, split and GPG
 
@@ -603,6 +603,7 @@ I noticed a few imperfections so I now check the blank medium before using it.
 | Id | Date       | Disc brand | Disc type | Write software | File source | IO type                              | Project type | File system     | File type | Write device | Write speed max | Write speed average | Result |
 |----|------------|------------|-----------|----------------|-------------|--------------------------------------|--------------|-----------------|-----------|--------------|-----------------|---------------------|--------|
 | 65 | 2021-03-03 | MediaRange | BD-R DL   | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | binary    | BDR-212M     | 8x              | 6.6x                | OK     |
+| 88 | 2021-07-03 | MediaRange | BD-R      | ImgBurn        | Remote SMB  | Windows                              | Data         | ISO 9660+Joliet | binary    | BDR-212M     |                 | 6x                  | OK     |
 
 ### Data set 2 read
 
@@ -701,6 +702,9 @@ With regards to finding a format for a friends player:
 * ffmpeg
 	* Re-encode for correcting timestamps on TS streams.
 		* See heading: [ffmpeg](#ffmpeg)
+		* I noticed PS3 playback didn't seem to mind broken timestamps when seeking.
+		* mpv gets somewhat confused.
+		* vlc gets completely confused.
 	* `-report` flag
 	* `-map` choose the right stream index?
 	* `-c` specify codec for streams or specific with `a` then `copy` it or use `aac` etc

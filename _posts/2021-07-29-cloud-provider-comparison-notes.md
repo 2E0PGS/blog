@@ -48,7 +48,7 @@ Mostly based around my workflows and use cases so it may miss out some products 
 ### Glacier
 
 * Long term archival storage. Cheaper than S3 but costs to take the data out.
-* [AWS Glacier Tutorial | Introduction to Amazon Glacier | AWS Training | Edureka](https://www.youtube.com/watch?v=HcYutDorr2Q)
+* [AWS Glacier Tutorial \| Introduction to Amazon Glacier \| AWS Training \| Edureka](https://www.youtube.com/watch?v=HcYutDorr2Q)
 
 ### RDS (Relational Database Service)
 
@@ -65,7 +65,7 @@ Mostly based around my workflows and use cases so it may miss out some products 
 
 * Also covers VS plugin for AWS.
 * [How to Deploy .NET Code to AWS from Within Visual Studio](https://www.youtube.com/watch?v=pgRzdZeNxD8)
-* [[ AWS 10 ] Elastic Beanstalk | Deploying your first application](https://www.youtube.com/watch?v=254OsG2ZPLA)
+* [[ AWS 10 ] Elastic Beanstalk \| Deploying your first application](https://www.youtube.com/watch?v=254OsG2ZPLA)
 * [Tutorial: Deploying an ASP.NET core application with Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-core-tutorial.html)
 
 ### Lambda/API Gateway
@@ -142,7 +142,7 @@ Mostly based around my workflows and use cases so it may miss out some products 
 
 ### Blob Storage
 
-* [Azure Blob Storage Tutorial - Setup & Explore with Azure Portal | Part 1](https://youtu.be/-sCKnOm8G_g)
+* [Azure Blob Storage Tutorial - Setup & Explore with Azure Portal \| Part 1](https://youtu.be/-sCKnOm8G_g)
 * FTP
 	* [FTP to Azure Blob Storage](https://stackoverflow.com/questions/39992173/ftp-to-azure-blob-storage)
 	* See my blog post: SFTP/SSH jail

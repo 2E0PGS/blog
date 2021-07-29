@@ -172,7 +172,6 @@ Ref: [stackshare.io/stackups/amazon-s3-vs-azure-storage](https://stackshare.io/s
 * AWS also easy rdp access, option for Windows server only with no desktop. Nice desktop wallpaper overlay to show IP and hostname. No auto shutdown, no cost estimate on provisioning. 
 * AWS free tier on EC2 micro.
 * Azure free is an internal page inside their portal along with being a public website page. AWS free is only a public website page.
-[Azure free services](https://portal.azure.com/#blade/Microsoft_Azure_Billing/FreeServicesBlade)
 * AWS EC2 provisioning, cold start and regular start-up is faster than Azure.
 * Ability to disk export in Azure virtual machine via a link.
 * I think EC2 restoring snapshot breaks RDP password... yes it does so stop and start VM. don't try reboot as it doesn't update the "get pass"
@@ -186,7 +185,7 @@ Ref: [stackshare.io/stackups/amazon-s3-vs-azure-storage](https://stackshare.io/s
 * Azure RDP you set the username and password but AWS it's created for you when you restart it and upload the pem key to decrypt it.
 * AWS RDP drops if you try copying a large file.
 * Azure console has a strange horizontal scrolling UI.
-* OTT browser security settings on AWS and Azure Windows server images however I used wWindows 10 desktop on Azure which doesn't have such security settings.
+* OTT browser security settings on AWS and Azure Windows server images however I used Windows 10 desktop on Azure which doesn't have such security settings.
 
 ## Other notes
 

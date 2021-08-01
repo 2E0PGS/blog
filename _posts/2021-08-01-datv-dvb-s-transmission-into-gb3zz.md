@@ -92,7 +92,7 @@ I could also do multicast but I am sticking to unicast as I only intend to watch
 * TODO: Try pluto with SDRangel.
 * Blazer HD4000 will go down to 1 MSps.
 	* It will also go down to 437 MHz and a bit lower.
-	* `10000 (Mhz lnb freq in software) + 437 (Mhz freq we want to receiver) = 10437 is the frequency we input into the box so it can account for lnb down shift`
+	* 10000 (Mhz lnb freq in software) + 437 (Mhz freq we want to receiver) = 10437 is the frequency we input into the box so it can account for lnb down shift.
 	* However its input sensitivity is rather bad that low down.
 * It's worth monitoring the TX output spectrum of your TX device, in my case Pluto SDR.
 	* I found sometimes it transmits a bit wonky, e.g. broken up signal. In that instance DATV Express needs restarting to fix it.

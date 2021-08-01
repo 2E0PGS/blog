@@ -21,14 +21,14 @@ See comment/description of video: [Working GB3ZZ 437 MHz input 2021-07-14](https
 
 ## Videos
 
-<iframe width="1257" height="707" src="https://www.youtube.com/embed/4vg6mT37uoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="419" height="236" src="https://www.youtube.com/embed/4vg6mT37uoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="1257" height="707" src="https://www.youtube.com/embed/-eicPTC1YCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## VLC
 
 * Useful command to check VLC ports: `watch -d "sudo lsof -i -P -n  | grep vlc"`
-* <https://wiki.videolan.org/Documentation:Streaming_HowTo/Command_Line_Examples/>
+* <https://wiki.videolan.org/Documentation:Streaming_HowTo/Command_Line_Examples>
 
 ### Local
 
@@ -153,31 +153,29 @@ Note this information is subject to change and should only be viewed as a snapsh
 
 ## Links and diagram
 
-[//]: # (Trying a single bracket there below)
-
 * <https://www.qsl.net/g8ymm/gb3zz.htm> 
 * [Interlacing and HD for DATV Express - GW8BVI](https://www.cardiffars.org.uk/events/2020_Phil%20Longhurst_Interlacing%20and%20HD%20for%20DATV%20Express.pdf)
-* <https://www.camsecure.co.uk/GB3ZZ.html/>
-	* <https://www.camsecure.co.uk/437.html/>
-* <https://batc.org.uk/live/gb3zz/>
-* <http://www.stvg.co.uk/gb3zz.html/>
-* <https://wiki.batc.org.uk/GB3ZZ/>
-* <https://github.com/BritishAmateurTelevisionClub/>
-* <https://github.com/davecrump/portsdown-buster/>
-* <https://wiki.batc.org.uk/Portsdown_software/>
-* <https://wiki.batc.org.uk/Use_With_a_DTX-1/>
-* <https://wiki.batc.org.uk/Lean_DVB_receiver/>
-* <https://wiki.batc.org.uk/Portsdown_2019/>
-* <https://wiki.batc.org.uk/23cms_ATV/>
+* <https://www.camsecure.co.uk/GB3ZZ.html>
+	* <https://www.camsecure.co.uk/437.html>
+* <https://batc.org.uk/live/gb3zz>
+* <http://www.stvg.co.uk/gb3zz.html>
+* <https://wiki.batc.org.uk/GB3ZZ>
+* <https://github.com/BritishAmateurTelevisionClub>
+* <https://github.com/davecrump/portsdown-buster>
+* <https://wiki.batc.org.uk/Portsdown_software>
+* <https://wiki.batc.org.uk/Use_With_a_DTX-1>
+* <https://wiki.batc.org.uk/Lean_DVB_receiver>
+* <https://wiki.batc.org.uk/Portsdown_2019>
+* <https://wiki.batc.org.uk/23cms_ATV>
 * [Bristol Minicat19, BATC](https://youtu.be/krVbt_BBdWM)
-* <https://github.com/F5OEO/rpidatv/>
-* <https://wiki.batc.org.uk/Ryde_Receiver/>
-* <https://wiki.microwavers.org.uk/Langstone_Project/>
-* <https://wiki.batc.org.uk/Portsdown_4_Pluto/>
-* <https://wiki.batc.org.uk/Portsdown_2020/>
-* <https://wiki.batc.org.uk/DATV_transmitting_Equipment/>
-* <https://wiki.batc.org.uk/The_Portsdown_DATV_transceiver_system/>
-* <https://wiki.batc.org.uk/Portsdown_4/>
+* <https://github.com/F5OEO/rpidatv>
+* <https://wiki.batc.org.uk/Ryde_Receiver>
+* <https://wiki.microwavers.org.uk/Langstone_Project>
+* <https://wiki.batc.org.uk/Portsdown_4_Pluto>
+* <https://wiki.batc.org.uk/Portsdown_2020>
+* <https://wiki.batc.org.uk/DATV_transmitting_Equipment>
+* <https://wiki.batc.org.uk/The_Portsdown_DATV_transceiver_system>
+* <https://wiki.batc.org.uk/Portsdown_4>
 
 ![Portsdown 4 diagram](https://wiki.batc.org.uk/images/thumb/f/fd/Portsdown_4_Block.PNG/600px-Portsdown_4_Block.PNG)
 

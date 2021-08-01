@@ -81,13 +81,13 @@ if you get errors check syslog.
 Normal http gelf on port 12202
 
 ```sh
-peter@desktop:~$ curl 192.168.2.22:12202/gelf -X POST -H 'Content-Type: application/json' -d '{ "short_message": "A short message", "level": 5 }'
+peter@desktop:~$ curl 192.168.1.22:12202/gelf -X POST -H 'Content-Type: application/json' -d '{ "short_message": "A short message", "level": 5 }'
 ```
 
 Checking http reverse proxy on port 80
 
 ```sh
-peter@desktop:~$ curl 192.168.2.22:80/sgelf -X POST -H 'Content-Type: application/json' -d '{ "short_message": "from sgelf", "level": 5 }'
+peter@desktop:~$ curl 192.168.1.22:80/sgelf -X POST -H 'Content-Type: application/json' -d '{ "short_message": "from sgelf", "level": 5 }'
 ```
 
 ```html
@@ -103,7 +103,7 @@ peter@desktop:~$ curl 192.168.2.22:80/sgelf -X POST -H 'Content-Type: applicatio
 Try with auth now
 
 ```sh
-peter@desktop:~$ curl 192.168.2.22:80/sgelf -X POST -H 'Content-Type: application/json' -H "Authorization: Basic $(echo -n foo:bar | base64)" -d '{ "short_message": "from sgelf with pass", "level": 5 }'
+peter@desktop:~$ curl 192.168.1.22:80/sgelf -X POST -H 'Content-Type: application/json' -H "Authorization: Basic $(echo -n foo:bar | base64)" -d '{ "short_message": "from sgelf with pass", "level": 5 }'
 ```
 
 ## Option 2 (Separate ngix proxy server) (recommended method)
@@ -116,7 +116,7 @@ Add the following.
 server {
         server_name logger.example.com;
         location / {
-                proxy_pass http://192.168.2.22:12202/gelf;
+                proxy_pass http://192.168.1.22:12202/gelf;
                 auth_basic "Restricted Area";
                 auth_basic_user_file /etc/nginx/.htpasswd;
         }

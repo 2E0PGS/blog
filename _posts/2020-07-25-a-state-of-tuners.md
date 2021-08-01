@@ -127,7 +127,7 @@ Note: Generic RTL devices may require a PPM offset outside their intended use ce
 
 * ITV: `vlc dvb-t://frequency=578000000:bandwidth=0`
 * The docs state it should be in KHz but I get: `dtv stream error: 578000 Hz carrier frequency is too low.` so it looks like it's actually using Hz.
-* Record `cvlc` transport stream headless: `cvlc dvb-t://frequency=578000000:bandwidth=0 :program=8384 --sout "#file{dst=/home/anon/recording.ts,no-overwrite}"`
+* Record `cvlc` transport stream headless: `cvlc dvb-t://frequency=578000000:bandwidth=0 :program=8384 --sout "#file{dst=/home/peter/recording.ts,no-overwrite}"`
 	* There must be a spare before `:program`
 
 ## VLC DVB-S

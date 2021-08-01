@@ -13,14 +13,14 @@ tags:
 
 # VirtualBox installing Ubuntu 18.04/20.04
 
-https://www.virtualbox.org/wiki/Linux_Downloads
+<https://www.virtualbox.org/wiki/Linux_Downloads/>
 
 > Ubuntu 19.10 / 20.04 / 20.10 / 21.04
 > Ubuntu 18.04 / 18.10 / 19.04
 
-20.04: https://download.virtualbox.org/virtualbox/6.1.22/virtualbox-6.1_6.1.22-144080~Ubuntu~eoan_amd64.deb
+20.04: <https://download.virtualbox.org/virtualbox/6.1.22/virtualbox-6.1_6.1.22-144080~Ubuntu~eoan_amd64.deb/>
 
-18.04: https://download.virtualbox.org/virtualbox/6.1.22/virtualbox-6.1_6.1.22-144080~Ubuntu~bionic_amd64.deb
+18.04: <https://download.virtualbox.org/virtualbox/6.1.22/virtualbox-6.1_6.1.22-144080~Ubuntu~bionic_amd64.deb/>
 
 ```sh
 wget https://download.virtualbox.org/virtualbox/6.1.22/virtualbox-6.1_6.1.22-144080~Ubuntu~eoan_amd64.deb
@@ -36,11 +36,11 @@ sudo usermod -a -G vboxusers $USER
 
 This download it, installs it, fixes dependencies, installs kernel drivers (DKMS) and finally adds our user to `vboxusers` group for USB support etc.
 
-https://www.virtualbox.org/wiki/Downloads
+<https://www.virtualbox.org/wiki/Downloads/>
 
 > Oracle VM VirtualBox Extension Pack
 > All supported platforms
 
-https://download.virtualbox.org/virtualbox/6.1.22/Oracle_VM_VirtualBox_Extension_Pack-6.1.22.vbox-extpack
+<https://download.virtualbox.org/virtualbox/6.1.22/Oracle_VM_VirtualBox_Extension_Pack-6.1.22.vbox-extpack/>
 
 Download, double click and install.

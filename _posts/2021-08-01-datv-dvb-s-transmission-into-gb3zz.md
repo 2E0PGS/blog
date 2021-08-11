@@ -17,7 +17,8 @@ This post is a continuation of [A state of tuners](https://2e0pgs.github.io/blog
 
 ## Current setup
 
-See comment/description of video: [Working GB3ZZ 437 MHz input 2021-07-14](https://www.youtube.com/watch?v=-eicPTC1YCQ)
+* See comment/description of video: [Working GB3ZZ 437 MHz input 2021-07-14](https://www.youtube.com/watch?v=-eicPTC1YCQ)
+* 1280 x 720 progressive 30 fps MJPG
 
 ## Videos
 

@@ -373,6 +373,8 @@ Because most of this document covers these two frameworks, this heading will onl
 
 * [.NET Core is the Future of .NET ](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/)
 	* \> New applications should be built on .NET Core. .NET Core is where future investments in .NET will happen. Existing applications are safe to remain on .NET Framework which will be supported.
+* `dotnet --list-sdks`
+* `dotnet --list-runtimes`
 
 ### .NET 5
 

@@ -11,57 +11,19 @@ tags:
 
 # Comparison of various caddy/combo small vans
 
-## Vauxhall Combo
-
-* <https://www.autoexpress.co.uk/vauxhall/combo>
-
-## Volkswagen Caddy
-
-* <https://www.autoexpress.co.uk/volkswagen/caddy>
-
-## Renault Kangoo
-
-* <https://www.autoexpress.co.uk/renault/kangoo/van>
-
-## Peugeot Partner
-
-* <https://www.autoexpress.co.uk/peugeot/partner>
-
-## Peugeot Bipper
-
-* <https://www.autoexpress.co.uk/peugeot/bipper>
-
-## Citroen Berlingo
-
-* <https://www.autoexpress.co.uk/citroen/berlingo-van>
-
-## Nissan NV200
-
-* <https://www.autoexpress.co.uk/nissan/nv200>
-
-## Ford Transit Connect
-
-* <https://www.autoexpress.co.uk/ford/transit-connect>
-
-## Ford Transit Courier
-
-* <https://www.autoexpress.co.uk/ford/transit-courier>
-
-## Mercedes Citan
-
-* <https://www.autoexpress.co.uk/mercedes/citan>
-
-## Fiat Doblo Cargo
-
-* <https://www.autoexpress.co.uk/fiat/doblo-cargo>
-
-## Fiat Fiorino
-
-* <https://www.autoexpress.co.uk/fiat/fiorino>
-
-## Toyota Proace
-
-* <https://www.autoexpress.co.uk/toyota/proace-city/van>
+* [Vauxhall Combo](https://www.autoexpress.co.uk/vauxhall/combo)
+* [Volkswagen Caddy](https://www.autoexpress.co.uk/volkswagen/caddy)
+* [Renault Kangoo](https://www.autoexpress.co.uk/renault/kangoo/van)
+* [Peugeot Partner](https://www.autoexpress.co.uk/peugeot/partner)
+* [Peugeot Bipper](https://www.autoexpress.co.uk/peugeot/bipper)
+* [Citroen Berlingo](https://www.autoexpress.co.uk/citroen/berlingo-van)
+* [Nissan NV200](https://www.autoexpress.co.uk/nissan/nv200)
+* [Ford Transit Connect](https://www.autoexpress.co.uk/ford/transit-connect)
+* [Ford Transit Courier](https://www.autoexpress.co.uk/ford/transit-courier)
+* [Mercedes Citan](https://www.autoexpress.co.uk/mercedes/citan)
+* [Fiat Doblo Cargo](https://www.autoexpress.co.uk/fiat/doblo-cargo)
+* [Fiat Fiorino](https://www.autoexpress.co.uk/fiat/fiorino)
+* [Toyota Proace](https://www.autoexpress.co.uk/toyota/proace-city/van)
 
 ## Sorted ascending order load area length
 
@@ -413,7 +375,7 @@ tags:
 
 ## Size of items
 
-* So we know if the van can fit a UK single size mattress for camping.
+* So we know if the van can fit a UK single size mattress for camping:
 	* [YOUR GUIDE TO UK MATTRESS SIZES](https://www.frenchbedroomcompany.co.uk/uk-mattress-sizes#:~:text=The%20UK%20Single%20measures%2090,plenty%20of%20floor%20space%20free!)
 		* Single: 90 cm x 190 cm 
 		* In mm: 900 mm x 1900 mm
@@ -422,11 +384,13 @@ tags:
 
 ## Things of note
 
-* A lot of the vans now have PSA engines, quotes from AutoExpress.
+* A lot of the vans now have PSA engines, quotes from AutoExpress:
 	* \> Proace City model, which is another PSA joint-venture offering, this time a rebadged version of the Citroen Berlingo, Peugeot Partner and Vauxhall
 	* \> Development was led by the Citroen Berlingo and Peugeot Partner which arrived in 2018, with the Vauxhall Combo arriving in 2019 and the Toyota Proace City arriving in 2020. They all use the same running gear and are largely identical from the leading edge of the bonnet all the way to the back doors.
 	* \> The Fiat Doblo used to have a platform sharing partner in the shape of the Vauxhall Combo. But with that model now part of the PSA Group, the Doblo soldiers on alone.
-* Observed vans with tailgate windows
+	* \> The Renault is a versatile urban delivery van that majors on being good to drive and delivering impressive fuel efficiency. It's also great value for money, and shares much of its engineering with the Mercedes Citan
+		* Citan and Kangoo share the same running rail?
+* Observed vans with tailgate windows:
 	* VW Caddy
 	* Citroen Berlingo
 	* Fiat Fiorino
@@ -434,12 +398,28 @@ tags:
 	* Peugeot Bipper
 	* Peugeot Partner
 * Small vans like this are often called [LCV](https://en.wikipedia.org/wiki/Light_commercial_vehicle)
+* Common rail fuel injection.
+	* VW adopt common rail.
+* \> One area where the Citan is a bit of a letdown is the quality of the materials on board. This isn't like Merc's cars with plush materials everywhere, instead the cabin has the look of the Kangoo
 
-## Other links
+## Review links
 
-* <https://www.admiral.com/magazine/guides/van/10-of-the-best-small-vans>
-* <https://www.whatcar.com/news/the-best-small-vans-2021/n20723>
-* <https://www.buyacar.co.uk/vans/small-vans/519/the-best-small-vans-10-vans-that-prove-tiny-can-be-mighty>
-* <https://www.autoexpress.co.uk/vans/98413/best-small-vans-on-sale>
-* <https://www.parkers.co.uk/vans-pickups/best/small-vans/>
-* <https://www.vansdirect.co.uk/5-best-small-vans-2021>
+* [Admiral - 10 of the best small vans](https://www.admiral.com/magazine/guides/van/10-of-the-best-small-vans)
+* [whatcar - The best small vans 2021](https://www.whatcar.com/news/the-best-small-vans-2021/n20723)
+* [buyacar - The best small vans: 10 vans that prove tiny can be mighty](https://www.buyacar.co.uk/vans/small-vans/519/the-best-small-vans-10-vans-that-prove-tiny-can-be-mighty)
+* [Auto Express - Best small vans to buy 2021](https://www.autoexpress.co.uk/vans/98413/best-small-vans-on-sale)
+* [Parkers - Best small vans 2021](https://www.parkers.co.uk/vans-pickups/best/small-vans/)
+* [Vansdirect - The 5 best small vans to buy in 2021](https://www.vansdirect.co.uk/5-best-small-vans-2021)
+
+## MPG links
+
+* [Auto Express - Most economical commercial vehicles](https://www.autoexpress.co.uk/best-cars-vans/86968/most-economical-commercial-vehicles)
+* [Vanwise - A guide to fuel economy for small vans](https://www.vanwisegroup.com/news/a-guide-to-fuel-economy-for-small-vans/)
+* [vanarama - Top 5 Small Vans By MPG](https://www.vanarama.com/latest-news/top-5-small-vans-by-mpg.html)
+* [Parkers - Most economical small vans](https://www.parkers.co.uk/vans-pickups/best/2017/small-vans/)
+
+## YouTube review links
+
+* [Detail Corps Media - The Best Budget Van Money Can Buy - Renault Kangoo Review](https://youtu.be/_XVbFznYQZY)
+* [Detail Corps Media - Is This Really the BEST Small Van? Transit Connect Vs Caddy](https://youtu.be/c8UWFR0CEcU)
+* [Detail Corps Media - Transit vs Traffic vs Transporter? The Best Combi Van](https://youtu.be/q6vv3dnKGmk)

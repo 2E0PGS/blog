@@ -391,7 +391,7 @@ tags:
 	* \> The Renault is a versatile urban delivery van that majors on being good to drive and delivering impressive fuel efficiency. It's also great value for money, and shares much of its engineering with the Mercedes Citan
 		* Citan and Kangoo share the same running rail?
 * Observed vans with tailgate windows:
-	* VW Caddy
+	* Volkswagen Caddy
 	* Citroen Berlingo
 	* Fiat Fiorino
 	* _Mercedes Citan_
@@ -399,7 +399,7 @@ tags:
 	* Peugeot Partner
 * Small vans like this are often called [LCV](https://en.wikipedia.org/wiki/Light_commercial_vehicle)
 * Common rail fuel injection.
-	* VW adopt common rail.
+	* Volkswagen adopt common rail.
 * \> One area where the Citan is a bit of a letdown is the quality of the materials on board. This isn't like Merc's cars with plush materials everywhere, instead the cabin has the look of the Kangoo
 
 ## Review links

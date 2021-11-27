@@ -24,7 +24,7 @@ set list
 set listchars=tab:»\ ,eol:¬,space:.
 ```
 
-Update 2021-02-02: Include example for Atom and VS Code.
+Update: 2021-02-02: Include example for Atom and VS Code.
 
 VS Code `~/.config/Code/User/settings.json`
 

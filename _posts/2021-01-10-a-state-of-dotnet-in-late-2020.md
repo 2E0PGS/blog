@@ -117,7 +117,7 @@ Otherwise useful as a historic reference for frameworks built on these stacks.
 
 #### Namespaces
 
-* TODO: My blog post on: [TBA - Portable data layer library - Namespaces]()
+* My blog post on: [Portable data layer library - Namespaces](https://2e0pgs.github.io/blog/programming/2021/08/11/portable-data-layer-library/#namespaces)
 * Better namespaces for easier and shorter references as the Controllers can reference Models within same namespace.
 
 `MyOrg.SpecialApp.Models.System1.CustomerModel.cs`
@@ -249,7 +249,7 @@ I personally stick with the way .NET Framework projects where historically laid 
 
 * DI is built into ASP.NET Core which is nice, this should help consolidate and eliminate the need to know the intricacies of various DI frameworks across multiple projects in an organisation.
 * [Dependency injection in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.1)
-* TODO: My blog post on: [TBA - Portable data layer library - DI example]()
+* My blog post on: [Portable data layer library - DI example](https://2e0pgs.github.io/blog/programming/2021/08/11/portable-data-layer-library/#di-examples)
 
 ## Service reference/Web service/WCF
 

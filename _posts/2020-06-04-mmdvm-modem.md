@@ -25,7 +25,7 @@ My fiend 2E0EOL has written a article on a similar setup: [daybologic GMSK Gatew
 
 Requires Pi-Star beta image for Raspberry Pi 3B+ at time of writing.
 
-UPDATE 07/04/2020: "Raspberry Pi 3B+ out of beta".
+Update: 2020-04-07: "Raspberry Pi 3B+ out of beta".
 
 ## Pinouts
 

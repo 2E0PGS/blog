@@ -251,7 +251,7 @@ Can't seem to find a data sheet or product brochure unfortunately. So no way to 
 * 1: `ffmpeg -i "$1" -c:v copy -c:a copy -segment_time 01:18:00 -f segment %03d"$1"`
 	* `ffmpeg -i 001out.mp4 -c:v copy -c:a copy 001out-reprocessed.mp4` this will fix the timestamps must be some flag im missing on original line.
 	* That creates a file around: 3.6 GB (3604783722 bytes) in size although it will depend how compressed your source file is.
-* 2: UPDATE: `-reset_timestamps` is the flag: `ffmpeg -i "$1" -c:v copy -c:a copy -f segment -segment_time 08:30:00 -reset_timestamps 1 %03d"$1"`
+* 2: Update: `-reset_timestamps` is the flag: `ffmpeg -i "$1" -c:v copy -c:a copy -f segment -segment_time 08:30:00 -reset_timestamps 1 %03d"$1"`
 
 ### Tar compress, split and GPG
 

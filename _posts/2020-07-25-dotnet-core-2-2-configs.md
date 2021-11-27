@@ -161,7 +161,7 @@ If you want to retrieve a nested single string you can do the following. Notice 
 
 Use camelCase to conform to JSON standards but it seems MS cant decide if they want to stick to their old school PascalCase days. 
 
-UPDATE: They seem to mostly give camelCase example code snippets now. Originally they had PascalCase JSON property names in the scaffolding templates.
+Update: They seem to mostly give camelCase example code snippets now. Originally they had PascalCase JSON property names in the scaffolding templates.
 
 * Call it: `appsettings.json`
 * _Untested example migration from web.config: [stackoverflow.com/a/52341105](https://stackoverflow.com/a/52341105)_ I say untested because I believe I did try this and it didn't work however I didn't spend much time at all testing maybe 5 mins.

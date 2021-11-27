@@ -13,7 +13,7 @@ tags:
 
 # Bristol LoRa disaster.radio
 
-This post has been sat around in my drafts for a long time (23/01/2020) before I posted it and therefore may no longer be relevant.
+This post has been sat around in my drafts for a long time (since 2020-01-23) before I posted it and therefore may no longer be relevant.
 
 I thought I better get on and post this now as a flurry of videos about LoRa have surfaced again.
 

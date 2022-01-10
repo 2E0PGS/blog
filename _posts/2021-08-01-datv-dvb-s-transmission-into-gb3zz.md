@@ -19,6 +19,7 @@ This post is a continuation of [A state of tuners](https://2e0pgs.github.io/blog
 
 * See comment/description of video: [Working GB3ZZ 437 MHz input 2021-07-14](https://www.youtube.com/watch?v=-eicPTC1YCQ)
 * 1280 x 720 progressive 30 fps MJPG
+	* Could effect bandwidth or CPU usage.
 
 ## Videos
 
@@ -142,6 +143,9 @@ Note this information is subject to change and should only be viewed as a snapsh
 * The 144.750 MHz VHF FM vertical is for talk back. This gets fed into the TS (Transport Stream) of GB3ZZ output.
 * Rydes can take 30 seconds to switch as they're scanning multiple modes.
 * Output is two channel multiplexed. Channel 1 is the main channel and has audio left and right separate sources. Channel 2 has no audio normally and is the engineering channel.
+* **Update: 2021-08-16:** 70 cm input is no longer active.
+* **Update: 2021-09-01:** GB3ZZ site decommissioned. TODO: Find exact date.
+* **Update: 2022-01-10:** GB3ZZ recommissioned on adjacent building. Exact heights, bearings and ranges TBA. Currently running in TX only beacon mode with no RX enabled.
 
 | Band  | Direction | Name      | Availability  | Frequency   | Standard | Symbolrate                 | Video codec    | FEC | Antenna             | Polarisation | Device        | Notes |
 |-------|-----------|-----------|---------------|-------------|----------|----------------------------|----------------|-----|---------------------|--------------|---------------|-------|
@@ -153,6 +157,10 @@ Note this information is subject to change and should only be viewed as a snapsh
 | 2 m   | Input     | Primary   | 24/7          | 145.750 MHz | FM       | N/A                        | N/A            | N/A | Collinear           | Vertical     |               |       |
 
 ![antennas](http://www.stvg.co.uk/images/GB3ZZ%202013%20006a.jpg)
+
+## Working the 23 cm input
+
+Above I mention working the 70 cm input. I also worked the 23 cm input a few days later. TODO: Video coming soon.
 
 ## Links and diagram
 

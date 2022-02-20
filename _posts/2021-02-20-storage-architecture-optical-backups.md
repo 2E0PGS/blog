@@ -95,6 +95,7 @@ tags:
 * DU-8A5LH is a drive commonly found in DELL laptops.
 * Write software `Windows` refers to `Windows Explorer` but is kept short for brevity. 
 * Some items maybe missing write speed if the software doesn't show it like in the case of `Windows Explorer`, otherwise I may have not recorded the speed at the time.
+* Maybe odd combinations as I retested some to get a speed where I missed it before.
 
 ## Compatibility/playback tests
 
@@ -568,7 +569,7 @@ I noticed a few imperfections so I now check the blank medium before using it.
 
 * "Data set 1" is a continuation of the data set mentioned in [Write speed tests](#write-speed-tests) and [Compatibility/playback tests](#compatibilityplayback-tests)
 * 23, 24, 26, 27 are the most useful test disks.
-* TODO: Need a BB-R and BD-R DL multi file test disk.
+* TODO: Need a BD-R, BD-R DL and CD-R multi file test disk.
 * 25 was a accidental burn because I wasn't planning on testing that FS combo. However I thought id test it anyway.
 
 ### Data set 1 read
@@ -605,6 +606,8 @@ I noticed a few imperfections so I now check the blank medium before using it.
 | 65 | 2021-03-03 | MediaRange | BD-R DL   | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | binary    | BDR-212M     | 8x              | 6.6x                | OK     |
 | 88 | 2021-07-03 | MediaRange | BD-R      | ImgBurn        | Remote SMB  | Windows                              | Data         | ISO 9660+Joliet | binary    | BDR-212M     |                 | 6x                  | OK     |
 
+* Different data set. These are just included for write speed estimates.
+
 ### Data set 2 read
 
 N/A
@@ -620,6 +623,8 @@ N/A
 | 6  | 2021-02-24 | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | MP3       | BDR-212M     |                 |                     | OK     |
 | 7  | 2021-02-24 | Philips    | DVD-R     | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | MP3       | BDR-212M     |                 |                     | OK     |
 | 8  | 2021-03-08 | Kodak      | DVD+R DL  | ImgBurn        | Remote SMB  | Windows -> VM passthrough -> Windows | Data         | ISO 9660+Joliet | MP3       | BDR-212M     |                 |                     | OK     |
+
+* Different data set. Included as this is where I first noticed codec problems with the Sony BDP-S1500.
 
 ### Data set 3 read
 

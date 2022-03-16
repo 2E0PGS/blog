@@ -14,7 +14,7 @@ tags:
 
 # .NET Conf: Focus on F# notes
 
-<iframe width="1257" height="707" src="https://www.youtube.com/embed/i3qEhwcG7ps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="419" height="236" src="https://www.youtube.com/embed/i3qEhwcG7ps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Yes this has been sat in my drafts for far too long. I suspect since 2021-07-29
 

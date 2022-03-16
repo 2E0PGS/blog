@@ -14,9 +14,11 @@ tags:
 
 # .NET Conf: Focus on F# notes
 
-<iframe width="419" height="236" src="https://www.youtube.com/embed/i3qEhwcG7ps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Yes this has been sat in my drafts for far too long. I suspect since 2021-07-29
+
+<div align="center">
+	<iframe width="419" height="236" src="https://www.youtube.com/embed/i3qEhwcG7ps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 * JavaScript backend
 * Supports .NET libs
@@ -34,7 +36,7 @@ Yes this has been sat in my drafts for far too long. I suspect since 2021-07-29
 * [F# for Fun and Profit](https://fsharpforfunandprofit.com/)
 	* [Why use F#?](https://fsharpforfunandprofit.com/why-use-fsharp/)
 		* \> F# is not cluttered up with coding “noise” such as curly brackets, semicolons and so on.
-			* https://fsharpforfunandprofit.com/posts/fvsc-sum-of-squares/ 
+			* <https://fsharpforfunandprofit.com/posts/fvsc-sum-of-squares/> 
 			* Reminds me of what I was saying here: [A state of .NET in late 2020 - C# 9](https://2e0pgs.github.io/blog/programming/2021/01/10/a-state-of-dotnet-in-late-2020/#c-9)
 			* Perhaps C# 9 is actually getting lots of ideas from F# however I think there needs to be a clear line between them otherwise you muddy the two languages.
 * [SAFE Stack](https://safe-stack.github.io/)

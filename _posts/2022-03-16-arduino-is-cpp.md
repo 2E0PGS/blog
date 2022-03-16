@@ -101,5 +101,5 @@ Global variables use 188 bytes (9%) of dynamic memory, leaving 1860 bytes for lo
 * [GitHub - ladislas/Bare-Arduino-Project](https://github.com/ladislas/Bare-Arduino-Project)
 * [Arduino Forum - What is the difference between std::string and String](https://forum.arduino.cc/t/what-is-the-difference-between-std-string-and-string/641910)
 * [Stack Overflow -Strings in C++ class file for Arduino not compiling](https://stackoverflow.com/questions/10612385/strings-in-c-class-file-for-arduino-not-compiling)
-* [Arduino Forum - Error #include <string> while compileing](https://forum.arduino.cc/t/error-include-string-while-compileing/411001)
+* [Arduino Forum - Error \#include \<string\> while compileing](https://forum.arduino.cc/t/error-include-string-while-compileing/411001)
 
